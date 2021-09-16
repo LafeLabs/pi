@@ -32,13 +32,59 @@ Elements of a station:
  - fold up chair and fold out desk
  - projector
  - hydroelectric turbine
- - bike generator pickup
+ - bike generator pickup, which can integrate with a hydroelectric bike drive, using the bike wheels on the cart
  - water sensor array on arduino
  - arduino shield which controls an arbitrary motor: AC, DC, wall power 
  - picam
+ - optical microscope for viewing water
  - speakers
  - microphone
+ - software defined radio receiver 
+ - generic trash robot and controller
+ - power train for bike wheels for cart makes it into a fully mobile robot, which can be driven by arduino with controller
 
+Skills for an operator
+
+ - set up a new raspberry pi(software)
+ - get apache, PHP and geometron installed
+ - control the pi remotely using VNC
+ - build the enclosure, cart, tower
+ - learn to program arduino with blink
+ - learn to plot sensor data in arduino IDE
+ - learn to control neopixels
+ - plot data from arduino in jupyter notebooks, share notebooks
+ - replicate geometron from pi to private machine to github and back to pi
+ - run video chat over pi using VNC 
+ - GNU radio, learn to tune into radio stations, find a transmitter
+ - build a hydroelectric generator
+ - set up a solar power plant with a car battery
+
+Sensors:
+
+ - water level
+ - water current
+ - water temperature
+ - ice movement
+ - water salinity
+ - specific contaminant measurements, oil, phosphate, etc
+ - microscope watching the water on webcam
+ - wind
+
+Applications
+
+ - job board, personals, for sale, mutual aid
+ - zines, art sharing
+ - plant and animal lore distribution locally to a place
+ - local wildlife and nature news
+ - water monitoring 
+ - remote control of machines
+ - remote control of signal lights
+ - video chat with passerby from around the world
+ - fishery monitor with underwater cameras
+ - platform for environmental science
+ - applied physics teaching platform
+ - video game system, entertainment
+ 
 
 Really nice project to do video calls on pi:
 
