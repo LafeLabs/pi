@@ -75,6 +75,16 @@ EGO DEATH:
         }
     }
 
+    $pyfiles = scandir(getcwd()."/scrolls");
+
+    foreach($pyfiles as $value){
+        if($value[0] != "."){
+            echo "<div class = \"python file\">scrolls/";
+            echo $value;
+            echo "</div>\n";
+        }
+    }
+
 
     $phpfiles = scandir(getcwd()."/php");
 

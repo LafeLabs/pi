@@ -34,6 +34,7 @@
         "filesaver.txt",
         "mkdir.txt",
         "rdelete.txt",
+        "removephp.txt",
         "replicator.txt",
         "scrolleditor.txt",
         "scrollsetreplicator.txt",
@@ -44,6 +45,6 @@
     "maps": [],
     "scrolls": [
         "home",
-        "robot"
+        "plot1"
     ]
 }
