@@ -66,7 +66,13 @@ sudo nano /etc/hosts
 </pre>
 edit, and use control-x and say "yes" to save changes.
 
-## Install a
+## Install arduino
+
+<pre>
+sudo apt-get install arduino
+</pre>
+
+following more complicated instructions leads to non-working version which is impossible to uninstall.
 
 
 
