@@ -43,6 +43,7 @@
     ],
     "maps": [],
     "scrolls": [
+        "derp",
         "home",
         "robot"
     ]
