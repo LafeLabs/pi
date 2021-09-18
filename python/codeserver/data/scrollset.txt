@@ -1,0 +1,9 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/openarduino/main/codeserver/",
+    "scrolls": [
+        "blink",
+        "foo",
+        "home",
+        "robot"
+    ]
+}
