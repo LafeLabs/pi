@@ -44,18 +44,15 @@ php replicator.php
 sudo chmod -R 0777 *
 </pre>
 
-## Install VNC for remote control
+Check the IP address by hovering over the wifi icon, put that into the browser on another machine on the same local wifi network to see and edit the server.  Or open a browser on the pi and point it to [http://localhost](http://localhost)
 
-[https://www.raspberrypi.org/documentation/computers/remote-access.html#installing-vnc-on-raspberry-pi](https://www.raspberrypi.org/documentation/computers/remote-access.html#installing-vnc-on-raspberry-pi)
+## Enable VNC
 
-<pre>
-sudo apt update
-sudo apt install realvnc-vnc-server realvnc-vnc-viewer
-</pre>
+From the menu, select
 
-Select Menu › Preferences › Raspberry Pi Configuration › Interfaces.
+preferences>raspberry pi configuration>interfaces
 
-Ensure VNC is enabled
+click radio button to turn VNC on
 
 ## Set up to have names for other servers
 
@@ -73,6 +70,13 @@ sudo apt-get install arduino
 </pre>
 
 following more complicated instructions leads to non-working version which is impossible to uninstall.
+
+## Add python that we need
+
+matplotlib
+<pre>
+sudo apt install python3-matplotlib
+</pre>
 
 
 
