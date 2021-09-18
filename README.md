@@ -13,7 +13,7 @@
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
 
-## setup
+## install
 
 Get a SD card with 8 GB or more storage and a SD card USB reader
 
@@ -23,7 +23,7 @@ Download and install, then use the Raspberry Pi Imager:
 
 Turn on the pi click through all the things, put it on the wifi network.
 
-Install Apache and PHP so that geometron can run:
+## Install Apache and PHP so that geometron can run:
 
 <pre>
 sudo apt update
@@ -31,7 +31,7 @@ sudo apt install apache2 -y
 sudo apt install php libapache2-mod-php -y
 </pre>
 
-Install geometron with this document for self-documentation and replication
+## Install geometron with this document for self-documentation and replication
 
 <pre style = "overflow:scroll">
 cd /var/www/html
@@ -44,7 +44,7 @@ php replicator.php
 sudo chmod -R 0777 *
 </pre>
 
-Install VNC for remote control
+## Install VNC for remote control
 
 [https://www.raspberrypi.org/documentation/computers/remote-access.html#installing-vnc-on-raspberry-pi](https://www.raspberrypi.org/documentation/computers/remote-access.html#installing-vnc-on-raspberry-pi)
 
@@ -57,11 +57,27 @@ Select Menu › Preferences › Raspberry Pi Configuration › Interfaces.
 
 Ensure VNC is enabled
 
+## Set up to have names for other servers
+
+edit hosts file to have the IP address of the other servers and then the name you want to use, copying the format in the existing file.
+
+<pre>
+sudo nano /etc/hosts
+</pre>
+edit, and use control-x and say "yes" to save changes.
+
+## Install a
 
 
 
-Roles of the Raspberry pi:
+## Roles of the Raspberry pi:
 
+ - teaching tool
+ - radio
+ - video chat node
+ - remote sensor
+ - remote off grid social media
+ - network machine for building free wifi networks
  - web server
  - web client
  - host for organic media: geometron, bioweb, chaos, etc
