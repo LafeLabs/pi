@@ -1,4 +1,64 @@
-#  Raspberry Pi Station
+#  Raspberry Pi
+
+ - [http://localhost](http://localhost)
+ - [../](../)
+ - [fork.html](fork.html)
+ - [editor.php](editor.php)
+ - [readme.html](readme.html)
+ - [home](index.html)
+ - [scrolleditor.html](scrolleditor.html)
+ - [set.html](set.html)
+ - [dnagenerator.php](dnagenerator.php)
+ - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt)
+ - [local replicator code link](php/replicator.txt)
+ - [replicator.php](replicator.php)
+
+## setup
+
+Get a SD card with 8 GB or more storage and a SD card USB reader
+
+Download and install, then use the Raspberry Pi Imager:
+
+[https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/)
+
+Turn on the pi click through all the things, put it on the wifi network.
+
+Install Apache and PHP so that geometron can run:
+
+<pre>
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
+</pre>
+
+Install geometron with this document for self-documentation and replication
+
+<pre style = "overflow:scroll">
+cd /var/www/html
+sudo rm index.html
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt
+cd ..
+sudo chmod -R 0777 *
+cd html
+php replicator.php
+sudo chmod -R 0777 *
+</pre>
+
+Install VNC for remote control
+
+[https://www.raspberrypi.org/documentation/computers/remote-access.html#installing-vnc-on-raspberry-pi](https://www.raspberrypi.org/documentation/computers/remote-access.html#installing-vnc-on-raspberry-pi)
+
+<pre>
+sudo apt update
+sudo apt install realvnc-vnc-server realvnc-vnc-viewer
+</pre>
+
+Select Menu › Preferences › Raspberry Pi Configuration › Interfaces.
+
+Ensure VNC is enabled
+
+
+
 
 Roles of the Raspberry pi:
 
