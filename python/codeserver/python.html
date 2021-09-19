@@ -4,36 +4,39 @@
  <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
-EVERYTHING IS PHYSICAL
-EVERYTHING IS FRACTAL
-EVERYTHING IS RECURSIVE
-NO MONEY
-NO PROPERTY
-NO MINING
-EGO DEATH:
-    LOOK TO THE INSECTS
-    LOOK TO THE FUNGI
-    LANGUAGE IS HOW THE MIND PARSES REALITY
+CC0
 -->
+
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAETT//9E0///RNP//0TT//9E0///RNP//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAETT//9E0///RNP//0TT//9E0/////////////9E0///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABE0///RNP//0TT//9E0///RNP/////////////RNP//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARNP//0TT//9E0///RNP//0TT//9E0///RNP//0TT//8AAAAAAAAAAAAAAAAAAAAAAAAAAJ9wOv+fcDr/n3A6/0TT/5hE0///RNP//0TT//9E0///RNP//0TT//9E0///RNP//0TT//9E0///AAAAAJ9wOv+fcDr/n3A6/59wOv+fcDqVRNP//0TT//9E0///RNP//0TT//9E0///RNP//0TT//9E0///RNP//0TT//+fcDr/n3A6/59wOv+fcDr/RNP/mETT//9E0///RNP//0TT//9E0///RNP//0TT//9E0///RNP//0TT//9E0///n3A6/59wOv+fcDr/n3A6/59wOpVE0/+YRNP/mETT/5hE0/+YRNP/mETT/5hE0///RNP//0TT//9E0///RNP//59wOv+fcDr/n3A6/59wOv+fcDr/n3A6lZ9wOpWfcDqVn3A6lZ9wOpWfcDqVn3A6lUTT//9E0///RNP//0TT//+fcDr/n3A6/59wOv+fcDr/n3A6/59wOv+fcDr/n3A6/59wOv+fcDr/n3A6/0TT/5hE0///RNP//0TT//9E0///n3A6/59wOv+fcDr/n3A6/59wOv+fcDr/n3A6/59wOv+fcDr/n3A6/59wOv+fcDqVRNP//0TT//9E0///RNP//wAAAACfcDr/n3A6/59wOv+fcDr/n3A6/59wOv+fcDr/n3A6/59wOv+fcDr/RNP/mETT//9E0///RNP//wAAAAAAAAAAAAAAAAAAAAAAAAAAn3A6/59wOv+fcDr/n3A6/59wOv+fcDr/n3A6/59wOv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ9wOv///////////59wOv+fcDr/n3A6/59wOv+fcDr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfcDr///////////+fcDr/n3A6/59wOv+fcDr/n3A6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ9wOv+fcDr/n3A6/59wOv+fcDr/n3A6/wAAAAAAAAAAAAAAAAAAAAAAAAAA+B8AAPAPAADwDwAA8A8AAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAA8A8AAPAPAADwDwAA+B8AAA==" rel="icon" type="image/x-icon" />
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<title>Python Scroll Editor</title>
+<title>Python Code Server</title>
 </head>
 <body>
-
+<div id = "prototypescroll" style = "display:none"># new python program
+#name
+</div>
 <div id = "lightdarkbutton" class = "button">DARK MODE</div>
 
 <div id = "linkscroll">
-
-<a href = "index.html">index.html</a>
-<a href = "editor.php">editor.php</a>
-<a href = "scrolldelete.html">scrolldelete.html</a>
-
+    <a href = "index.html">index.html</a>
+    <a href = "editor.php">editor.php</a>
+    <a href = "scrolldelete.html">scrolldelete.html</a>
 </div>
-<div id = "namediv"></div>
+
+<table id = "inputtable">
+    <tr>
+        <td>Current Program:</td>
+        <td id = "currentfilename"></td>
+    </tr>
+    <tr>
+        <td>New Program Name:</td>
+        <td><input id = "newscrollinput"/></td>
+    </tr>
+</table>
+
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
 
@@ -42,8 +45,13 @@ EGO DEATH:
 </div>
 
 <script>
-
-
+editor = ace.edit("maineditor");
+editor.setTheme("ace/theme/github");
+//editor.setTheme("ace/theme/vibrant_ink");
+editor.getSession().setMode("ace/mode/python");
+editor.getSession().setUseWrapMode(true);
+editor.$blockScrolling = Infinity;
+editor.setTheme("ace/theme/vibrant_ink");
 
 currentFile = "scrolls/home";
 var httpc = new XMLHttpRequest();
@@ -51,36 +59,13 @@ httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         editor.setValue(filedata);
+        document.getElementById("currentfilename").innerHTML = currentFile;
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
 httpc.send();
 
-files = document.getElementById("filescroll").getElementsByClassName("file");
 
-document.getElementById("namediv").style.color = "#add8e6";
-document.getElementById("namediv").style.borderColor = "#add8e6";
-
-for(var index = 0;index < files.length;index++){
-    files[index].onclick = function(){
-        currentFile = this.innerHTML;
-        //use php script to load current file;
-        var httpc = new XMLHttpRequest();
-        httpc.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                filedata = this.responseText;
-                editor.setValue(filedata);
-                var fileType = currentFile.split("/")[0]; 
-                var fileName = currentFile.split("/")[1];
-              
-            }
-        };
-        httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-        httpc.send();
-        
-        document.getElementById("namediv").innerHTML = currentFile;
-    }
-}
 
 scrolls = [];
 var httpc8 = new XMLHttpRequest();
@@ -109,7 +94,7 @@ httpc8.onreadystatechange = function() {
                 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
                 httpc.send();
                 
-                document.getElementById("namediv").innerHTML = currentFile;
+                document.getElementById("currentfilename").innerHTML = currentFile;
                 
             }
         }
@@ -120,14 +105,7 @@ httpc8.open("GET", "dir.php?filename=scrolls", true);
 httpc8.send();
 
 
-document.getElementById("namediv").innerHTML = currentFile;
-
-editor = ace.edit("maineditor");
-editor.setTheme("ace/theme/github");
-//editor.setTheme("ace/theme/vibrant_ink");
-editor.getSession().setMode("ace/mode/python");
-editor.getSession().setUseWrapMode(true);
-editor.$blockScrolling = Infinity;
+document.getElementById("currentfilename").innerHTML = currentFile;
 
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());
@@ -146,24 +124,18 @@ lightmode = false;
 document.getElementById("lightdarkbutton").onclick = function(){
     lightmode = !lightmode;
     if(lightmode){
-        document.getElementById("filescroll").style.backgroundColor = "white";
-        document.getElementById("namediv").style.backgroundColor = "#eeeeee";
-        document.body.style.backgroundColor = "#b0b0b0";
-        document.getElementById("lightdarkbutton").innerHTML = "DARK MODE";
+
         editor.setTheme("ace/theme/github");
-        document.getElementById("linkscroll").style.backgroundColor = "#eeeeee";
+
         var links = document.getElementById("linkscroll").getElementsByTagName("a");
         for(var index = 0;index < links.length;index++){
             links[index].style.color = "black";
-        }
+        }        
+
     }
     else{
-        document.body.style.backgroundColor = "#404040";
-        document.getElementById("filescroll").style.backgroundColor = "#101010";        
-        document.getElementById("namediv").style.backgroundColor = "#101010";        
-        document.getElementById("lightdarkbutton").innerHTML = "LIGHT MODE";        
+
         editor.setTheme("ace/theme/vibrant_ink");
-        document.getElementById("linkscroll").style.backgroundColor = "#101010";
         var links = document.getElementById("linkscroll").getElementsByTagName("a");
         for(var index = 0;index < links.length;index++){
             links[index].style.color = "white";
@@ -171,34 +143,30 @@ document.getElementById("lightdarkbutton").onclick = function(){
     }
 }
 
-document.body.style.backgroundColor = "#404040";
-document.getElementById("filescroll").style.backgroundColor = "#101010";        
-document.getElementById("namediv").style.backgroundColor = "#101010";        
-document.getElementById("lightdarkbutton").innerHTML = "LIGHT MODE";        
 editor.setTheme("ace/theme/vibrant_ink");
-document.getElementById("linkscroll").style.backgroundColor = "#101010";
-document.getElementById("namediv").style.color = "#0000ff";
-document.getElementById("namediv").style.borderColor = "#0000ff";
-
-links = document.getElementById("linkscroll").getElementsByTagName("a");
+var links = document.getElementById("linkscroll").getElementsByTagName("a");
 for(var index = 0;index < links.length;index++){
     links[index].style.color = "white";
 }   
+        
+document.getElementById("newscrollinput").value = "";
 
+document.getElementById("newscrollinput").onchange = function(){
+    
+    
+}
 
 
 </script>
 <style>
-#namediv{
+#inputtable{
     position:absolute;
-    top:5px;
-    left:20%;
+    left:10px;
+    top:10px;
     font-family:courier;
-    padding:0.5em 0.5em 0.5em 0.5em;
-    border:solid;
-    background-color:#eeeeee;
+    background-color:black;
+    color:white;
 }
-
 a{
     color:black;
     display:block;
@@ -207,6 +175,11 @@ a{
 }
 body{
     background-color:#b0b0b0;
+}
+input{
+    font-family:courier;
+    background-color:black;
+    color:white;
 }
 .html{
     color:#0000ff;

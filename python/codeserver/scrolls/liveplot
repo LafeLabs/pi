@@ -1,5 +1,6 @@
 #liveplot
 
+# adding a python comment here
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib import style
