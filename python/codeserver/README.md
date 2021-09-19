@@ -6,6 +6,9 @@ Links:
 
  - [../](../)
  - [php/replicator.txt](php/replicator.txt)
+ - [codeserver.html](codeserver.html)
+ - [scrolls.html](scrolls.html) 
+ - [python.html](python.html)
  - [global replicator link](https://raw.githubusercontent.com/LafeLabs/openarduino/main/codeserver/php/replicator.txt)
  - [code editor](editor.php)
  - [localhost](http://localhost)

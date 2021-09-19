@@ -1,14 +1,17 @@
 {
     "html": [
         "README.md",
+        "codeserver.html",
         "copy.html",
         "distance.html",
         "fork.html",
         "index.html",
+        "python.html",
         "qrcode.html",
         "readme.html",
         "scrolldelete.html",
         "scrolleditor.html",
+        "scrolls.html",
         "scrollset.html",
         "set.html"
     ],
@@ -33,6 +36,7 @@
         "fileloader.txt",
         "filesaver.txt",
         "mkdir.txt",
+        "pythoneditor.txt",
         "rdelete.txt",
         "removephp.txt",
         "replicator.txt",
@@ -44,7 +48,9 @@
     ],
     "maps": [],
     "scrolls": [
+        "foo",
         "home",
+        "liveplot",
         "plot1"
     ]
 }

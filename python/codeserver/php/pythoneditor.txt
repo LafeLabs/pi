@@ -26,22 +26,9 @@ EGO DEATH:
 <div id = "linkscroll">
 
 <a href = "index.html">index.html</a>
-<a href = "dnagenerator.php">dnagenerator.php</a>
-<a href = "text2php.php">text2php.php</a>
-<a href = "pythoneditor.php">pythoneditor.php</a>
+<a href = "editor.php">editor.php</a>
+<a href = "scrolldelete.html">scrolldelete.html</a>
 
-
-<?php
-    $topfiles = scandir(getcwd());
-
-    foreach($topfiles as $value){
-        if(substr($value,-5) == ".html"){
-            echo "\n<a href = \"".$value."\">".$value."</a>\n";
-        }
-
-    }
-
-?>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
@@ -49,34 +36,7 @@ EGO DEATH:
 
 
 <?php
-    $topfiles = scandir(getcwd());
-
-    foreach($topfiles as $value){
-        if(substr($value,-5) == ".html" || substr($value,-4) == ".svg"){
-            echo "\n<div class = \"html file\">".$value."</div>\n";
-        }
-        if(substr($value,-3) == ".py"){
-            echo "\n<div class = \"python file\">".$value."</div>\n";
-        }
-        if(substr($value,-3) == ".md"){
-            echo "\n<div class = \"markdown file\">".$value."</div>\n";
-        }
-        if(substr($value,-3) == ".sh"){
-            echo "\n<div class = \"sh file\">".$value."</div>\n";
-        }
-        
-    }
-
-    $jsfiles = scandir(getcwd()."/jscode");
-
-    foreach($jsfiles as $value){
-        if($value[0] != "."){
-            echo "<div class = \"javascript file\">jscode/";
-            echo $value;
-            echo "</div>\n";
-        }
-    }
-
+    
     $pyfiles = scandir(getcwd()."/scrolls");
 
     foreach($pyfiles as $value){
@@ -87,90 +47,12 @@ EGO DEATH:
         }
     }
 
-
-    $phpfiles = scandir(getcwd()."/php");
-
-    foreach($phpfiles as $value){
-        if($value[0] != "."){
-            echo "<div class = \"php file\">php/";
-            echo $value;
-            echo "</div>\n";
-        }
-    }
-
-
-    $datafiles = scandir(getcwd()."/data");
-
-    foreach($datafiles as $value){
-        if($value[0] != "."){
-            echo "<div class = \"javascript file\">data/";
-            echo $value;
-            echo "</div>\n";
-        }
-    }
-
-//    $mapfiles = scandir(getcwd()."/maps");
-
- //   foreach($mapfiles as $value){
-  //      if($value[0] != "."){
-//            echo "<div class = \"javascript file\">maps/";
- //           echo $value;
-   //         echo "</div>\n";
-  //      }
- //   }
-
-    if(isset($_GET["newfile"])){
-        $newfile = $_GET["newfile"];
-        if(substr($newfile,-5) == ".html" || substr($newfile,-4) == ".svg"){
-            echo "<div class = \"html file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-        if(substr($newfile,-3) == ".md"){
-            echo "<div class = \"markdown file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-        if(substr($newfile,-3) == ".py"){
-            echo "<div class = \"python file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-        if(substr($newfile,-3) == ".sh"){
-            echo "<div class = \"sh file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-        if(substr($newfile,0,3) == "php"){
-            echo "<div class = \"php file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-        if(substr($newfile,0,7) == "jscode/"){
-            echo "<div class = \"javascript file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-//        if(substr($newfile,0,5) == "maps/"){
-  //          echo "<div class = \"javascript file\">";
-    //        echo $newfile;
-      //      echo "</div>\n";
-    //    }
-        if(substr($newfile,0,5) == "data/"){
-            echo "<div class = \"javascript file\">";
-            echo $newfile;
-            echo "</div>\n";
-        }
-
-    }
-
-
 ?>
 
 </div>
 
 <script>
-currentFile = "index.html";
+currentFile = "scrolls/home";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -180,6 +62,7 @@ httpc.onreadystatechange = function() {
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
 httpc.send();
+
 files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
@@ -257,7 +140,7 @@ document.getElementById("namediv").style.borderColor = "#0000ff";
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/github");
 //editor.setTheme("ace/theme/vibrant_ink");
-editor.getSession().setMode("ace/mode/html");
+editor.getSession().setMode("ace/mode/python");
 editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 
