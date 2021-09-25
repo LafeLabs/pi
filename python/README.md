@@ -24,5 +24,18 @@ sudo apt install python3-matplotlib
 
 [https://matplotlib.org/](https://matplotlib.org/)
 
+[https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/](https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/)
+
+<pre>
+sudo su -
+apt-get update
+apt-get install python3-matplotlib
+apt-get install python3-scipy
+pip3 install --upgrade pip
+reboot
+sudo pip3 install jupyter
+
+
+</pre>
 
 

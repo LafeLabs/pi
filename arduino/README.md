@@ -1,5 +1,9 @@
 ## [back up to main pi scroll](../)
 
+how to do the tar ball thing to get a later version of arduino which has the plotting
+
+[https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/](https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/)
+
 # Arduino
 
  - [arduino code server](codeserver/)

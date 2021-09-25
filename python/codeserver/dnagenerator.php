@@ -2,21 +2,19 @@
 this program generates the file data/dna.txt
 dna.txt is a json formatted file which points to all the files in this system, which is then used by replciator.php to copy the whole thing.  The file names are local, so that the replicator can work when pointed at any address where this system lives, which could be any new instance, so that the system can replicate without any reference to some centralized repository such as one on github. 
 -->
-
-<a href = "index.html"><img src = "iconsymbols/home.svg"/></a>
+<a href = "editor.php">editor.php</a>
+<p></p>
+<a href = "index.html">index.html</a>
 
 <br/>
 <pre>
 <?php
 
     $files = scandir(getcwd());
-    $jsfiles = scandir(getcwd()."/jscode");
-    $iconfiles = scandir(getcwd()."/iconsymbols");
     $phpfiles = scandir(getcwd()."/php");
     $datafiles = scandir(getcwd()."/data");
-
-    $mapfiles = scandir(getcwd()."/maps");
-    $scrollfiles = scandir(getcwd()."/scrolls");
+    $iconfiles = scandir(getcwd()."/iconsymbols");
+    $codefiles = scandir(getcwd()."/code");
 
     $htmlfiles = [];
     foreach($files as $value){
@@ -27,20 +25,6 @@ dna.txt is a json formatted file which points to all the files in this system, w
 
     $dna = json_decode("{}");
     $dna->html = $htmlfiles;
-
-    $dna->javascript = [];
-    foreach($jsfiles as $value){
-        if($value[0] != "."){
-            array_push($dna->javascript,$value);
-        }
-    }
-    
-    $dna->iconsymbols = [];
-    foreach($iconfiles as $value){
-        if($value[0] != "."){
-            array_push($dna->iconsymbols,$value);
-        }
-    }
 
 
     $dna->data = [];
@@ -54,6 +38,13 @@ dna.txt is a json formatted file which points to all the files in this system, w
         }
     }
 
+    $dna->iconsymbols = [];
+    foreach($iconfiles as $value){
+        if($value[0] != "."){
+            array_push($dna->iconsymbols,$value);
+        }
+    }
+    
     
     $dna->php = [];
     foreach($phpfiles as $value){
@@ -62,19 +53,13 @@ dna.txt is a json formatted file which points to all the files in this system, w
         }
     }
 
-    $dna->maps = [];
-    foreach($mapfiles as $value){
+    $dna->code = [];
+    foreach($codefiles as $value){
         if($value[0] != "."){
-            array_push($dna->maps,$value);
+            array_push($dna->code,$value);
         }
     }
 
-    $dna->scrolls = [];
-    foreach($scrollfiles as $value){
-        if($value[0] != "."){
-            array_push($dna->scrolls,$value);
-        }
-    }
 
     echo json_encode($dna,JSON_PRETTY_PRINT);
 
@@ -85,10 +70,3 @@ dna.txt is a json formatted file which points to all the files in this system, w
 ?>
 </pre>
 
-<style>
-    body{
-        background-color:black;
-        color:#00ff00;
-        font-family:courier;
-    }
-</style>

@@ -73,6 +73,12 @@ sudo apt-get install arduino
 
 following more complicated instructions leads to non-working version which is impossible to uninstall.
 
+
+how to do the tar ball thing to get a later version of arduino which has the plotting
+
+[https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/](https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/)
+
+
 ## Add python that we need
 
 matplotlib
@@ -81,6 +87,46 @@ sudo apt install python3-matplotlib
 </pre>
 
 [https://matplotlib.org/](https://matplotlib.org/)
+
+matplotlib install:
+
+<pre>
+sudo apt install python3-matplotlib
+</pre>
+
+[https://matplotlib.org/](https://matplotlib.org/)
+
+[https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/](https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/)
+
+<pre>
+sudo su -
+apt-get update
+apt-get install python3-matplotlib
+apt-get install python3-scipy
+pip3 install --upgrade pip
+reboot
+sudo pip3 install jupyter
+
+
+</pre>
+
+
+## stuff to buy
+
+
+ - [sdr cheap receiver from adafruit](https://www.adafruit.com/product/1497)
+ - [speakers](https://www.adafruit.com/product/1363)
+ - [mic](https://www.adafruit.com/product/3367)
+ - [wifi dongle for wifi bridge](https://www.adafruit.com/product/1012)
+ - [picam](https://www.adafruit.com/product/3099)
+ - [light sensor for water clarity measureing](https://www.adafruit.com/product/1334)
+ - [pi specific battery pack](https://www.adafruit.com/product/1566)
+
+
+[wifi extender tutorial](https://pimylifeup.com/raspberry-pi-wifi-extender/)
+
+[https://hamprojects.wordpress.com/2020/09/06/raspberry-pi-for-ham-radio/](https://hamprojects.wordpress.com/2020/09/06/raspberry-pi-for-ham-radio/)
+
 
 
 

@@ -24,7 +24,14 @@
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>    
-<a href = "index.html"><img src = "iconsymbols/home.svg"/></a>
+
+<a href = "index.html">
+    <img src = "iconsymbols/home.svg"/>
+</a>
+<a href = "readme.html">
+    <img src = "iconsymbols/scroll.svg"/>
+</a>
+
 <table>
     <tr>
         <td></td>
@@ -64,7 +71,7 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 	width: codesquaresize,
 	height: codesquaresize,
 	colorDark : "#000000",
-	colorLight : "#00ff00",
+	colorLight : "#ffffff",
 	correctLevel : QRCode.CorrectLevel.H
 });
 
@@ -83,22 +90,13 @@ document.getElementById("urlbutton").onclick = function(){
 </script>
 <style>
 input{
-    background-color:black;
-    color:#00ff00;
     border:solid;
-    border-color:#00ff00;
-}
-a{
-    color:#ff2cb4;
 }
 body{
-    background-color:black;
-    color:#00ff00;
     font-family:courier;
 }
 canvas,img{
     border:solid;
-    border-color:#00ff00;
     border-width:4px;
     margin:1em 1em 1em 1em;
 }

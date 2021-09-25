@@ -28,8 +28,6 @@ EGO DEATH:
 <a href = "index.html">index.html</a>
 <a href = "dnagenerator.php">dnagenerator.php</a>
 <a href = "text2php.php">text2php.php</a>
-<a href = "pythoneditor.php">pythoneditor.php</a>
-
 
 <?php
     $topfiles = scandir(getcwd());
@@ -67,26 +65,6 @@ EGO DEATH:
         
     }
 
-    $jsfiles = scandir(getcwd()."/jscode");
-
-    foreach($jsfiles as $value){
-        if($value[0] != "."){
-            echo "<div class = \"javascript file\">jscode/";
-            echo $value;
-            echo "</div>\n";
-        }
-    }
-
-    $pyfiles = scandir(getcwd()."/scrolls");
-
-    foreach($pyfiles as $value){
-        if($value[0] != "."){
-            echo "<div class = \"python file\">scrolls/";
-            echo $value;
-            echo "</div>\n";
-        }
-    }
-
 
     $phpfiles = scandir(getcwd()."/php");
 
@@ -108,16 +86,6 @@ EGO DEATH:
             echo "</div>\n";
         }
     }
-
-//    $mapfiles = scandir(getcwd()."/maps");
-
- //   foreach($mapfiles as $value){
-  //      if($value[0] != "."){
-//            echo "<div class = \"javascript file\">maps/";
- //           echo $value;
-   //         echo "</div>\n";
-  //      }
- //   }
 
     if(isset($_GET["newfile"])){
         $newfile = $_GET["newfile"];
