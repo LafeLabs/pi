@@ -1,264 +1,29 @@
 #  Servers
 
- - [page/](page/)
- - [fork.html](fork.html)
+This page is the most basic of pages, it reads a markdown file called README.md and turns the markdown into html using the JavaScript library [showdown.js](http://showdownjs.com/).  This is the format of [github](https://github.com/) repositories, and can be used to make self-replicating web pages which are also Github repositories.  
+
+This is the prototype from which we can make all the other kinds of servers.  Use copy links below to replace the replicator for this page with a replicator for another kind of server, then click the replicator to replace this with any of those servers(chaos server, board server, code server, full geometron server).
+
+
+
  - [http://localhost](http://localhost)
  - [../](../)
- - [python/](python/)
- - [arduino/](arduino/)
- - [editor.php](editor.php)
+ - [fork.html](fork.html)
  - [readme.html](readme.html)
  - [home](index.html)
+ - [editor.php](editor.php)
  - [scrolleditor.html](scrolleditor.html)
  - [set.html](set.html)
  - [dnagenerator.php](dnagenerator.php)
- - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt)
+ - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
+ - [copy.html](copy.html)
+ - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt&to=replicator.php)
+ - [copy board server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/boardserver/main/php/replicator.txt&to=replicator.php)
+ - [copy geometron server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/thing/master/php/replicator.txt&to=replicator.php)
+ - [copy chaos server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/chaos/main/php/replicator.txt&to=replicator.php)
 
-## install
-
-Get a SD card with 8 GB or more storage and a SD card USB reader
-
-Download and install, then use the Raspberry Pi Imager:
-
-[https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/)
-
-Turn on the pi click through all the things, put it on the wifi network.
-
-## Install Apache and PHP so that geometron can run:
-
-<pre>
-sudo apt update
-sudo apt install apache2 -y
-sudo apt install php libapache2-mod-php -y
-</pre>
-
-## Install geometron with this document for self-documentation and replication
-
-<pre style = "overflow:scroll">
-cd /var/www/html
-sudo rm index.html
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt
-cd ..
-sudo chmod -R 0777 *
-cd html
-php replicator.php
-sudo chmod -R 0777 *
-</pre>
-
-Check the IP address by hovering over the wifi icon, put that into the browser on another machine on the same local wifi network to see and edit the server.  Or open a browser on the pi and point it to [http://localhost](http://localhost)
-
-## Enable VNC
-
-From the menu, select
-
-preferences>raspberry pi configuration>interfaces
-
-click radio button to turn VNC on
-
-## Set up to have names for other servers
-
-edit hosts file to have the IP address of the other servers and then the name you want to use, copying the format in the existing file.
-
-<pre>
-sudo nano /etc/hosts
-</pre>
-edit, and use control-x and say "yes" to save changes.
-
-## Install arduino
-
-<pre>
-sudo apt-get install arduino
-</pre>
-
-following more complicated instructions leads to non-working version which is impossible to uninstall.
-
-
-how to do the tar ball thing to get a later version of arduino which has the plotting
-
-[https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/](https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/)
-
-
-## Add python that we need
-
-matplotlib
-<pre>
-sudo apt install python3-matplotlib
-</pre>
-
-[https://matplotlib.org/](https://matplotlib.org/)
-
-matplotlib install:
-
-<pre>
-sudo apt install python3-matplotlib
-</pre>
-
-[https://matplotlib.org/](https://matplotlib.org/)
-
-[https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/](https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/)
-
-<pre>
-sudo su -
-apt-get update
-apt-get install python3-matplotlib
-apt-get install python3-scipy
-pip3 install --upgrade pip
-reboot
-sudo pip3 install jupyter
-
-
-</pre>
-
-
-## stuff to buy
-
-
- - [sdr cheap receiver from adafruit](https://www.adafruit.com/product/1497)
- - [speakers](https://www.adafruit.com/product/1363)
- - [mic](https://www.adafruit.com/product/3367)
- - [wifi dongle for wifi bridge](https://www.adafruit.com/product/1012)
- - [picam](https://www.adafruit.com/product/3099)
- - [light sensor for water clarity measureing](https://www.adafruit.com/product/1334)
- - [pi specific battery pack](https://www.adafruit.com/product/1566)
-
-
-[wifi extender tutorial](https://pimylifeup.com/raspberry-pi-wifi-extender/)
-
-[https://hamprojects.wordpress.com/2020/09/06/raspberry-pi-for-ham-radio/](https://hamprojects.wordpress.com/2020/09/06/raspberry-pi-for-ham-radio/)
-
-
-
-
-## Roles of the Raspberry pi:
-
- - teaching tool
- - radio
- - video chat node
- - remote sensor
- - remote off grid social media
- - network machine for building free wifi networks
- - web server
- - web client
- - host for organic media: geometron, bioweb, chaos, etc
- - ipython notebooks to analyze data and share science
- - program arduino
-
-Roles for the Arduino:
-
- - control neopixel array around the unit
- - control motors, both DC and AC
- - control high intensity lights, signal lights
- - record sensor data
-
-Elements of a station:
-
- - lead acid battery
- - battery charger
- - solar panel
- - cart with bike wheels
- - rugged rain and snow and wind proof enclosure
- - protected screen
- - rugged keyboard, with cover
- - rugged mouse with cover
- - neopixel array
- - beacon light
- - raspberry pi
- - stand
- - fold up chair and fold out desk
- - projector
- - hydroelectric turbine
- - bike generator pickup, which can integrate with a hydroelectric bike drive, using the bike wheels on the cart
- - water sensor array on arduino
- - arduino shield which controls an arbitrary motor: AC, DC, wall power 
- - picam
- - optical microscope for viewing water
- - speakers
- - microphone
- - software defined radio receiver 
- - generic trash robot and controller
- - power train for bike wheels for cart makes it into a fully mobile robot, which can be driven by arduino with controller
-
-Skills for an operator
-
- - set up a new raspberry pi(software)
- - get apache, PHP and geometron installed
- - control the pi remotely using VNC
- - build the enclosure, cart, tower
- - learn to program arduino with blink
- - learn to plot sensor data in arduino IDE
- - learn to control neopixels
- - plot data from arduino in jupyter notebooks, share notebooks
- - replicate geometron from pi to private machine to github and back to pi
- - run video chat over pi using VNC 
- - GNU radio, learn to tune into radio stations, find a transmitter
- - build a hydroelectric generator
- - set up a solar power plant with a car battery
-
-Sensors:
-
- - water level
- - water current
- - water temperature
- - ice movement
- - water salinity
- - specific contaminant measurements, oil, phosphate, etc
- - microscope watching the water on webcam
- - wind
-
-Applications
-
- - job board, personals, for sale, mutual aid
- - zines, art sharing
- - plant and animal lore distribution locally to a place
- - local wildlife and nature news
- - water monitoring 
- - remote control of machines
- - remote control of signal lights
- - video chat with passerby from around the world
- - fishery monitor with underwater cameras
- - platform for environmental science
- - applied physics teaching platform
- - video game system, entertainment
- 
-
-Really nice project to do video calls on pi:
-
-https://www.hackster.io/rundhall/raspberry-pi-based-video-call-for-seniors-00dcc2
-
-
-
-Wireless networking free and open resource:
-
-[https://commotionwireless.net/](https://commotionwireless.net/)
-
- - [http://localhost](http://localhost)
- - [../](../)
- - [fork.html](fork.html)
- - [readme.html](readme.html)
- - [home](index.html)
- - [editor.php](editor.php)
- - [scrolleditor.html](scrolleditor.html)
- - [set.html](set.html)
- - [dnagenerator.php](dnagenerator.php)
- - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/bioweb/main/php/replicator.txt)
- - [local replicator code link](php/replicator.txt)
-
-extender?
-
-"range extender" = repeater
-
-https://www.techwalla.com/articles/wireless-bridge-vs-repeater
-
-
-[https://pimylifeup.com/raspberry-pi-wifi-extender/](https://pimylifeup.com/raspberry-pi-wifi-extender/)
-
-how to edit hosts file to give raspberry pi a name:
-
-[https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)
-
-This is problematic with random clients but works if you can set up each device.
 
 To replicate this system, create a new github repository, get PHP working from the command line on your machine(mac, pc, linux all work), then copy the file [php/replicator.txt](php/replicator.txt) into a new file called replicator.php, and run it.  
 
@@ -301,6 +66,8 @@ cd html
 php replicator.php
 sudo chmod -R 0777 *
 </pre>
+
+Be sure to change the code in the above to represent the correct address of php/replicator.txt in any new copy of the github repository.
 
 ### Use cases
 
@@ -346,6 +113,9 @@ THERE ARE NO DATABASES
  - [fork.html](fork.html): lists directories with links to all of them, allows for creating new directories and also deleting any directory
  - [data/dna.txt](data/dna.txt): a JSON file which lists all the files replicated by replicator.php
  - [data/set.txt](data/set.txt): a JSON file which lists files to replicate using setreplicator.php
+ - [copy.php](php/copy.txt): php script which copies any file anywhere on the web to the local server, syntax is copy.php?from=[from url]&to=[to url]
+ - [copy.html](copy.html):web app which creates a copy.php link with correct syntax
+
 
 
 

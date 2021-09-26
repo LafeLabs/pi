@@ -1,7 +1,6 @@
 {
     "html": [
         "README.md",
-        "copy.html",
         "fork.html",
         "index.html",
         "readme.html",
@@ -13,7 +12,6 @@
         "set.txt"
     ],
     "php": [
-        "copy.txt",
         "dir.txt",
         "dnagenerator.txt",
         "editor.txt",

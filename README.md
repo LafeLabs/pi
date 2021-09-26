@@ -1,6 +1,11 @@
 #  Raspberry Pi
 
- - [servers/](servers/)
+scroll down to install a pi for geometron.
+
+## [learn to become a server operator](serveroperator/)
+
+ - [how to replicate and fork servers](servers/)
+ - [learn geometron](https://github.com/lafelabs/thing/)
  - [http://localhost](http://localhost)
  - [../](../)
  - [python/](python/)
