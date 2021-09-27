@@ -1,13 +1,11 @@
+## [../](../)
+
 #  Raspberry Pi
 
 scroll down to install a pi for geometron.
 
 ## [learn to become a server operator](serveroperator/)
 
-```
-<a href = "index.html">index.html</a>
-```
- - [markdown/](markdown/)
  - [how to replicate and fork servers](servers/)
  - [learn geometron](https://github.com/lafelabs/thing/)
  - [http://localhost](http://localhost)
@@ -37,11 +35,11 @@ Turn on the pi click through all the things, put it on the wifi network.
 
 ## Install Apache and PHP so that geometron can run:
 
-```
+<pre>
 sudo apt update
 sudo apt install apache2 -y
 sudo apt install php libapache2-mod-php -y
-```
+</pre>
 
 ## Install geometron with this document for self-documentation and replication
 
