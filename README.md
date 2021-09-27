@@ -1,12 +1,23 @@
-#  Raspberry Pi
+#  Community Network Station
 
-scroll down to install a pi for geometron.
+We will build community controlled social media. This class is to train operators who will learn to build the entire technology system, both hardware and software, and to operate it as a community resource.  
 
-## [learn to become a server operator](serveroperator/)
+1. [buy parts and kits](buy/)
+2. [install the system on the Raspberry Pi](install/)
+3. [create new servers, edit, them, destroy them, replicate them](servers/)
+4. [learn Markdown, the language of text documents](markdown/)
+5. [learn HTML, the language of Web content](learnhtml/)
+6. [learn CSS, the language of Web style and format](learncss/)
+7. [learn JavaScript, the language of *action* in web browsers](learnjavascript/)
+8. [learn PHP, the language of web servers](learnphp/)
+9. [learn python, the language of free open science](python/)
+10. [learn Arduino, the language of machine control](arduino/)
+11. [build off grid micro power](micropower/)
+12. [build and operate your own wireless networks](wireless/)
+13. [how to operate a network for community benefit](operator/)
 
-```
-<a href = "index.html">index.html</a>
-```
+
+
  - [markdown/](markdown/)
  - [how to replicate and fork servers](servers/)
  - [learn geometron](https://github.com/lafelabs/thing/)
