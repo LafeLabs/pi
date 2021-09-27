@@ -1,13 +1,19 @@
-#  Servers
+[../](../)
 
-This page is the most basic of pages, it reads a markdown file called README.md and turns the markdown into html using the JavaScript library [showdown.js](http://showdownjs.com/).  This is the format of [github](https://github.com/) repositories, and can be used to make self-replicating web pages which are also Github repositories.  
+Actions for this section: make each type of server, destroy it, make it again, edit it.
 
-This is the prototype from which we can make all the other kinds of servers.  Use copy links below to replace the replicator for this page with a replicator for another kind of server, then click the replicator to replace this with any of those servers(chaos server, board server, code server, full geometron server).
+#  Server Types:
 
+ - page like this
+ - math pages(typeset math, optional)
+ - wall
+ - code server
+ - board server
+ - CHAOS scroll server
+ - full geometron server
 
+## Links
 
- - [http://localhost](http://localhost)
- - [../](../)
  - [fork.html](fork.html)
  - [readme.html](readme.html)
  - [home](index.html)
