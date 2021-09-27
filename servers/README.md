@@ -6,7 +6,7 @@ Actions for this section: make each type of server, destroy it, make it again, e
 
  - page like this
  - math pages(typeset math, optional)
- - wall
+ - [wall](wall/)
  - code server
  - board server
  - CHAOS scroll server

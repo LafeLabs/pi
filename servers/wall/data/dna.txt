@@ -9,7 +9,8 @@
     ],
     "data": [
         "dna.txt",
-        "set.txt"
+        "set.txt",
+        "wall.txt"
     ],
     "php": [
         "dir.txt",
