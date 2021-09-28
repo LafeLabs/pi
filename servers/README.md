@@ -4,13 +4,13 @@ Actions for this section: make each type of server, destroy it, make it again, e
 
 #  Server Types:
 
- - page like this
- - math pages(typeset math, optional)
+ - [page like this](page/)
+ - [math pages(typeset math, optional)](mathpage/)
  - [wall](wall/)
- - code server
- - board server
- - CHAOS scroll server
- - full geometron server
+ - [code server](codeserver/)
+ - [board server](boardserver/)
+ - [CHAOS scroll server](chaos/)
+ - [full geometron server](geometron/)
 
 ## Links
 

@@ -1,0 +1,10 @@
+{
+    "server": "http://localhost/",
+    "boards": [
+        "forsale",
+        "home",
+        "rantsandraves",
+        "wanted",
+        "wildlife"
+    ]
+}
