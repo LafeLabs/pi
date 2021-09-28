@@ -11,7 +11,15 @@
         "dna.txt",
         "set.txt"
     ],
+    "iconsymbols": [
+        "delete.svg",
+        "edit.svg",
+        "home.svg",
+        "lightdark.svg",
+        "scroll.svg"
+    ],
     "php": [
+        "deletefile.txt",
         "dir.txt",
         "dnagenerator.txt",
         "editor.txt",
@@ -22,6 +30,7 @@
         "removephp.txt",
         "replicator.txt",
         "setreplicator.txt",
-        "text2php.txt"
+        "text2php.txt",
+        "upload.txt"
     ]
 }
