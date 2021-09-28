@@ -12,6 +12,7 @@
         "set.txt"
     ],
     "php": [
+        "copy.txt",
         "dir.txt",
         "dnagenerator.txt",
         "editor.txt",
