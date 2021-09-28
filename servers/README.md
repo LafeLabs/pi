@@ -1,8 +1,17 @@
 [../](../)
 
+## Actions:
+
+1. create one of each type of server
+2. learn to destroy servers, create new ones, destroy again
+3. learn how servers and files replicate in geometron, about the nature of organic media, replication, evolution, and death of files, web of documents not of users
+4. learn how to edit documents on each type of server, again creating new ones, editing existing ones and deleting them
+
 Actions for this section: make each type of server, destroy it, make it again, edit it.
 
-#  Server Types:
+
+
+##  Server Types:
 
  - [page like this](page/)
  - [math pages(typeset math, optional)](mathpage/)
