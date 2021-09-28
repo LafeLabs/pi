@@ -1,8 +1,8 @@
 [
     {
-        "x": 0.05961070559610705,
-        "y": 0.05474452554744526,
-        "w": 0.9063260340632603,
+        "x": 0.0592503022974607,
+        "y": 0.05441354292623942,
+        "w": 0.905683192261185,
         "h": 0.9069212410501193,
         "angle": 0,
         "text": "CLICK TO DESIGN!!",
@@ -27,8 +27,8 @@
         "w": 0.46916565900846435,
         "h": 0.056831922611850064,
         "angle": 19,
-        "text": "home",
-        "href": "index.html",
+        "text": "readme",
+        "href": "readme.html",
         "src": "",
         "maplinkmode": false
     },
@@ -40,6 +40,17 @@
         "angle": 0,
         "text": "<span style=\"color:red\">Γ</span>     <span style=\"color:orange\">ε</span>     <span style=\"color:yellow\">ω</span>     <span style=\"color:green\">μ</span>     <span style=\"color:blue\">ε</span>     <span style=\"color:purple\">τ</span>     <span style=\"color:red\">ρ</span>     <span style=\"color:orange\">ο</span>     <span style=\"color:yellow\">ν</span>",
         "href": "",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.6928657799274486,
+        "y": 0.5405078597339782,
+        "w": 0.46916565900846435,
+        "h": 0.056831922611850064,
+        "angle": -7,
+        "text": "up",
+        "href": "../",
         "src": "",
         "maplinkmode": false
     }

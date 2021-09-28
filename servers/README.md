@@ -20,7 +20,7 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [CHAOS scroll server](chaos/)
  - [full geometron server](geometron/)
  - [image server](imageserver/)
- - map server
+ - [map server](mapserver/)
  - symbol server
  - icon server
 
