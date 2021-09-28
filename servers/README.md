@@ -10,7 +10,6 @@
 Actions for this section: make each type of server, destroy it, make it again, edit it.
 
 
-
 ##  Server Types:
 
  - [page like this](page/)
@@ -20,6 +19,10 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [board server](boardserver/)
  - [CHAOS scroll server](chaos/)
  - [full geometron server](geometron/)
+ - image server
+ - map server
+ - symbol server
+ - icon server
 
 ## Links
 
