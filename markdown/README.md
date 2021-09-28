@@ -2,6 +2,13 @@
 
 #  Markdown
 
+## Goals
+
+1. make a document with headers, links, images, lists, bold, italic, code blocks, paragraph breaks
+2. create new markdown documents, delete them, copy them
+3. learn to use math in markdown if you are a math person, using mathjax/latex
+
+## Links
 
  - [wikipedia](https://en.wikipedia.org/wiki/Markdown)
  - [markdown guide](https://www.markdownguide.org/)
