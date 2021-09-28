@@ -17,7 +17,7 @@ mkdir("uploadimages");
 mkdir("iconsymbols");
 
 
-copy("https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt","replicator.php");
 
 foreach($dna->html as $value){
     
