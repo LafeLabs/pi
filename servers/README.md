@@ -22,7 +22,7 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [image server](imageserver/)
  - [map server](mapserver/)
  - [symbol server](symbolserver/)
- - scroll server
+ - [scroll server](scrollserver/)
  - trash robot icon server
 
 ## Links
@@ -37,6 +37,9 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
+
+## copy replicators to local replicator.php
+
  - [copy wall server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt&to=replicator.php)
  - [copy page server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt&to=replicator.php)
  - [copy mathpage server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt&to=replicator.php)
@@ -47,5 +50,18 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [copy image server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt&to=replicator.php)
  - [copy map server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt&to=replicator.php)
  - [copy symbol server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt&to=replicator.php)
+
+## links to replicators
+
+ - [wall server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt)
+ - [page server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [mathpage server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt)
+ - [board server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/boardserver/php/replicator.txt)
+ - [code server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/codeserver/php/replicator.txt)
+ - [CHAOS server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/chaos/php/replicator.txt)
+ - [full geometron server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/geometron/php/replicator.txt)
+ - [image server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt)
+ - [map server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt)
+ - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
 
 
