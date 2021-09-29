@@ -19,15 +19,15 @@ how to do *nix on a windows machine or mac
 
 ## commands
 
- - cd
- - ls
- - mkdir
- - pwd
- - whoami
- - rmdir
- - cp
- - rm
- - more
+ - `cd`: change directory
+ - `ls`: list files in a directory
+ - `mkdir`: make new directory
+ - `rmdir`: remove directory(delete)
+ - `pwd`: present working directory(where am I?)
+ - `whoami`: who am I(identify current user identity)? 
+ - `cp`: copy file
+ - `rm`: remove file(delete)
+ - `more`: list contents of a file
  - emacs, nano, vim, vi
  - pip
  - apt-get

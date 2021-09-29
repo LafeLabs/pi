@@ -23,7 +23,7 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [map server](mapserver/)
  - [symbol server](symbolserver/)
  - [scroll server](scrollserver/)
- - trash robot icon server
+ - [trash robot icon server](iconserver/)
 
 ## Links
 
@@ -51,6 +51,7 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [copy map server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt&to=replicator.php)
  - [copy scroll server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt&to=replicator.php)
  - [copy symbol server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt&to=replicator.php)
+ - [copy icon server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt&to=replicator.php)
 
 ## links to replicators
 
@@ -65,5 +66,6 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [map server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt)
  - [scroll server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
  - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
+ - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
 
 
