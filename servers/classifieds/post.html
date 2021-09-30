@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!--
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY 
+
+    -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+
+
+    
+</head>
+<body>  
+<table>
+    <tr>
+        <td>timestamp:</td>
+        <td>
+            <input id = "timestampinput"/>
+        </td>
+    </tr>
+    <tr>
+        <td>days:</td>
+        <td>
+            <input id = "daysinput"/>
+        </td>
+    </tr>
+    <tr>
+        <td>contact:</td>
+        <td>
+            <input id = "contactinput"/>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class = "button" id = "postbutton">POST</td>
+    </tr>
+</table>
+
+<textarea id = "textio"></textarea>
+
+<div id = "feedscroll"></div>
+<a id = "editlink" href= "readme.html">README</a>
+<script>
+
+
+document.getElementById("feedscroll").innerHTML = "";
+var httpc666 = new XMLHttpRequest();
+httpc666.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        feed = JSON.parse(this.responseText);
+        loadfeed();
+    }
+};
+httpc666.open("GET", "fileloader.php?filename=data/feed.txt", true);
+httpc666.send();
+
+document.getElementById("textio").value = "";
+document.getElementById("daysinput").value = "";
+document.getElementById("contactinput").value = "";
+document.getElementById("timestampinput").value = "";    
+
+function loadfeed(){
+    document.getElementById("feedscroll").innerHTML = "";
+    for(var index = 0;index < feed.length;index++){
+        var newad = document.createElement("DIV");
+        newad.className = "ad";
+        var adindex = document.createElement("span");
+        adindex.className = "data";
+        adindex.innerHTML = index.toString();
+        newad.appendChild(adindex);
+        newad.onclick = function(){
+            var localindex = parseInt(this.getElementsByClassName("data")[0].innerHTML);
+            document.getElementById("textio").value = feed[localindex].text;
+            document.getElementById("daysinput").value = feed[localindex].days;
+            document.getElementById("contactinput").value = feed[localindex].contact;
+            document.getElementById("timestampinput").value = feed[localindex].timestamp;    
+            
+        }
+        var newlink = document.createElement("A");
+        newlink.innerHTML = feed[index].contact; 
+        newlink.href = feed[index].contact; 
+        var newtext = document.createElement("P");
+        newtext.innerHTML = feed[index].text;
+        daysec = 86400;//1 day in seconds
+        endtimestamp = feed[index].timestamp + daysec*feed[index].days;
+        var a = new Date(feed[index].timestamp * 1000);
+        var b = new Date(endtimestamp * 1000);
+
+        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            
+        var year = a.getFullYear();
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var yearb = b.getFullYear();
+        var monthb = months[b.getMonth()];
+        var dateb = b.getDate();
+            
+        var time = month + ' ' + date + ', ' + year;
+        var timeb = dateb + ' ' + monthb + ' ' + yearb;            
+        var postdate = document.createElement("SPAN");
+        postdate.innerHTML = time + " - ";
+        var stopdate = document.createElement("SPAN");
+        stopdate.innerHTML = timeb;
+
+        newad.appendChild(postdate);
+        newad.appendChild(stopdate);
+        newad.appendChild(newtext);
+        newad.appendChild(newlink);
+        
+        var deletebutton = document.createElement("DIV");
+        deletebutton.style.color = "red";
+        deletebutton.innerHTML = "DELETE!";
+        deletebutton.className = "button";
+        deletebutton.style.borderColor = "red";
+        newad.appendChild(deletebutton);
+        deletebutton.onclick = function(){
+            var localindex = parseInt(this.parentElement.getElementsByClassName("data")[0].innerHTML);
+            var tempfeed = feed;
+            feed = [];
+            for(var index = 0;index < tempfeed.length;index++){
+                if(index != localindex){
+                    feed.push(tempfeed[index]);
+                }
+            }
+            loadfeed();
+            savefeed();
+        }
+
+        document.getElementById("feedscroll").appendChild(newad);
+            
+    }
+}
+
+
+function savefeed(){
+    var httpc = new XMLHttpRequest();
+    httpc.open("POST", "filesaver.php", true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(JSON.stringify(feed,null,"  "))+"&filename=data/feed.txt");//send text to filesaver.php
+}
+
+
+document.getElementById("postbutton").onclick = function(){
+    var newelement = {};
+    newelement.text = document.getElementById("textio").value;
+    newelement.days = parseInt(document.getElementById("daysinput").value);
+    newelement.contact = document.getElementById("contactinput").value;
+    var timestamp = Math.round((new Date().getTime())/1000).toString();
+    newelement.timestamp = parseInt(timestamp);
+    
+    feed.unshift(newelement);
+    loadfeed();
+    savefeed();
+}
+
+</script>
+<style>
+body{
+    overflow:hidden;
+}
+.ad{
+    border:solid;
+    margin-bottom:0.5em;
+    padding:0.5em 0.5em 0.5em 0.5em;
+}
+.data{
+    display:none;
+}
+#feedscroll{
+    padding-left:1em;
+    padding-right:1em;
+    left:0px;
+    bottom:0px;
+    top:50%;
+    right:0px;
+    position:absolute;
+    overflow:scroll;
+    font-size:2em;
+    z-index:-3;
+}
+#feedscroll a{
+    color:#4040ff;
+}
+#feedscroll img{
+    max-width:50%;
+    display:block;
+    margin:auto;
+    background-color:none;
+}
+h1,h2,h3,h4{
+    text-align:center;
+}
+#editlink{
+    position:absolute;
+    right:0px;
+    top:0px;
+    font-size:2em;
+}
+#textio{
+    position:absolute;
+    right:0px;
+    top:4em;
+    width:25%;
+    height:20%;
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+    border:solid;
+    border-radius:3px;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
+</style>
+</body>
+</html>

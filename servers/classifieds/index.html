@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!--
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY 
+
+    -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+
+
+    
+</head>
+<body>    
+<div id = "feedscroll"></div>
+<script>
+
+
+document.getElementById("feedscroll").innerHTML = "";
+var httpc666 = new XMLHttpRequest();
+httpc666.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        feed = JSON.parse(this.responseText);
+        for(var index = 0;index < feed.length;index++){
+            var newad = document.createElement("DIV");
+            newad.className = "ad";
+            var newlink = document.createElement("A");
+            newlink.innerHTML = feed[index].contact; 
+            newlink.href = feed[index].contact; 
+            var newtext = document.createElement("P");
+            newtext.innerHTML = feed[index].text;
+            daysec = 86400;//1 day in seconds
+            endtimestamp = feed[index].timestamp + daysec*feed[index].days;
+            var a = new Date(feed[index].timestamp * 1000);
+            var b = new Date(endtimestamp * 1000);
+
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            
+            var year = a.getFullYear();
+            var month = months[a.getMonth()];
+            var date = a.getDate();
+            var hour = a.getHours();
+            var min = a.getMinutes();
+            var yearb = b.getFullYear();
+            var monthb = months[b.getMonth()];
+            var dateb = b.getDate();
+            var hourb = b.getHours();
+            var minb = b.getMinutes();
+            
+            
+            //var sec = a.getSeconds();
+
+//            var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+            var time = month + ' ' + date + ', ' + year;
+            var timeb = dateb + ' ' + monthb + ' ' + yearb;            
+            var postdate = document.createElement("SPAN");
+            postdate.innerHTML = time + " - ";
+            var stopdate = document.createElement("SPAN");
+            stopdate.innerHTML = timeb;
+
+            newad.appendChild(postdate);
+            newad.appendChild(stopdate);
+            newad.appendChild(newtext);
+            newad.appendChild(newlink);
+
+            document.getElementById("feedscroll").appendChild(newad);
+            
+        }
+    }
+};
+httpc666.open("GET", "fileloader.php?filename=data/feed.txt", true);
+httpc666.send();
+
+
+
+</script>
+<style>
+body{
+    overflow:hidden;
+}
+.ad{
+    border:solid;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+    padding:0.5em 0.5em 0.5em 0.5em;
+}
+#feedscroll{
+    padding-left:1em;
+    padding-right:1em;
+    left:0px;
+    bottom:0px;
+    top:0px;
+    right:0px;
+    position:absolute;
+    overflow:scroll;
+    font-size:2em;
+    z-index:-3;
+}
+#feedscroll a{
+    color:#4040ff;
+}
+#feedscroll img{
+    max-width:50%;
+    display:block;
+    margin:auto;
+    background-color:none;
+}
+h1,h2,h3,h4{
+    text-align:center;
+}
+
+
+</style>
+</body>
+</html>
