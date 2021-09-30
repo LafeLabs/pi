@@ -1,32 +1,32 @@
 [
   {
+    "text": "",
+    "days": 0,
+    "link": "qrcode.html",
+    "timestamp": 1632970875
+  },
+  {
+    "text": "",
+    "days": null,
+    "link": "editor.php",
+    "timestamp": 1632970412
+  },
+  {
+    "text": "this is some random text",
+    "days": 10,
+    "link": "../",
+    "timestamp": 1632963505
+  },
+  {
     "text": "editor",
     "days": 3,
-    "contact": "editor.php",
+    "link": "post.html",
     "timestamp": 1632962929
   },
   {
-    "text": "math tutoring barter for coffee.",
-    "days": 3,
-    "contact": "mailto:lafelabs@gmail.com",
-    "timestamp": 1632962454
-  },
-  {
-    "text": "adssfadsfadskfjasdf",
-    "days": 50,
-    "contact": "asdf",
-    "timestamp": 1632962437
-  },
-  {
-    "contact": "readme.html",
+    "link": "readme.html",
     "text": "readme for this page.",
     "timestamp": 1632924126,
     "days": 10
-  },
-  {
-    "contact": "mailto:lafelabs@gmail.com",
-    "text": "math tutoring barter for coffee.",
-    "timestamp": 1632922236,
-    "days": 3
   }
 ]

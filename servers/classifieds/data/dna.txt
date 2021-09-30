@@ -4,6 +4,7 @@
         "fork.html",
         "index.html",
         "post.html",
+        "qrcode.html",
         "readme.html",
         "scrolleditor.html",
         "set.html"

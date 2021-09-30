@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!--
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY 
+
+    -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+</head>
+<body>    
+
+<div id = "qrcode"></div>
+<p>
+    <a id = "mainlink"></a>
+</p>
+<p>
+    <a href = "index.html">BACK TO FEED</a>
+</p>
+<table>
+    <tr>
+        <td>ALTERNATE URL:</td>
+        <td>
+            <input id = "urlinput"/>
+        </td>
+    </tr>
+</table>
+<script>
+
+
+
+codesquaresize = 250;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href.split("qrcode.html")[0];
+    
+document.getElementById("mainlink").innerHTML = globalurl;
+document.getElementById("mainlink").href = globalurl;
+
+
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+    
+qrcode.makeCode(globalurl);
+
+
+document.getElementById("urlinput").onchange = function(){
+    globalurl= this.value;
+    qrcode.makeCode(globalurl);
+    document.getElementById("mainlink").innerHTML = globalurl;
+    document.getElementById("mainlink").href = globalurl;
+}
+
+</script>
+<style>
+
+</style>
+</body>
+</html>

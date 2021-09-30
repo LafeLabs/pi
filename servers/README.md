@@ -24,6 +24,7 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [symbol server](symbolserver/)
  - [scroll server](scrollserver/)
  - [trash robot icon server](iconserver/)
+ - [classifieds server](classifieds/)
 
 ## Links
 
