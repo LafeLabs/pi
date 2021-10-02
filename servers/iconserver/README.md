@@ -2,7 +2,7 @@
 
 ## Icon Server
 
-[index.html](index.html)
+Trash Robot/ Geometron icon server. Create icons to print on a Trash Robot printer.  See Book of Geometron free online book at [www.trashrobot.org](https://www.trashrobot.org).
 
 ## Links
 
@@ -13,10 +13,9 @@
  - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
-
 
 ## copy replicators to local replicator.php
 
@@ -29,7 +28,10 @@
  - [copy full geometron server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/geometron/php/replicator.txt&to=replicator.php)
  - [copy image server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt&to=replicator.php)
  - [copy map server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt&to=replicator.php)
+ - [copy scroll server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt&to=replicator.php)
  - [copy symbol server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt&to=replicator.php)
+ - [copy icon server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt&to=replicator.php)
+ - [copy classifieds server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt&to=replicator.php)
 
 ## links to replicators
 
@@ -42,6 +44,9 @@
  - [full geometron server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/geometron/php/replicator.txt)
  - [image server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt)
  - [map server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt)
+ - [scroll server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
  - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
+ - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
+ - [classifieds server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt)
 
 

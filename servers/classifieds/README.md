@@ -1,18 +1,18 @@
 [../](../)
 
-# Classifieds
+# [Classifieds](index.html)
 
 ## Links
 
- - [post.html](post.html)
- - [readme.html](readme.html)
- - [home](index.html)
+ - [post ad](post.html)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)
+ - [readme.html](readme.html)
+ - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
 
@@ -30,6 +30,7 @@
  - [copy scroll server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt&to=replicator.php)
  - [copy symbol server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt&to=replicator.php)
  - [copy icon server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt&to=replicator.php)
+ - [copy classifieds server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt&to=replicator.php)
 
 ## links to replicators
 
@@ -45,5 +46,6 @@
  - [scroll server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
  - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
  - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
+ - [classifieds server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt)
 
 
