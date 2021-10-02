@@ -1,10 +1,12 @@
-[../](../)
+## [../](../)
 
 # [Classifieds](index.html)
 
 ## Links
 
  - [post ad](post.html)
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

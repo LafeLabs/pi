@@ -6,6 +6,8 @@ Just a text page, a screen you can write on which remembers.   Edit one at a tim
 
 ## Links
 
+ - [ipaddress.php](ipaddress.php)
+ - [qrcode.html](qrcode.html)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

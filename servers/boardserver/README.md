@@ -6,6 +6,8 @@ Like the Wall server, but with multiple walls.  Create a large collection of mes
 
 ## Links
 
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

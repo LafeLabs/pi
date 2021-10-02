@@ -4,6 +4,7 @@
         "fork.html",
         "index.html",
         "mapdelete.html",
+        "qrcode.html",
         "readme.html",
         "scrolleditor.html",
         "set.html"
@@ -23,6 +24,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "ipaddress.txt",
         "mapeditor.txt",
         "mkdir.txt",
         "rdelete.txt",
@@ -33,6 +35,7 @@
         "user.txt"
     ],
     "maps": [
+        "foo",
         "home"
     ],
     "iconsymbols": [

@@ -8,6 +8,8 @@ To replace this page with any of the various types of server, click on a "copy" 
 
 ## Links
 
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

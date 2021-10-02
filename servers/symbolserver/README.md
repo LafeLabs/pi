@@ -6,6 +6,8 @@ Create, edit, replicate and delete symbols using the Geometron language.  For de
 
 ## Links
 
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

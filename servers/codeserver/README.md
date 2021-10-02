@@ -8,6 +8,7 @@ Social coding: make a program, edit a program, destroy a program, replicate a pr
 
  - [code/](code/)
  - [codeset.html](codeset.html)
+ - [ipaddress.php](ipaddress.php)
  - [qrcode.html](qrcode.html)
  - [http://localhost/](http://localhost/)
  - [../](../)

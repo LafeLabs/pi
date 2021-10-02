@@ -6,6 +6,8 @@ Upload images. Delete them.  That's all.
 
 ## Links
 
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

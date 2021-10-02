@@ -1,5 +1,7 @@
 [../](../)
 
+[page replicator raw code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+
 ## Actions:
 
 1. create one of each type of server

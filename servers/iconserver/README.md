@@ -1,4 +1,4 @@
-[../](../)
+## [../](../)
 
 ## Icon Server
 
@@ -6,6 +6,8 @@ Trash Robot/ Geometron icon server. Create icons to print on a Trash Robot print
 
 ## Links
 
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

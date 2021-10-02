@@ -29,6 +29,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "ipaddress.txt",
         "mkdir.txt",
         "rdelete.txt",
         "replicator.txt",

@@ -3,6 +3,7 @@
         "README.md",
         "fork.html",
         "index.html",
+        "qrcode.html",
         "readme.html",
         "scrolleditor.html",
         "set.html"
@@ -19,6 +20,7 @@
         "fileloader.txt",
         "filesaver.txt",
         "hyperreplicator.txt",
+        "ipaddress.txt",
         "mkdir.txt",
         "rdelete.txt",
         "removephp.txt",

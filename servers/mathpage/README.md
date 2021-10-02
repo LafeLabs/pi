@@ -13,6 +13,8 @@ $$
 
 ## Links
 
+ - [ipaddress.php](ipaddress.php)
+ - [qrcode.html](qrcode.html)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)

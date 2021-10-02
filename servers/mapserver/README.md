@@ -6,6 +6,8 @@ Make a map, replicate a map, delete a map.  Maps are a format of arranging thing
 
 ## Links
 
+ - [qrcode.html](qrcode.html)
+ - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)
