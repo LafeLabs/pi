@@ -23,7 +23,7 @@ sudo apt install php libapache2-mod-php -y
 ```
 cd /var/www/html
 sudo rm index.html
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
@@ -67,11 +67,6 @@ how to do the tar ball thing to get a later version of arduino which has the plo
 
 ## Add python that we need
 
-matplotlib
-```
-sudo apt install python3-matplotlib
-```
-
 [https://matplotlib.org/](https://matplotlib.org/)
 
 matplotlib install:
@@ -85,11 +80,9 @@ sudo apt install python3-matplotlib
 [https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/](https://www.instructables.com/Jupyter-Notebook-on-Raspberry-Pi/)
 
 ```
-sudo su -
-apt-get update
-apt-get install python3-matplotlib
-apt-get install python3-scipy
-pip3 install --upgrade pip
+sudo apt-get update
+sudo apt-get install python3-scipy
+sudo pip3 install --upgrade pip
 reboot
 sudo pip3 install jupyter
 ```
