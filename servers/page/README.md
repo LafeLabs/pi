@@ -2,7 +2,9 @@
 
 #  Generic Web document
 
-This is a example of a generic format of markdown document, just about the simplest form of self-replicating document.
+This is a example of a generic format of markdown document, just about the simplest form of self-replicating document.  Edit with the "edit" link.  Format is the "[markdown](https://www.markdownguide.org/cheat-sheet/)" language.  
+
+To replace this page with any of the various types of server, click on a "copy" link below under the second list, then click the "replicator" link under the top list. This document is the "readme", which should be accessible on each type of server.  To fork down to a new page/server, use "[fork.html](fork.html)", create a new page, and repeat the replication process.  You can also use that to turn delete mode on and destroy any server.
 
 ## Links
 
@@ -13,10 +15,9 @@ This is a example of a generic format of markdown document, just about the simpl
  - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
-
 
 ## copy replicators to local replicator.php
 
@@ -32,6 +33,7 @@ This is a example of a generic format of markdown document, just about the simpl
  - [copy scroll server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt&to=replicator.php)
  - [copy symbol server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt&to=replicator.php)
  - [copy icon server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt&to=replicator.php)
+ - [copy classifieds server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt&to=replicator.php)
 
 ## links to replicators
 
@@ -47,7 +49,6 @@ This is a example of a generic format of markdown document, just about the simpl
  - [scroll server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
  - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
  - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
-
-
+ - [classifieds server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt)
 
 
