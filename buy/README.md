@@ -1,19 +1,20 @@
 ## [../](../)
 
-#  Purchase Things
-
-
-## Basic Kit
+# Basic Kit
 
  - [Raspberry Pi 4 4 gb($55)](https://www.pishop.us/product/raspberry-pi-4-model-b-4gb/)
  - [microSD Card and SD adapter($7)](https://www.pishop.us/product/microsd-card-32-gb-class-10-blank/)
  - [SD card reader($3)](https://www.pishop.us/product/high-speed-micro-sd-card-reader-maximum-128gb-black/)
  - [HDMI micro to HDMI cable($7)](https://www.pishop.us/product/micro-hdmi-to-standard-hdmi-a-m-1m-cable-white/)
- - [HDMI Screen($135)](https://www.sunfounder.com/collections/displays-monitors/products/10-inch-hdmi-monitor)
- - [high current USB-c power supply($9)](https://www.sunfounder.com/collections/power-supply/products/power-supply-with-switch)
- - keyboard
- - mouse
- - [arcade controllers($9)](https://www.sunfounder.com/collections/keyboard-gamepad/products/wired-arcade-gamepad)
+  - [HDMI Screen($102)](https://www.sunfounder.com/collections/monitors/products/7-inch-hdmi-monitor)
+ - [raspberry pi keyboard and mouse, official, from sunfounder($36)](https://www.sunfounder.com/collections/keyboard-gamepad/products/keyboard-mouse)
+
+
+# Terminal Assembly
+
+![](https://i.imgur.com/Y46szlG.jpg)
+
+![](https://i.imgur.com/N4ItAdo.jpg)
 
 
 ## Random Purchase Links
