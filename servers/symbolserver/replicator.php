@@ -16,8 +16,7 @@ mkdir("php");
 mkdir("maps");
 mkdir("jscode");
 mkdir("iconsymbols");
-
-
+mkdir("symbolfeed");
 
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt","replicator.php");
 
