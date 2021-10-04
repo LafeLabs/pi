@@ -1,5 +1,5 @@
 {
-    "server": "http://localhost/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnjavascript/p5js/",
     "code": [
         "hello.py",
         "index.html",

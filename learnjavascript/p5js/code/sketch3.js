@@ -5,8 +5,12 @@ let imgy = 0;
 let delta = 10;
 let img;
 let img2;
+
+let stack = [];
+
+
 function preload() {
-  img = loadImage('https://i.imgur.com/Mtgj8R8.png');
+  img = loadImage('https://i.imgur.com/0tmNy74.png');
   img2 = loadImage('https://i.imgur.com/No1wukK.png');
 }
 
@@ -59,11 +63,23 @@ function draw() {
     }
   }
 
+  if(keyIsDown(32)){
+
+      var element = {};
+      element.dx = x - imgx;
+      element.dy = y - imgy;
+      stack.push(element);
+      
+  }
+
   clear();
   //http://vineotron.net/images/uploadimages/image1.PNG
   image(img,imgx,imgy);
 
 //  rect(x, y, 50, 50);
+  for(var index = 0;index < stack.length;index++){
+      image(img2, imgx + stack[index].dx,imgy + stack[index].dy, 50, 50);
+  }
   image(img2, x, y, 50, 50);
 
 }
