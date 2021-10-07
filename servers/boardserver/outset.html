@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAABEAERABEAAAEQABAAEQAAAAEAEAEAAAAAABAQEAAAAAEAAREAEAAAERERERERAAABAAERABAAAAAAEBAQAAAAAAEAEAEAAAABEAAQABEAAAEQABAAEQAAAAABEQAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+</head>
+<body>    
+<table id = "toptable">
+    <tr>
+        <td>
+            <a href = "index.html">HOME</a>
+        </td>
+        <td>
+            <a href = "readme.html">README</a>
+        </td>
+        <td>
+            <a href = "fork.html">FORK</a>
+        </td>
+        <td>
+            <a href = "inset.html">RECIEVE</a>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style = "text-align:right">HERE:</td>
+        <td><input id = "serverinput"/></td>
+    </tr>
+</table>
+<textarea id = "textio"></textarea>
+    
+<h1>CREATE SERVER SET</h1>
+
+<script>
+
+
+boardset = {};
+boards = [];
+
+var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        boardset = JSON.parse(this.responseText);
+        var httpc9 = new XMLHttpRequest();
+        httpc9.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                boards = JSON.parse(this.responseText);
+                boardset.boards = boards;
+                document.getElementById("textio").value = JSON.stringify(boardset.boards,null,"    ");
+                savejson();
+                var localurl = window.location.href.split("boardset.html")[0];
+                boardset.server = localurl;
+                document.getElementById("serverinput").value = boardset.server;
+
+            };
+        }
+        
+        httpc9.open("GET", "dir.php?filename=boards", true);
+        httpc9.send();
+
+    }
+};
+httpc.open("GET", "fileloader.php?filename=data/boardset.txt", true);
+httpc.send();
+
+
+function savejson(){
+    var url = "filesaver.php";        
+    var httpc2 = new XMLHttpRequest();
+    httpc2.open("POST", url, true);
+    httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc2.send("data="+encodeURIComponent(JSON.stringify(boardset,null,"    "))+"&filename=data/boardset.txt");//send text to filesaver.php
+}
+
+
+
+</script>
+<style>
+#toptable td{
+    width:6em;
+}
+
+#textio{
+    position:absolute;
+    right:1px;
+    top:2em;
+    height:80%;
+    width:40%;
+}
+#serverinput{
+    width:100%;
+}
+body,div,textarea,input{
+    font-family:courier;
+    background-color:black;
+    color:#00ff00;
+    font-size:24px;
+    border-color:#00ff00;
+}
+a{
+    font-family:courier;
+    background-color:black;
+    font-size:24px;
+    border-color:#00ff00;
+    color:#ff2cb4;
+}
+
+.button{
+    cursor:pointer;
+    border:solid;
+}
+.button:hover{
+    background-color:#00ff0080;
+}
+.button:active{
+    background-color:#ffff0080;
+}
+.box img{
+    width:3em;
+}
+</style>
+</body>
+</html>

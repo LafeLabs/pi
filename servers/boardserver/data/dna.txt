@@ -5,6 +5,8 @@
         "boardset.html",
         "fork.html",
         "index.html",
+        "inset.html",
+        "outset.html",
         "qrcode.html",
         "readme.html",
         "scrolleditor.html"
