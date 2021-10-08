@@ -9,76 +9,83 @@
     <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>    
-<a href = "readme.html">README.md</a>
-
-<table id = "buttontable">
+<table id = "toptable">
     <tr>
-        <td class = "button" id = "herebutton">THIS SERVER</td>
-        <td class = "button" id ="importbutton">IMPORT</td>
-        <td class = "button" id = "resetbutton">RESET</td>
+        <td>
+            <a href = "index.html">
+                <img src = "iconsymbols/home.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "readme.html">
+                <img src = "iconsymbols/scroll.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "fork.html">
+                <img src = "iconsymbols/fork.svg"/>
+            </a>
+        </td>
     </tr>
 </table>
-    
-<table id = "inputtable">
+<table>
     <tr>
-        <td style = "text-align:right">SERVER:</td>
-        <td><input id = "serverinput"/></td>
+        <td style = "text-align:right">SOURCE SERVER:</td>
+        <td>
+            <input id = "sourceinput"/>
+        </td>
     </tr>
+    <tr>
+        <td style = "text-align:right">THIS SERVER HERE:</td>
+        <td>
+            <input id = "hereinput"/>
+        </td>
+    </tr>
+
 </table>
 
-    <textarea id = "textio"></textarea>
-    <h1>BOARD SET REPLICATOR</h1>
-<a href = "boardsetreplicator.php">boardsetreplicator.php</a>
 
+<a href = "boardsetreplicator.php" id = "fetchlink">
+(!)CLICK TO FETCH SET FROM SOURCE TO HERE(!)
+</a>
+
+<textarea id  = "textio"></textarea>
 <script>
 
-document.getElementById("serverinput").value = "";
+var localurl = window.location.href.split("boardset.html")[0];
+document.getElementById("hereinput").value = localurl;
 
-boardset0 = {
-    "server":"https://raw.githubusercontent.com/LafeLabs/boardserver/main/",
-    "boards":[
-        "home"
-    ]
-};
-boardset = JSON.parse(JSON.stringify(boardset0));
-
-boards = [];
+boardset = {};
 
 var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var localscrollset = JSON.parse(this.responseText);
-        boardset.server = localscrollset.server;
+        boardset = JSON.parse(this.responseText);
         if(boardset.server.charAt(boardset.server.length-1) != "/"){
             boardset.server = boardset.server + "/"; 
         }
-        document.getElementById("serverinput").value = boardset.server;
+        document.getElementById("sourceinput").value = boardset.server;
         var httpc9 = new XMLHttpRequest();
         httpc9.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
+
                 boards = JSON.parse(this.responseText);
                 boardset.boards = boards;
                 document.getElementById("textio").value = JSON.stringify(boardset.boards,null,"    ");
                 savejson();
+
             };
         }
         
         httpc9.open("GET", "dir.php?filename=boards", true);
         httpc9.send();
-
+        
     }
 };
 httpc.open("GET", "fileloader.php?filename=data/boardset.txt", true);
 httpc.send();
 
-
-document.getElementById("importbutton").onclick = function(){
-    boardset.boards = JSON.parse(document.getElementById("textio").value);
-    savejson();
-}
-
-
-document.getElementById("serverinput").onchange = function(){
+document.getElementById("sourceinput").onchange = function(){
     boardset.server = this.value;
     if(boardset.server.charAt(boardset.server.length-1) != "/"){
         boardset.server = boardset.server + "/"; 
@@ -95,23 +102,13 @@ function savejson(){
 }
 
 
-document.getElementById("resetbutton").onclick = function(){
-    boardset = JSON.parse(JSON.stringify(boardset0));
-    document.getElementById("serverinput").value = boardset.server;
-    document.getElementById("textio").value = JSON.stringify(boardset.boards,null,"    ");
-    savejson();
-}
-
-document.getElementById("herebutton").onclick = function(){
-    var localurl = window.location.href.split("boardset.html")[0];
-    boardset.server = localurl;
-    document.getElementById("serverinput").value = boardset.server;
-    savejson();
-}
-
 
 </script>
 <style>
+#toptable{
+    background-color:#808080;
+}
+
 #buttontable{
     position:absolute;
     right:0px;
@@ -153,17 +150,13 @@ document.getElementById("herebutton").onclick = function(){
 }
 body,div,textarea,input{
     font-family:courier;
-    background-color:black;
-    color:#00ff00;
+    background-color:#808080;
     font-size:24px;
-    border-color:#00ff00;
+    border-color:black;
 }
 a{
     font-family:courier;
-    background-color:black;
     font-size:24px;
-    border-color:#00ff00;
-    color:#ff2cb4;
 }
 
 .button{

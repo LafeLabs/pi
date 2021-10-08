@@ -13,7 +13,7 @@ $boards = $remoteboardset->boards;
 
 foreach($boards as $value){
 
-    copy($server."boards/".$value,"boards/".$value);
+    copy($server."boards/".$value,"boards/".$value."copy");
 
 }
 
