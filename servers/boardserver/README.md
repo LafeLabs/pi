@@ -4,9 +4,7 @@
 
 Like the Wall server, but with multiple walls.  Create a large collection of message boards for specific subjects/groups.
 
-## [create set of local boards to replicate to another server](outset.html)
-
-## [replicate a board set from another server](inset.html)
+## [replicate sets of boards from one server to another](boardset.html)
 
 ## [create and destroy new board servers below this one](fork.html)
 
