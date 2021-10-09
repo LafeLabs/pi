@@ -15,8 +15,10 @@
         "dna.txt"
     ],
     "iconsymbols": [
+        "chaos.svg",
         "delete.svg",
         "edit.svg",
+        "fork.svg",
         "home.svg",
         "lightdark.svg",
         "scroll.svg"
@@ -30,6 +32,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "ipaddress.txt",
         "mkdir.txt",
         "rdelete.txt",
         "replicator.txt",

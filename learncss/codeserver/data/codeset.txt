@@ -6,5 +6,17 @@
         "plot1.py",
         "sketch.js",
         "slimezistor.ino"
+    ],
+    "boards": [
+        "aspectratio.css",
+        "body.css",
+        "box.css",
+        "classes.css",
+        "hello.py",
+        "index.html",
+        "plot1.py",
+        "scroll.css",
+        "sketch.js",
+        "slimezistor.ino"
     ]
 }
