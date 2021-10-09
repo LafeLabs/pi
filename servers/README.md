@@ -1,16 +1,10 @@
 [../](../)
 
-[page replicator raw code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+#  Servers
 
-## Actions:
+In organic media, media behaves like living things.  All media replicates, evolves, and dies.  There is no private information of any kind and there are no users, no passwords and no cryptography.  The entire system consists of swarms of self-replicating files.  The server-side programming language PHP is used to replicate, edit, and destroy files in the swarm across both public and private networks via the Web.  
 
-1. create one of each type of server
-2. learn to destroy servers, create new ones, destroy again
-3. learn how servers and files replicate in geometron, about the nature of organic media, replication, evolution, and death of files, web of documents not of users
-4. learn how to edit documents on each type of server, again creating new ones, editing existing ones and deleting them
-
-Actions for this section: make each type of server, destroy it, make it again, edit it.
-
+This is the model.  Within this model we have built a variety of prototype servers for various purposes.  These include:
 
 ##  Server Types:
 
@@ -27,6 +21,19 @@ Actions for this section: make each type of server, destroy it, make it again, e
  - [scroll server](scrollserver/)
  - [trash robot icon server](iconserver/)
  - [classifieds server](classifieds/)
+
+## Create new server
+
+To create a new Geometron server on any given location on a Web server, copy the page replicator into the web directory and run replicator.php:
+
+[global page replicator link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+
+## Fork server
+
+To fork a server, go to [fork.html](fork.html) and create a new page, click through on the replicator then the link after replication. This will always replicate any kind of server. If you do it with a "page" you'll get a page, with a "wall" or "boardserver", etc.  After that, you can mutate the new server to be any other type of server by clicking one of the replicator copy links in the list "copy replicators to local replicator.php".  Just click that link, click through back to the main page and then under the list of links below, click replicator.php and the new replicator will replace whatever type of server you have with the one in the new replicator.  You can repeat this process over and over to mutate between any of the various types of server.
+
+Use this to create a new server, and mutate it.  Then go up a level (you might have to use the "scroll" to do this) and click on the fork, and turn delete mode on and delete your new server.  Any sub-forks below a given server are also all destroyed when you destroy a server.  Destruction is instantaneous and forever.  Replicate, mutate, and destroy!  Repeat!
+
 
 ## Links
 

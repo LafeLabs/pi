@@ -8,18 +8,11 @@
 
 [Raspbian Raspberry pi OS](https://en.wikipedia.org/wiki/Raspberry_Pi_OS)
 
-linux, bsd, macos, android, UNIX, at&t, command lines, C, stallman, "free software" movement, raspberry pi, openwrt, linux embedded systems overview
-
-resources: linux, pi
-
 [ubuntu guide](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
-
-how to do *nix on a windows machine or mac
 
 ## shells: scripts and commands
 
 .sh files, examples
-
 
 ## commands
 
@@ -58,5 +51,6 @@ how to do *nix on a windows machine or mac
  - create a little .php script and run it
  - create a little python script and run it
  - use ifconfig to see network information
-
+ - write a shell script to do stuff, call it from php, call php from shell script, python to php php to python etc
+ - make a thing happen on bootup
 
