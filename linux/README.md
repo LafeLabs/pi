@@ -4,6 +4,10 @@
 
 ## history and culture
 
+[linux wikipedia](https://en.wikipedia.org/wiki/Linux)
+
+[Raspbian Raspberry pi OS](https://en.wikipedia.org/wiki/Raspberry_Pi_OS)
+
 linux, bsd, macos, android, UNIX, at&t, command lines, C, stallman, "free software" movement, raspberry pi, openwrt, linux embedded systems overview
 
 resources: linux, pi
