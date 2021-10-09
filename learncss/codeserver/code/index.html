@@ -1,68 +1,33 @@
+<!doctype html>
 <html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>    
-    <script src="sketch.js"></script>
-  </head>
-  <body>
-    <main id = "main">
-    </main>
-    <div id  = "linkscroll">
-        <div id = "qrcode"></div>
-        <ul>
-            <li>
-                 <a href = "../readme.html">../readme.html</a>        
-            </li>
-            <li>
-                 <a href = "../">up to code editor</a>        
-            </li>
-        </ul>
-    </div>
-    <script>
-        if(innerWidth > innerHeight){
-            document.getElementById("linkscroll").style.width = (innerWidth - innerHeight).toString() + "px";
-            document.getElementById("linkscroll").style.left = (innerHeight + 20).toString() + "px";
-            document.getElementById("linkscroll").style.top = (0).toString() + "px";
-            
-        }
-        else{
-            document.getElementById("linkscroll").style.width = (innerWidth).toString() + "px";
-            document.getElementById("linkscroll").style.left = (30).toString() + "px";
-            document.getElementById("linkscroll").style.top = (innerWidth + 20).toString() + "px";
-        }
-        codesquaresize = 100;
-        //globalurl = "http://www.trashrobot.org/qrcode.html";
-        globalurl = window.location.href;
-        
-        qrcode = new QRCode(document.getElementById("qrcode"), {
-        	text: globalurl,
-        	width: codesquaresize,
-        	height: codesquaresize,
-        	colorDark : "#000000",
-        	colorLight : "#ffffff",
-        	correctLevel : QRCode.CorrectLevel.H
-        });
-            
-        qrcode.makeCode(globalurl);
+<head>
+<title>foo.html</title>
+ <link rel="stylesheet" href="box.css"> 
+ <link rel="stylesheet" href="body.css"> 
+ <link rel="stylesheet" href="scroll.css"> 
+ <link rel="stylesheet" href="classes.css"> 
+ <link rel="stylesheet" href="aspectratio.css">
+</head>
+<body>
 
-    </script>
-    <style>
-        body{
-            background-color:#e0e0e0;
-            overflow:hidden;
-        }
-        #linkscroll{
-            position:absolute;
-            right:10px;
-            bottom:10px;
-            overflow:scroll;
-            border-left:solid;
-            background-color:#a0a0a0;
-        }
-        a{
-            color:#2020ff;
-            font-size:2em;
-        }
-    </style>
-  </body>
+<h1 class = "data" style = "background-color:white;color:black">BIG INVISIBLE TITLE</h1>
+
+<h2 class = "portrait">PORTRAIT</h2>
+<h2 class = "landscape">LANDSCAPE</h2>
+
+<table>
+    <tr>
+        <td class=  "button">button1</td>
+        <td class = "button">button2</td>
+        <td class = "textd">some random text in a box</td>
+    </tr>
+</table>
+<div id = "box">
+    BOX
+</div>
+
+<div id = "scroll">
+    We hope we have convinced the reader that the system cannot be reformed in such a way as to reconcile freedom with technology. The only way out is to dispense with the industrialtechnological system altogether. This implies revolution, not necessarily an armed uprising, but certainly a radical and fundamental change in the nature of society. 141. People tend to assume that because a revolution involves a much greater change than reform does, it is more difficult to bring about than reform is. Actually, under certain circumstances revolution is much easier than reform. The reason is that a revolutionary movement can inspire an intensity of commitment that a reform movement cannot inspire. A reform movement merely offers to solve a particular social problem. A revolutionary movement offers to solve all problems at one stroke and create a whole new world; it provides the kind of ideal for which people will take great risks and make great sacrifices. For this reasons it would be much easier to overthrow the whole technological system than to put effective, permanent restraints on the development or application of any one segment of technology, such as genetic engineering, for example. Not many people will devote themselves with single-minded passion to imposing and maintaining restraints on genetic engineering, but under suitable conditions large numbers of people may devote themselves passionately to a revolution against the industrial-technological system. As we noted in paragraph 132, reformers seeking to limit certain aspects of technology would be working to avoid a negative outcome. But revolutionaries work to gain a powerful reward -- fulfillment of their revolutionary vision and therefore work harder and more persistently than reformers do. 
+</div>
+</body>
 </html>
