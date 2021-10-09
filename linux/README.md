@@ -34,6 +34,7 @@
  - `touch`: create a new empty file 
  - `curl`: utility for transferring files from a server, used to copy the replicator scripts of the initial server, stands for "Client URL"
  - `sudo`: run a command as "super user" or "root", the user with maximum power on the system
+ - `passwd`: set password for an account
  - `php`: use the php command to run php scripts. PHP is the only language used in our system for manipulating files on servers from the web browser. Files all end in .php
  - `python`: run a program in the Python language, which ends with .py
  - `grep`: utility used to search for regular expressions in a file ("get regular expression")
