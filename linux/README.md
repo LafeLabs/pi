@@ -2,17 +2,26 @@
 
 #  Linux
 
-## history and culture
+## What we want to know how to do
 
-[linux wikipedia](https://en.wikipedia.org/wiki/Linux)
+ - Open a file in all major text editors, edit, close.
+ - create a new file, copy it, destroy it
+ - create a new directory, destroy it
+ - list files in a directory, change their permissions
+ - install a new python package and new general package with pip and apt-get
+ - create a little .php script and run it
+ - create a little python script and run it
+ - use ifconfig to see network information
+ - write a shell script to do stuff, call it from php, call php from shell script, python to php php to python etc
+ - make a thing happen on bootup
 
-[Raspbian Raspberry pi OS](https://en.wikipedia.org/wiki/Raspberry_Pi_OS)
+## external links
 
-[ubuntu guide](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
-
-## shells: scripts and commands
-
-.sh files, examples
+ - [linux wikipedia](https://en.wikipedia.org/wiki/Linux)
+ - [Raspbian Raspberry pi OS](https://en.wikipedia.org/wiki/Raspberry_Pi_OS)
+ - [ubuntu guide](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
+ - [free software foundation](https://www.fsf.org/)
+ - [raspberrypi.org](https://www.raspberrypi.org/)
 
 ## commands
 
@@ -35,6 +44,7 @@
  - `curl`: utility for transferring files from a server, used to copy the replicator scripts of the initial server, stands for "Client URL"
  - `sudo`: run a command as "super user" or "root", the user with maximum power on the system
  - `passwd`: set password for an account
+ - `alias`: map a command name to another command
  - `php`: use the php command to run php scripts. PHP is the only language used in our system for manipulating files on servers from the web browser. Files all end in .php
  - `python`: run a program in the Python language, which ends with .py
  - `grep`: utility used to search for regular expressions in a file ("get regular expression")
@@ -42,16 +52,42 @@
  - `ifconfig`: configure the network interface. Used to see and modify networking information
  - `man`: access the Linux manual entry for a command
  
-## What we want to know how to do
 
- - Open a file in all major text editors, edit, close.
- - create a new file, copy it, destroy it
- - create a new directory, destroy it
- - list files in a directory, change their permissions
- - install a new python package and new general package with pip and apt-get
- - create a little .php script and run it
- - create a little python script and run it
- - use ifconfig to see network information
- - write a shell script to do stuff, call it from php, call php from shell script, python to php php to python etc
- - make a thing happen on bootup
+## Working with files
 
+
+Open a terminal by clicking the black rectangle in the menu bar.  See your present working directory by typing 
+
+```
+pwd
+```
+
+Then move into the web directory on the Raspberry pi using 
+
+```
+cd /var/www/html
+```
+
+List the files in the directory by typing 
+```
+ls
+```
+Now to read out the contents of a file type 
+```
+more index.html
+```
+and you will see the contents of the file index.html which is the top level home page of the main Geometron web server on the Pi.  
+
+Now move into your home directory, denoted by a tilde:
+```
+cd ~
+```
+and create a new file using "touch"
+```
+touch foo
+```
+Now you want to list the files and see how big they all are using the -l extension(long) as follows:
+```
+ls -l
+```
+This should show the files along a bunch more information, including permissions, edit dates, the owner, the file size in bytes, 
