@@ -1,5 +1,5 @@
 {
-    "server": "http://localhost/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/codeserver/data/codeset.txt/",
     "code": [
         "hello.py",
         "index.html",
@@ -12,11 +12,7 @@
         "body.css",
         "box.css",
         "classes.css",
-        "hello.py",
         "index.html",
-        "plot1.py",
-        "scroll.css",
-        "sketch.js",
-        "slimezistor.ino"
+        "scroll.css"
     ]
 }

@@ -39,10 +39,11 @@
         "text2php.txt"
     ],
     "code": [
-        "hello.py",
+        "aspectratio.css",
+        "body.css",
+        "box.css",
+        "classes.css",
         "index.html",
-        "plot1.py",
-        "sketch.js",
-        "slimezistor.ino"
+        "scroll.css"
     ]
 }

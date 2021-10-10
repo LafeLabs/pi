@@ -2,6 +2,8 @@
 
 [code server](codeserver/)
 
+[code server code/index.html page](codeserver/code/)
+
 #  CSS (Cascaded Style Sheets)
 
 1. learn what CSS is, how to put a style into a html file
