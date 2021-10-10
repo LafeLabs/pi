@@ -1,13 +1,6 @@
 {
     "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/codeserver/data/codeset.txt/",
     "code": [
-        "hello.py",
-        "index.html",
-        "plot1.py",
-        "sketch.js",
-        "slimezistor.ino"
-    ],
-    "boards": [
         "aspectratio.css",
         "body.css",
         "box.css",

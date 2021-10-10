@@ -69,9 +69,9 @@ var httpc = new XMLHttpRequest();
         httpc9.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
 
-                boards = JSON.parse(this.responseText);
-                codeset.boards = boards;
-                document.getElementById("textio").value = JSON.stringify(codeset.boards,null,"    ");
+                code = JSON.parse(this.responseText);
+                codeset.code = code;
+                document.getElementById("textio").value = JSON.stringify(codeset.code,null,"    ");
                 savejson();
 
             };

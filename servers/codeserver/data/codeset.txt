@@ -6,12 +6,5 @@
         "plot1.py",
         "sketch.js",
         "slimezistor.ino"
-    ],
-    "boards": [
-        "hello.py",
-        "index.html",
-        "plot1.py",
-        "sketch.js",
-        "slimezistor.ino"
     ]
 }
