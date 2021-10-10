@@ -13,7 +13,7 @@ $code = $remotecodeset->code;
 
 foreach($code as $value){
 
-    copy($server."code/".$value,"code/".$value);
+    copy($server."code/".$value,"code/".$value."copy");
 
 }
 
