@@ -1,10 +1,6 @@
 {
-    "server": "http://localhost/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnhtml/codeserver/",
     "code": [
-        "hello.py",
-        "index.html",
-        "plot1.py",
-        "sketch.js",
-        "slimezistor.ino"
+        "index.html"
     ]
 }
