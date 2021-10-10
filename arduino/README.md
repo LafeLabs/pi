@@ -54,29 +54,27 @@ void loop() {
 
 ### batteryvoltage.py
 
-(only on windows so far)
-
 ```
 import serial
 import json
 import time
-
-connection = serial.Serial(port="COM4", baudrate=9600)
-connection.reset_input_buffer()
-data = connection.readline()
-cleandatastring = data.decode('latin1')[1:-2]
-jsondata = json.loads(cleandatastring)
+ser = serial.Serial('/dev/ttyUSB0', 9600)
+data = ""
+for x in range(4):
+    data += ser.readline()
+cleandatastring = data.decode('latin1')
+dataarray = cleandatastring.split('\n')
+secondelement = dataarray[1];
+jsondata = json.loads(secondelement)
 timestamp = round(time.time())
 jsondata['timestamp'] = timestamp
 jsondatastring = json.dumps(jsondata) + ",\n"
-#print(jsondatastring)
-connection.close()
 file = open("datafile.txt", "a")
 file.write(jsondatastring)
-#print(jsondatastring)
 file.close()
+#print(jsondatastring)
+ser.close()
 ```
-
 
 
 
