@@ -2,12 +2,35 @@
 
 [open arduino class](https://github.com/LafeLabs/openarduino)
 
+## Data logging:
+
+ - water level
+ - air and water temperature
+ - water clarity
+ - water chemical sensors with slimezistor
+ - battery voltage
+ - solar panel voltage
+
+All these go into JSON objects which are put down the serial.  Python reads multiple lines, takes one from the middle to prevent partial JSON objects, parses it, stores it as a data file.  JavaScript takes that data file, turns it into JSON and saves it. Then JavaScript with p5js and html makes plots visible on the rest of the network.
+
 [dataloggercode/](dataloggercode/)
 
-## Arduino Actions
 
- - monitor and log water level
- - measure temperature and 
+## Control
+
+Serial commands drive  a motor
+
+Serial commands drive a neopixel array.
+
+## Trash Robot
+
+button controller construction, shield boards with motor drivers, geometron to control arbitrary movements to draw generalized symbols.
+
+## Motor speed control
+
+## Generic neopixel illumination
+
+## sensor to motor or neopixel
 
 
 
