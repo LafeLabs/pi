@@ -2,6 +2,23 @@
 
 # Python
 
+## Goals
+
+ - Use python to take data from Arduino.
+ - Use python to plot data.
+ - Use python to fit data.
+ - Use python to open and close a file, read write and append
+ - Use python to work with jsons and strings
+ - plot a function 
+ - all the basic string operations
+ - for loops, while loops, if
+ - all the boolean operations
+ - all the bitwise operations
+ - basic matplotlib operations, axes and labels etc
+
+
+## Links
+
  - [codeserver/](codeserver/)
  - [http://localhost](http://localhost)
  - [../](../)

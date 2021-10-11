@@ -14,6 +14,8 @@
  - use ifconfig to see network information
  - write a shell script to do stuff, call it from php, call php from shell script, python to php php to python etc
  - make a thing happen on bootup
+ - file completion(use tab)
+
 
 ## external links
 

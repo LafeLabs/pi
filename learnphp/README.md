@@ -9,6 +9,8 @@
 
 Languages: PHP, HTML, JavaScript, CSS, Markdown, JSON
 
+To edit the code and see it with syntax highlighting on a live machine, go to [editor.php](editor.php).
+
 THERE ARE NO DATABASES
 
  - [replicator.php](php/replicator.txt): replicates the system using the file [data/dna.txt](data/dna.txt)

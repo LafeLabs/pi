@@ -78,6 +78,44 @@ how to do the tar ball thing to get a later version of arduino which has the plo
 
 [https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/](https://www.raspberrypi-spy.co.uk/2020/12/install-arduino-ide-on-raspberry-pi/)
 
+go get the Arduino software at:
+
+[https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+
+and download "Linux ARM 32 bits".
+
+Open a terminal and go to the home directory:
+
+```
+cd ~
+```
+
+Go to downloads folder:
+```
+cd Downloads
+```
+list the files with 
+```
+ls
+```
+See the name of an archive with a name like "arduino-####-linuxarm.tar.xz", where #### is a version number.
+
+extract with 
+```
+tar -xf arduino-####-linuxarm.tar.xz
+```
+
+move the extracted information to opt directory(directory for package installation)
+
+```
+sudo mv arduino-#### /opt
+```
+
+then run the install script:
+```
+sudo /opt/arduino-####/install.sh
+```
+
 
 ## Add python that we need
 

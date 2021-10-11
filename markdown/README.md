@@ -95,6 +95,7 @@ Things to edit or create in your version of this document:
 - [local replicator code link](php/replicator.txt)
 - [replicator.php](replicator.php)
 
+![](https://i.imgur.com/No1wukK.png)
 
 
 
