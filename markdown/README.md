@@ -8,7 +8,7 @@
 2. create new markdown documents, delete them, copy them
 3. learn to use math in markdown if you are a math person, using mathjax/latex
 
-If you are reading this on a live Geometron server, click the "edit" link in the upper right hand corner to edit this Markdown document. You will see all the elements of Markdown in the code and can edit this document live, then click back over to see how it looks by clicking the "home" link. 
+If you are reading this on a live Geometron server, click the "[edit](scrolleditor.html)" link in the upper right hand corner to edit this Markdown document. You will see all the elements of Markdown in the code and can edit this document live, then click back over to see how it looks by clicking the "home" link. 
 
 ## Links
 

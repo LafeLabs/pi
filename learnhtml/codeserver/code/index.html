@@ -6,14 +6,13 @@
   <body>
       <h1>biggest heading size</h1>
       <h2>next biggest heading size</h2>
-      <a href = "../../">a stands for "anchor" which means hyperlink</a>
+      <a href = "../">a stands for "anchor" which means hyperlink</a>
       <div>division, just a box with no specific properties, displayed "block" by default</div>
       <span>like a "div", but inline(no newline)</span>
       <img src = "../iconsymbols/chaos.svg" alt "alt text describes image"/>
 <ul>
     <li>un-ordered list item 1</li>
     <li>un-ordered list item 2</li>
-    <li><a href = "../">back to editor</a></li>
 </ul>      
 <ol>
     <li>ordered list item 1</li>
@@ -50,21 +49,37 @@ break with br manually
 
 <h4>base 10 smiling poop emoji UNICODE:</h4>
 <span style = "font-size:4em">&#128169;</span>
+
+<ul style = "font-size:4em">
+    <li>
+        <a href = "sketch.html">sketch.html</a>
+    </li>
+    <li>
+        <a href = "../">../</a>
+    </li>
+    <li>
+        <a href = "../../">../../</a>
+    </li>
+    <li>
+        <a href = "readme.html">readme.html</a>
+    </li>
+</ul>
+
     <script>
-     //javascript goes in scripts
-     console.log("print this on console, you can see using developer mode on your browser");
+    //javascript goes in scripts
+    console.log("print this on console, you can see using developer mode on your browser");
     </script>
-      <style>
-      /*
-      "style" contains CSS code to decide how things look
-      this turns links(anchors) a color
-      */
-          a{
-              color:purple;
-          }
-          td,tr,table{
-              border:solid;
-          }
+    <style>
+        /*
+        "style" contains CSS code to decide how things look
+        this turns links(anchors) a color
+        */
+        a{
+            color:purple;
+        }
+        td,tr,table{
+            border:solid;
+        }
       </style>
   </body>
 </html>

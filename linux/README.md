@@ -70,6 +70,8 @@ Then move into the web directory on the Raspberry pi using
 cd /var/www/html
 ```
 
+Notice that in linux we use forward slashes just like in web addresses, rather than back slashes used in Microsoft systems.
+
 List the files in the directory by typing 
 ```
 ls
