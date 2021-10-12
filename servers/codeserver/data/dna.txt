@@ -21,7 +21,8 @@
         "fork.svg",
         "home.svg",
         "lightdark.svg",
-        "scroll.svg"
+        "scroll.svg",
+        "www.svg"
     ],
     "php": [
         "codesetreplicator.txt",
@@ -42,6 +43,7 @@
         "hello.py",
         "index.html",
         "plot1.py",
+        "sketch.html",
         "sketch.js",
         "slimezistor.ino"
     ]

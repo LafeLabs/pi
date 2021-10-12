@@ -2,9 +2,11 @@
 
 #  HTML
 
- [codeserver/](codeserver/)
+ [code server where you can edit an html file live(see the file by clicking on the link below)](codeserver/)
 
- [codeserver/code/index.html](codeserver/code/index.html)
+ [Example html file showing all the basic elements](codeserver/code/index.html)
+
+[Example code on Github](https://github.com/LafeLabs/pi/blob/main/learnhtml/codeserver/code/index.html)
 
 ## Goals
 
@@ -18,6 +20,12 @@
 7. use unicode to put in emoji and other non standard characters, find the unicode you want
 8. learn where to learn more, use online reference materials effectively
 9. put up web pages on a paid domain, a free hosting service, on github.io, and over local network
+
+## Make a web page
+
+If you are on a live Geometron server, make a new code server by clicking on [fork.html](fork.html), then making a name for the new server, clicking the replicator and clicking through to the new server.  Then click the copy replicator link to copy the code server replicator.  Then click the replicator.php and click through to the new server.  Edit the index.html file. Then click on the scroll link and on the scroll click on the link to "code/" to see index.html.
+
+
 
 ## Elements
 
