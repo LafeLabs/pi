@@ -1,6 +1,6 @@
 ## [../](../)
 
-#  CSS (Cascaded Style Sheets)
+#  [CSS (Cascaded Style Sheets)](https://github.com/LafeLabs/pi/blob/main/learncss/README.md)
 
 [raw version of this markdown file](https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/README.md)
 

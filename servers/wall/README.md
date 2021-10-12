@@ -1,11 +1,12 @@
 ## [../](../)
 
-#  Wall server
+#  [Wall server](https://github.com/LafeLabs/pi/tree/main/servers/wall)
 
-Just a text page, a screen you can write on which remembers.   Edit one at a time or you'll have a conflict!  
+Just a text page, a screen you can write on which remembers.   Edit one at a time or you'll have a conflict!  Use fork to create and destroy new forks, navigate down to forks below this, or up above this in the tree.   This is like a public virtual dry erase board.
 
 ## Links
 
+ - [back to the wall](index.html)
  - [ipaddress.php](ipaddress.php)
  - [qrcode.html](qrcode.html)
  - [http://localhost/](http://localhost/)
@@ -16,7 +17,7 @@ Just a text page, a screen you can write on which remembers.   Edit one at a tim
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
  - [set replicator](set.html)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
 
