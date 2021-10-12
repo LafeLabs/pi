@@ -1,8 +1,8 @@
 # [../](../)
 
-#  Math Page
+#  [Math Page](https://github.com/LafeLabs/pi/blob/main/servers/mathpage/README.md)
 
-This is identical to the regular page, but with math formatting using $\LaTeX$ by way of [Mathjax](https://www.mathjax.org/).
+This is identical to the [regular page](https://github.com/LafeLabs/pi/blob/main/servers/page/README.md), but with math formatting using $\LaTeX$ by way of [Mathjax](https://www.mathjax.org/).
 
 Example Equation:
 

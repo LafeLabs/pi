@@ -1,10 +1,12 @@
 ## [../](../)
 
-#  Generic Web document
+#  [Generic Geometron Web document](https://github.com/LafeLabs/pi/blob/main/servers/page/README.md)
 
 This is a example of a generic format of markdown document, just about the simplest form of self-replicating document.  Edit with the "edit" link.  Format is the "[markdown](https://www.markdownguide.org/cheat-sheet/)" language.  
 
 To replace this page with any of the various types of server, click on a "copy" link below under the second list, then click the "replicator" link under the top list. This document is the "readme", which should be accessible on each type of server.  To fork down to a new page/server, use "[fork.html](fork.html)", create a new page, and repeat the replication process.  You can also use that to turn delete mode on and destroy any server.
+
+To create a new page like this on a web server without any Geometron, create a new file on the server called replicator.php, and copy the code in the [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt) into it, give it maximally permissive permissions, and point a browser to it to run it.  Click on the link.  You are now in Geometron.
 
 ## Links
 
