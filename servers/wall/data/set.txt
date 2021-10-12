@@ -1,14 +1,6 @@
 [
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/minimal/scrolls/home",
-        "name": "README.md"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/minimal/php/replicator.txt",
-        "name": "php/replicator.txt"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/minimal/php/replicator.txt",
-        "name": "replicator.php"
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/data/wall.txt",
+        "name": "data/wall.txt"
     }
 ]

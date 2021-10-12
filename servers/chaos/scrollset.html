@@ -8,79 +8,84 @@
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
-<body>    
-<a href = "index.html"><img src = "iconsymbols/home.svg" alt = "home"/></a>
-
-<table id = "buttontable">
+<body>
+<table id = "toptable">
     <tr>
-        <td class = "button" id = "herebutton">THIS SERVER</td>
-        <td class = "button" id ="importbutton">IMPORT</td>
-        <td class = "button" id = "resetbutton">RESET</td>
+        <td>
+            <a href = "index.html">
+                <img src = "iconsymbols/home.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "readme.html">
+                <img src = "iconsymbols/scroll.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "fork.html">
+                <img src = "iconsymbols/fork.svg"/>
+            </a>
+        </td>
     </tr>
 </table>
-    
-<table id = "inputtable">
+<table>
     <tr>
-        <td style = "text-align:right">SERVER:</td>
-        <td><input id = "serverinput"/></td>
+        <td style = "text-align:right">SOURCE SERVER:</td>
+        <td>
+            <input id = "sourceinput"/>
+        </td>
     </tr>
+    <tr>
+        <td style = "text-align:right">THIS SERVER HERE:</td>
+        <td>
+            <input id = "hereinput"/>
+        </td>
+    </tr>
+
 </table>
 
-    <textarea id = "textio"></textarea>
-    <h1>SCROLL SET REPLICATOR</h1>
-<a href = "scrollsetreplicator.php">scrollsetreplicator.php</a>
 
+<a href = "scrollsetreplicator.php" id = "fetchlink">
+(!)CLICK TO FETCH SET FROM SOURCE TO HERE(!)
+</a>
+
+<textarea id  = "textio"></textarea>
 <script>
 
-document.getElementById("serverinput").value = "";
+var localurl = window.location.href.split("scrollset.html")[0];
+document.getElementById("hereinput").value = localurl;
 
-scrollset0 = {
-    "server":"https://raw.githubusercontent.com/LafeLabs/chaos/main/",
-    "scrolls":[
-        "home",
-        "north",
-        "south"
-    ]
-};
-scrollset = JSON.parse(JSON.stringify(scrollset0));
-
-scrolls = [];
+scrollset = {};
 
 var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var localscrollset = JSON.parse(this.responseText);
-        scrollset.server = localscrollset.server;
+        scrollset = JSON.parse(this.responseText);
         if(scrollset.server.charAt(scrollset.server.length-1) != "/"){
             scrollset.server = scrollset.server + "/"; 
         }
-        document.getElementById("serverinput").value = scrollset.server;
+        document.getElementById("sourceinput").value = scrollset.server;
         var httpc9 = new XMLHttpRequest();
         httpc9.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
+
                 scrolls = JSON.parse(this.responseText);
                 scrollset.scrolls = scrolls;
                 document.getElementById("textio").value = JSON.stringify(scrollset.scrolls,null,"    ");
                 savejson();
+
             };
         }
         
         httpc9.open("GET", "dir.php?filename=scrolls", true);
         httpc9.send();
-
+        
     }
 };
 httpc.open("GET", "fileloader.php?filename=data/scrollset.txt", true);
 httpc.send();
 
-
-document.getElementById("importbutton").onclick = function(){
-    scrollset.scrolls = JSON.parse(document.getElementById("textio").value);
-    savejson();
-}
-
-
-document.getElementById("serverinput").onchange = function(){
+document.getElementById("sourceinput").onchange = function(){
     scrollset.server = this.value;
     if(scrollset.server.charAt(scrollset.server.length-1) != "/"){
         scrollset.server = scrollset.server + "/"; 
@@ -96,20 +101,6 @@ function savejson(){
     httpc2.send("data="+encodeURIComponent(JSON.stringify(scrollset,null,"    "))+"&filename=data/scrollset.txt");//send text to filesaver.php
 }
 
-
-document.getElementById("resetbutton").onclick = function(){
-    scrollset = JSON.parse(JSON.stringify(scrollset0));
-    document.getElementById("serverinput").value = scrollset.server;
-    document.getElementById("textio").value = JSON.stringify(scrollset.scrolls,null,"    ");
-    savejson();
-}
-
-document.getElementById("herebutton").onclick = function(){
-    var localurl = window.location.href.split("scrollset.html")[0];
-    scrollset.server = localurl;
-    document.getElementById("serverinput").value = scrollset.server;
-    savejson();
-}
 
 
 </script>
@@ -156,15 +147,13 @@ document.getElementById("herebutton").onclick = function(){
 body,div,textarea,input{
     font-family:courier;
     background-color:black;
-    color:#00ff00;
     font-size:24px;
     border-color:#00ff00;
+    color:#00ff00;
 }
 a{
     font-family:courier;
-    background-color:black;
     font-size:24px;
-    border-color:#00ff00;
     color:#ff2cb4;
 }
 

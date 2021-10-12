@@ -15,6 +15,7 @@ Just a text page, a screen you can write on which remembers.   Edit one at a tim
  - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
+ - [set replicator](set.html)
  - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)

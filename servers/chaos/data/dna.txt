@@ -13,8 +13,10 @@
     ],
     "javascript": [],
     "iconsymbols": [
+        "chaos.svg",
         "delete.svg",
         "edit.svg",
+        "fork.svg",
         "home.svg",
         "scroll.svg"
     ],

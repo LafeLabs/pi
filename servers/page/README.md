@@ -21,6 +21,7 @@ To create a new page like this on a web server without any Geometron, create a n
  - [dnagenerator.php](dnagenerator.php)
  - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
+ - [set replicator page](set.html)
  - [replicator.php](replicator.php)
 
 ## copy replicators to local replicator.php
