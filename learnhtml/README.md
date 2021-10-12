@@ -1,6 +1,6 @@
 ## [../](../)
 
-#  HTML
+#  [HTML](https://github.com/LafeLabs/pi/blob/main/learnhtml/README.md)
 
  [code server where you can edit an html file live(see the file by clicking on the link below)](codeserver/)
 
