@@ -1,0 +1,7 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/chaos/main/",
+    "scrolls": [
+        "foo",
+        "home"
+    ]
+}

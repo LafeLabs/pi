@@ -40,18 +40,75 @@
     
 </head>
 <body>    
+
 <div id = "scrollscroll"></div>
-<div id = "modebutton" class = "button">LIGHT<br>DARK</div>
-<div id = "hidebutton" class = "button"><span id  = "hideshow">SHOW</span><br>MENU</div>
-<div id = "margin">
-    <div id = "marginbutton">⇳⇳⇳⇳⇳⇳⇳⇳⇳⇳⇳</div>
-    <div id  = "scrollsbox">
-        <input id = "scrollinput"/>
-        <a id  = "scrolleditorlink" href = "scrolleditor.html">
-            <img style = "width:50px;display:block;margin:auto;padding-top:1em" src = "iconsymbols/edit.svg"/>
-        </a>
-    </div>
+
+<div id  = "scrollsbox">
+    <input id = "scrollinput"/>
 </div>
+<table id = "landscapelinks">
+    <tr>
+        <td>
+            <a id = "scrolleditorlink2" href = "scrolleditor.php">
+                <img src = "iconsymbols/edit.svg"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "scrollset.html">
+                <img src = "iconsymbols/chaos.svg"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "scrolldelete.html">
+                <img src = "iconsymbols/delete.svg"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "fork.html">
+                <img src = "iconsymbols/fork.svg"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td id = "modebutton" class= "button">
+            <img src = "iconsymbols/lightdark.svg"/>
+        </td>
+    </tr>
+</table>
+
+<table id = "portraitlinks">
+    <tr>
+        <td>
+            <a id ="scrolleditorlink" href = "scrolleditor.php">
+                <img src = "iconsymbols/edit.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "scrollset.html">
+                <img src = "iconsymbols/chaos.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "scrolldelete.html">
+                <img src = "iconsymbols/delete.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "fork.html">
+                <img src = "iconsymbols/fork.svg"/>
+            </a>
+        </td>
+        <td id = "modebutton" class= "button">
+            <img src = "iconsymbols/lightdark.svg"/>
+        </td>
+    </tr>
+</table>
 <div class = "data" id = "scrolldiv"><?php
     
 if(isset($_GET["scroll"])){
@@ -59,50 +116,26 @@ if(isset($_GET["scroll"])){
 }
 
 ?></div>
+
 <script>
 
-mode = "dark";
-//mode = "light";
-
-
 if(innerWidth > innerHeight){
-    menuhide = false;
-
-    document.getElementById("margin").style.left = (innerHeight).toString() + "px";
-    document.getElementById("scrollscroll").style.width = (innerHeight- 25).toString() + "px";
-    document.getElementById("scrollscroll").style.height = innerHeight.toString() + "px";    
+    
+    document.getElementById("scrollscroll").style.width = (innerHeight - 35).toString() + "px";
+    document.getElementById("scrollscroll").style.left = (0.5*(innerWidth - innerHeight) - 25).toString() + "px";    
+    document.getElementById("scrollsbox").style.width = (0.5*(innerHeight - innerWidth)).toString() + "px";
+    document.getElementById("scrollsbox").style.left = (innerHeight + 0.5*(innerWidth - innerHeight)).toString() + "px";    
 
 }
 else{
-    menuhide = true;
-    document.getElementById("scrollscroll").style.width = innerWidth.toString() + "px";
-
-    document.getElementById("scrollscroll").style.height = (innerHeight - 100).toString() + "px";        
-    document.getElementById("margin").style.display = "none";
-    document.getElementById("margin").style.height = (innerHeight - innerWidth - 150).toString() + "px";
-    document.getElementById("margin").style.bottom = "0px";
-    
+    document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
+    document.getElementById("scrollscroll").style.top = (0.5*(innerHeight - innerWidth)).toString() + "px";    
+    document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
+    document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";        
 }
 
-
-document.getElementById("hidebutton").onclick = function(){
-    menuhide = !menuhide;
-    if(menuhide){
-        document.getElementById("hideshow").innerHTML = "SHOW";
-        document.getElementById("margin").style.display = "none";
-        if(innerHeight > innerWidth){
-            document.getElementById("scrollscroll").style.height = (innerHeight - 100).toString() + "px";        
-        }
-    }
-    else{
-        document.getElementById("hideshow").innerHTML = "HIDE";
-        document.getElementById("margin").style.display = "block";
-        if(innerHeight > innerWidth){
-            document.getElementById("scrollscroll").style.height = (innerWidth + 150).toString() + "px";        
-        }
-    }
-}
-
+mode = "dark";
+//mode = "light";
 
 
 scroll = "";
@@ -114,6 +147,8 @@ converter.setOption('literalMidWordUnderscores', 'true');
 converter.setOption('tables', 'true')
     
 filename = "scrolls/home";
+
+//loadscroll("scrolls/home");
 
 if(document.getElementById("scrolldiv").innerHTML.length > 0){
     loadscroll(document.getElementById("scrolldiv").innerHTML);
@@ -136,6 +171,8 @@ function loadscroll(scrollname){
         localfile = false;
     }
     document.getElementById("scrolleditorlink").href = "scrolleditor.php?scroll=" + filename;
+    document.getElementById("scrolleditorlink2").href = "scrolleditor.php?scroll=" + filename;
+
 
     document.getElementById("scrollscroll").innerHTML = "";
     document.getElementById("scrollscroll").style.display = "block";
@@ -207,25 +244,24 @@ function modeswitch(){
     if(mode == "dark"){
         mode = "light";
         document.body.style.backgroundColor = "white";
-        document.getElementById("scrollscroll").style.backgroundColor = "white";
+        document.getElementById("scrollscroll").style.backgroundColor = "#f0f0f0";
         document.getElementById("scrollscroll").style.color = "black";
 
         document.getElementById("scrollinput").style.color = "black";
         document.getElementById("scrollinput").style.backgroundColor = "white";       
-        document.getElementById("scrollsbox").style.backgroundColor = "#e0e0ff";
+        document.getElementById("scrollsbox").style.backgroundColor = "white";
         document.getElementById("scrollsbox").style.color = "black";        
     }
     else{
         mode = "dark";
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "#404040";
         document.getElementById("scrollscroll").style.backgroundColor = "black";
         document.getElementById("scrollscroll").style.color = "#00ff00";    
-        document.getElementById("scrollinput").style.color = "#ff2cb4";
+        document.getElementById("scrollinput").style.color = "#303030";
         document.getElementById("scrollinput").style.backgroundColor = "black";              
   
-        document.getElementById("scrollsbox").style.backgroundColor = "#202060";
-        document.getElementById("scrollsbox").style.color = "#00ff00";          
-                
+        document.getElementById("scrollsbox").style.backgroundColor = "#303030";
+        document.getElementById("scrollsbox").style.color = "#00ff00";  
 
     }
 }
@@ -295,17 +331,15 @@ input{
 }
 
 #scrollscroll{
+    
     padding-left:1em;
     padding-right:1em;
-    left:0px;
-    top:0px;
     position:absolute;
     overflow:scroll;
     background-color:black;
     color:#00ff00;
     font-size:2em;
     display:none;
-    z-index:-3;
 }
 #scrollscroll a{
     color:#ff2cb4;
@@ -322,83 +356,66 @@ input{
 h1,h2,h3,h4{
     text-align:center;
 }
-#modebutton{
-    position:absolute;
-    background-color:white;
-    color:black;
-    cursor:pointer;
-    border:solid;
-    border-radius:5px;
-    text-align:center;
-}
-#hidebutton{
-    position:absolute;
-    background-color:white;
-    color:black;
-    cursor:pointer;
-    border:solid;
-    border-radius:5px;
-    text-align:center;
-}
 .button:hover{
     background-color:green;
 }
 .button:active{
     background-color:yellow;
 }
-#margin{
-    position:absolute;
-    right:0px;
-    bottom:0px;
-    z-index:-1;
-    overflow:hidden;
-    background:#404040;
-    font-size:1.2em;
-}
 #scrollsbox{
     position:absolute;
-    left:0px;
-    top:0px;
-    bottom:0px;
-    right:0px;
-    background-color:#e0e0ff;
+    background-color:#808080;
     color:black;
     overflow:scroll;
 }
 
 
 @media only screen and (orientation: landscape) {
-    #margin{
+    
+    #scrollsbox{
+        right:0px;
+        top:0px;
+        bottom:0px;
+    }
+    #scrollscroll{
+        top:0px;
+        bottom:0px;
+    }   
+    #landscapelinks{
+        display:block;
+        position:absolute;
+        left:0px;
         top:0px;
     }
-    #modebutton{
-        right:5px;
-        top:5px;
-    }
-    #hidebutton{
+    #portraitlinks{
         display:none;
     }
+    
 }
 
 @media only screen and (orientation: portrait) {
-    #modebutton{
-        right:0px;
-        bottom:0px;
-    }
-    #margin{
-        bottom:0px;
-        left:0px;
-    }
-    #margin img{
-        width:50px;
-    }
-    #hidebutton{
-        left:0px;
-        bottom:0px;
-    }
     .button{
         font-size:2em;
     }
+    #scrollsbox{
+        right:0px;
+        left:0px;
+        bottom:0px;
+    }
+    #scrollscroll{
+        left:0px;
+        right:0px;
+    }   
+    #landscapelinks{
+        display:none;
+    }
+    #portraitlinks{
+        display:block;
+        position:absolute;
+        left:0px;
+        top:0px;
+    }
+
 }
 </style>
 </body>

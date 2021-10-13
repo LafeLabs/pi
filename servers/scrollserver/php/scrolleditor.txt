@@ -34,9 +34,6 @@
 <div id = "feedscroll">
     <div id = "modebutton" class = "button">DARK MODE</div>
     <a id = "userlink" href = "user.php?scroll=scrolls/home">
-        <img src = "iconsymbols/scroll.svg"/>
-    </a>
-    <a href = "index.html">
         <img src = "iconsymbols/home.svg"/>
     </a>
     <a href = "scrolldelete.html">

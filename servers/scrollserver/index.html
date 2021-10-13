@@ -49,7 +49,7 @@
 <table id = "landscapelinks">
     <tr>
         <td>
-            <a href = "scrolleditor.php">
+            <a  id ="scrolleditorlink2" href = "scrolleditor.php">
                 <img src = "iconsymbols/edit.svg"/>
             </a>
         </td>
@@ -121,10 +121,10 @@ if(innerWidth > innerHeight){
 
 }
 else{
-    document.getElementById("scrollscroll").style.width = (innerHeight).toString() + "px";
-    document.getElementById("scrollscroll").style.left = (0.5*(innerHeight - innerWidth)).toString() + "px";    
-    document.getElementById("scrollsbox").style.width = (0.5*(innerHeight - innerWidth)).toString() + "px";
-    document.getElementById("scrollsbox").style.left = (innerHeight + 0.5*(innerHeight - innerWidth)).toString() + "px";    
+    document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
+    document.getElementById("scrollscroll").style.top = (0.5*(innerHeight - innerWidth)).toString() + "px";    
+    document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
+    document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";    
 }
 
 mode = "dark";
@@ -155,6 +155,7 @@ function loadscroll(scrollname){
         localfile = false;
     }
     document.getElementById("scrolleditorlink").href = "scrolleditor.php?scroll=" + filename;
+    document.getElementById("scrolleditorlink2").href = "scrolleditor.php?scroll=" + filename;    
 
     document.getElementById("scrollscroll").innerHTML = "";
     document.getElementById("scrollscroll").style.display = "block";
@@ -236,7 +237,7 @@ function modeswitch(){
     }
     else{
         mode = "dark";
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "#404040";
         document.getElementById("scrollscroll").style.backgroundColor = "black";
         document.getElementById("scrollscroll").style.color = "#00ff00";    
         document.getElementById("scrollinput").style.color = "#303030";

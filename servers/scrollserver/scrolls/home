@@ -15,8 +15,10 @@ Create, replicate, edit and delete "scroll" documents, which are in the [Markdow
  - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
+ - [scroll set replicator](scrollset.html)
+ - [set replicator](set.html)
  - [replicator.php](replicator.php)
 
 ## copy replicators to local replicator.php
