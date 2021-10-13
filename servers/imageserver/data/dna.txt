@@ -2,6 +2,7 @@
     "html": [
         "README.md",
         "fork.html",
+        "imageset.html",
         "index.html",
         "qrcode.html",
         "readme.html",
@@ -10,6 +11,7 @@
     ],
     "data": [
         "dna.txt",
+        "imageset.txt",
         "set.txt"
     ],
     "iconsymbols": [
@@ -29,6 +31,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "imagesetreplicator.txt",
         "ipaddress.txt",
         "mkdir.txt",
         "rdelete.txt",
