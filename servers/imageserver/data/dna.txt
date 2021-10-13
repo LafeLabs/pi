@@ -13,13 +13,16 @@
         "set.txt"
     ],
     "iconsymbols": [
+        "chaos.svg",
         "delete.svg",
         "edit.svg",
+        "fork.svg",
         "home.svg",
         "lightdark.svg",
         "scroll.svg"
     ],
     "php": [
+        "copy.txt",
         "deletefile.txt",
         "dir.txt",
         "dnagenerator.txt",

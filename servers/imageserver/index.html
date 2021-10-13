@@ -17,7 +17,7 @@
     
     -->
     
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/wAAAAD//wAA/wAAAAD/AP8A/wAApv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFUAAARGAAIxFVUABEYAAjMRFQAARGYiIjMRAABERmZiIzEAAARERGZiMwAAAARERGYiAAAAAABERiL4PwAA+78AAPu/AAD33wAA9V8AAPVfAAD1XwAA998AAOADAADhAAAA4AAAAPAAAADwAAAA+AAAAP4AAAD/wAAA" rel="icon" type="image/x-icon" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
     
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
@@ -25,24 +25,20 @@
 <body>
 <table id = "linktable">
     <tr>
-        <td id = "help">?</td>
         <td>
-            <a href = "readme.html">README</a>
+            <a href = "readme.html">
+                <img src = "iconsymbols/scroll.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "fork.html">
+                <img src = "iconsymbols/fork.svg"/>
+            </a>
         </td>
     </tr>    
 </table>    
-<div id = "header">
-        
-    <h1>Local Image Feed</h1>
-    
-    <p>
-        Upload images to local server(this generally breaks on global web pages). Images that are too large in megabytes are rejected and should be shrunk.  Red "X" deletes an image. Use this for private local art.
-    </p>
-    
-</div>    
-
 <div id = "imagefeedheader">
-    <form style = "margin-top:10px" id = "uploadform" action="upload.php" method="post" enctype="multipart/form-data">
+    <form id = "uploadform" action="upload.php" method="post" enctype="multipart/form-data">
                 <span id ="uploadspan">UPLOAD:</span>
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit" id ="submitinput">
@@ -50,6 +46,7 @@
 </div>
     
 <div id = "imagefeed"></div>
+
 <script>
 
 uploadImages = [];
@@ -95,30 +92,20 @@ function loadimagefeed(){
     }    
 }
 
-document.getElementById("help").onmouseover = function(){
-    document.getElementById("header").style.display = "block";
-}
-document.getElementById("help").onmouseout = function(){
-    document.getElementById("header").style.display = "none";
-}
-
 
 </script>
 <style>
 #fileToUpload,#submitinput,#uploadspan{
     font-size:2em;
 }
+#fileToUpload,#submitinput{
+    cursor:pointer;
+}
+
 body{
     overflow:hidden;
     font-size:1em;
-    font-family:courier;
-    color:#00ff00;
-    background-color:black;
-}
-a{
-    color:black;
-    background-color:#00c000;
-    font-family:courier;
+    background-color:#808080;
 }
 h1{
     text-align:center;
@@ -126,33 +113,15 @@ h1{
 #linktable{
     position:absolute;
     top:0px;
-    left:0px;
     right:0px;
-    width:100%;
-}
-#linktable td{
-    text-align:center;
-    font-size:2em;
-    font-family:courier;
-    background-color:black;
-}
-#header{
-    display:none;
-    position:absolute;
-    z-index:2;
-    top:3em;
-    bottom:60%;
-    background-color:black;
 }
 #imagefeedheader{
     position:absolute;
     left:0px;
-    right:0px;
-    top:3em;
-    height:7em;
-    border-bottom:solid;
-    border-color:#00ff00;
-    overflow:scroll;
+    top:0px;
+    padding-top:1em;
+    padding-left:1em;
+    height:8em;
 }
 #imagefeed{
     position:absolute;
@@ -161,7 +130,6 @@ h1{
     right:0px;
     bottom:0px;
     overflow:scroll;
-    background-color:black;
 }
 .uploadimage{
     max-width:50%;
