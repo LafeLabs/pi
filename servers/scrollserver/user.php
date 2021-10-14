@@ -48,28 +48,28 @@
 </div>
 <table id = "landscapelinks">
     <tr>
-        <td>
+        <td class = "editlinks">
             <a id = "scrolleditorlink2" href = "scrolleditor.php">
                 <img src = "iconsymbols/edit.svg"/>
             </a>
         </td>
     </tr>
     <tr>
-        <td>
+        <td class = "editlinks">
             <a href = "scrollset.html">
                 <img src = "iconsymbols/chaos.svg"/>
             </a>
         </td>
     </tr>
     <tr>
-        <td>
+        <td class = "editlinks">
             <a href = "scrolldelete.html">
                 <img src = "iconsymbols/delete.svg"/>
             </a>
         </td>
     </tr>
     <tr>
-        <td>
+        <td class = "editlinks">
             <a href = "fork.html">
                 <img src = "iconsymbols/fork.svg"/>
             </a>
@@ -84,7 +84,7 @@
 
 <table id = "portraitlinks">
     <tr>
-        <td>
+        <td class = "editlinks">
             <a id ="scrolleditorlink" href = "scrolleditor.php">
                 <img src = "iconsymbols/edit.svg"/>
             </a>
@@ -94,17 +94,17 @@
                 <img src = "iconsymbols/chaos.svg"/>
             </a>
         </td>
-        <td>
+        <td class = "editlinks">
             <a href = "scrolldelete.html">
                 <img src = "iconsymbols/delete.svg"/>
             </a>
         </td>
-        <td>
+        <td class = "editlinks">
             <a href = "fork.html">
                 <img src = "iconsymbols/fork.svg"/>
             </a>
         </td>
-        <td id = "modebutton" class= "button">
+        <td id = "modebutton2" class= "button">
             <img src = "iconsymbols/lightdark.svg"/>
         </td>
     </tr>
@@ -129,7 +129,7 @@ if(innerWidth > innerHeight){
 }
 else{
     document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
-    document.getElementById("scrollscroll").style.top = (0.5*(innerHeight - innerWidth)).toString() + "px";    
+    document.getElementById("scrollscroll").style.top = (120).toString() + "px";    
     document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
     document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";        
 }
@@ -236,6 +236,10 @@ function convertscrollinks(){
 }
 
 document.getElementById("modebutton").onclick = function(){
+    modeswitch();
+}
+
+document.getElementById("modebutton2").onclick = function(){
     modeswitch();
 }
 
