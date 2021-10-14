@@ -30,7 +30,7 @@
     <a href = "scrolldelete.html">
         <img src = "iconsymbols/delete.svg"/>
     </a>
-    <div id = "modebutton" class = "button">DARK MODE</div>
+    <img id = "modebutton" class = "button" src= "iconsymbols/lightdark.svg"/>
 
 <div id = "feedscroll">
     <table>
@@ -330,16 +330,18 @@ modeswitch();
 function modeswitch(){
     if(mode == "dark"){
         mode = "light";
-        document.getElementById("modebutton").innerHTML = "DARK MODE";
         document.getElementById("maintextarea").style.backgroundColor = "#e0e0e0";
         document.getElementById("maintextarea").style.color = "black";
         document.body.style.backgroundColor = "white";
+        document.getElementById("newscrollinput").style.color = "black";
+        document.getElementById("newscrollinput").style.backgroundColor = "white";
     }
     else{
         mode = "dark";
-        document.getElementById("modebutton").innerHTML = "LIGHT MODE";
         document.getElementById("maintextarea").style.backgroundColor = "black";
-        document.getElementById("maintextarea").style.color = "#00ff00";        
+        document.getElementById("maintextarea").style.color = "#00ff00";
+        document.getElementById("newscrollinput").style.color = "#00ff00";
+        document.getElementById("newscrollinput").style.backgroundColor = "black";
         document.body.style.backgroundColor = "#808080";
     }
 }
@@ -362,13 +364,7 @@ body{
     display:none;
 }
 #modebutton{
-    display:none;
-    
-    position:absolute;
-    right:5px;
-    top:1em;
-    border:solid;
-    border-radius:5px;
+
 }
 
 #maintextarea{
