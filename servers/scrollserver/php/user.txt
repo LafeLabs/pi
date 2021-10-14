@@ -273,6 +273,14 @@ var httpc9 = new XMLHttpRequest();
 httpc9.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         scrolls = JSON.parse(this.responseText);
+        var newscrollbutton = document.createElement("P");
+        newscrollbutton.className = "boxlink";
+        newscrollbutton.innerHTML = "README.md";
+        document.getElementById("scrollsbox").appendChild(newscrollbutton);
+        newscrollbutton.onclick = function(){
+            currentFile = this.innerHTML;
+                loadscroll(currentFile);
+        }           
         for(var index = 0;index < scrolls.length;index++) {
             var newscrollbutton = document.createElement("P");
             newscrollbutton.className = "boxlink";

@@ -10,43 +10,36 @@
             <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
 
-<!--       un comment to use math
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script>
-            MathJax.Hub.Config({
-                tex2jax: {
-                inlineMath: [['$','$'], ['\\(','\\)']],
-                processEscapes: true,
-                processClass: "mathjax",
-                ignoreClass: "no-mathjax"
-                }
-            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
-        </script>
-    -->
-
 
 
     </head>
 <body>
+<div id = "prototype">
+# name
+ 
+ double line break for paragraph break, *italic*, **bold**, [link](index.html). 
+ 
+ ![image alt text](iconsymbols/chaos.svg)
+ 
+</div>
     
 <textarea id = "maintextarea"></textarea>
-<div id = "feedscroll">
-    <div id = "modebutton" class = "button">DARK MODE</div>
     <a id = "userlink" href = "user.php?scroll=scrolls/home">
         <img src = "iconsymbols/home.svg"/>
     </a>
     <a href = "scrolldelete.html">
         <img src = "iconsymbols/delete.svg"/>
     </a>
+    <div id = "modebutton" class = "button">DARK MODE</div>
 
+<div id = "feedscroll">
     <table>
         <tr>
-            <td>Currentfile:</td>
+            <td>Current:</td>
             <td id = "currentfilename"></td>
         </tr>
         <tr>
-            <td>New Scroll Name:</td>
+            <td>New:</td>
             <td><input id = "newscrollinput"/></td>
         </tr>
     </table>
@@ -68,6 +61,32 @@ if(isset($_GET["from"])){
 ?></div>
 
 <script>
+
+scrollprototype = document.getElementById("prototype").innerHTML;
+
+
+if(innerWidth > innerHeight){
+    
+    document.getElementById("maintextarea").style.width = (innerHeight - 50).toString() + "px";
+    document.getElementById("maintextarea").style.left = (0.5*(innerWidth - innerHeight) + 25).toString() + "px";    
+    document.getElementById("maintextarea").style.top = (25).toString() + "px";        
+    document.getElementById("maintextarea").style.height = (innerHeight - 100).toString() + "px";        
+    
+    document.getElementById("feedscroll").style.width = (0.5*(innerWidth - innerHeight)-10).toString() + "px";
+    document.getElementById("feedscroll").style.height = (innerHeight - 100).toString() + "px";    
+
+
+}
+else{
+    
+    document.getElementById("maintextarea").style.width = (innerWidth - 100).toString() + "px";
+    document.getElementById("maintextarea").style.top = (120).toString() + "px";        
+    document.getElementById("maintextarea").style.height = (innerWidth).toString() + "px";        
+
+    document.getElementById("feedscroll").style.height = (innerHeight - innerWidth - 150).toString() + "px";    
+    
+}
+
 currentfile = "";
 scroll = "";
 rawhtml = "";
@@ -247,20 +266,55 @@ if (this.readyState == 4 && this.status == 200) {
 httpc8.open("GET", "dir.php?filename=scrolls", true);
 httpc8.send();
 
+name = "";
 
 document.getElementById("newscrollinput").onchange = function(){
+    name = this.value;
     currentfile = "scrolls/" + this.value;
-    document.getElementById("currentfilename").innerHTML = currentfile;       
+    document.getElementById("currentfilename").innerHTML = currentfile; 
+    document.getElementById("userlink").href = "user.php?scroll=" + currentfile;
     var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             scroll = this.responseText;
+            if(scroll.length == 0){
+                scroll = scrollprototype;
+                scroll = scroll.replace(/name/g,name);
+                data = encodeURIComponent(scroll);
+                var httpc = new XMLHttpRequest();
+                var url = "filesaver.php";        
+                httpc.open("POST", url, true);
+                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc.send("data="+data+"&filename=" + currentfile);//send text to filesaver.php
+                
+            }
             document.getElementById("maintextarea").value = scroll; 
             document.getElementById("currentfilename").innerHTML = currentfile;
         }
     };
     httpc.open("GET", "fileloader.php?filename=" + currentfile, true);
     httpc.send();
+    
+    var newscrollbutton = document.createElement("div");
+    newscrollbutton.className = "scrollbutton";
+    newscrollbutton.innerHTML = currentfile;
+    document.getElementById("feedscroll").appendChild(newscrollbutton);
+    newscrollbutton.onclick = function(){
+        document.getElementById("newscrollinput").value = "";
+        currentfile = this.innerHTML;
+        //console.log(scrollname);
+        document.getElementById("currentfilename").innerHTML = currentfile;       
+        document.getElementById("userlink").href = "user.php?scroll=" + currentfile;
+        var httpc = new XMLHttpRequest();
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                scroll = this.responseText;
+                document.getElementById("maintextarea").value = scroll;  
+            }
+        };
+        httpc.open("GET", "fileloader.php?filename=" + currentfile, true);
+        httpc.send();
+    }
 }
 
 
@@ -271,6 +325,8 @@ document.getElementById("modebutton").onclick = function(){
 }
 
 modeswitch();
+modeswitch();
+
 function modeswitch(){
     if(mode == "dark"){
         mode = "light";
@@ -291,7 +347,9 @@ function modeswitch(){
 
 </script>
 <style>
-
+#prototype{
+    display:none;
+}
 body{
     overflow:hidden;
 }
@@ -315,14 +373,9 @@ body{
 
 #maintextarea{
     position:absolute;
-    left:0px;
-    top:0px;
-    width:65%;
-    height:100%;
     padding-left:1em;
     padding-top:1em;
     background-color:black;
-    color:#00ff00;
     font-family:"Times New Roman", Times, serif;
     font-size:1.5em;
     overflow:scroll;
@@ -330,12 +383,9 @@ body{
 #feedscroll{
     padding-top:1em;
     position:absolute;
-    right:0px;
-    bottom:0px;
-    top:0px;
-    width:30%;
     overflow:scroll;
     font-size:1.5em;
+    padding-left:1em;
 }
 .button{
     cursor:pointer;
@@ -346,38 +396,29 @@ body{
 .button:active{
     background-color:yellow;
 }
-@media only screen and (max-width: 1000px) {
-    #maintextarea{
-        position:absolute;
-        left:5%;
-        top:30%;
-        width:95%;
-        bottom:10px;
-        padding-left:1em;
-        padding-top:1em;
-        background-color:black;
-        color:#00ff00;
-        font-size:1em;
-        overflow:scroll;
-    }
+
+@media only screen and (orientation: landscape) {
+    
     #feedscroll{
-        position:absolute;
-        top:0px;
-        left:50px;
         right:0px;
-        width:100%;
-        bottom:73%;
-        overflow:scroll;
-        font-size:1.5em;
+        top:50px;
     }
 
+
 }
+
 @media only screen and (orientation: portrait) {
-    #maintextarea{
-        font-size:2em;
-    }
-}
 
+    #feedscroll{
+        right:0px;
+        left:0px;
+        bottom:0px;
+    }
+    #maintextarea{
+        left:40px;
+    }
+
+}
         </style>
     </body>
 </html>

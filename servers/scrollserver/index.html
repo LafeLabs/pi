@@ -257,6 +257,14 @@ var httpc9 = new XMLHttpRequest();
 httpc9.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         scrolls = JSON.parse(this.responseText);
+        var newscrollbutton = document.createElement("P");
+        newscrollbutton.className = "boxlink";
+        newscrollbutton.innerHTML = "README.md";
+        document.getElementById("scrollsbox").appendChild(newscrollbutton);
+        newscrollbutton.onclick = function(){
+            currentFile = this.innerHTML;
+                loadscroll(currentFile);
+        }        
         for(var index = 0;index < scrolls.length;index++) {
             var newscrollbutton = document.createElement("P");
             newscrollbutton.className = "boxlink";
@@ -267,6 +275,8 @@ httpc9.onreadystatechange = function() {
                 loadscroll(currentFile);
             }
         }
+        
+        
     };
 }
 
@@ -374,7 +384,7 @@ h1,h2,h3,h4{
     #portraitlinks{
         display:none;
     }
-    
+
 }
 
 @media only screen and (orientation: portrait) {
@@ -399,7 +409,9 @@ h1,h2,h3,h4{
         left:0px;
         top:0px;
     }
-
+    table img{
+        max-width:80px;
+    }
 }
 </style>
 </body>
