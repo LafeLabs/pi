@@ -325,6 +325,7 @@ input{
 .boxlink{
     padding-left:1em;
     cursor:pointer;
+    color:#ff2cb4;
 }
 .boxlink:hover{
     background-color:#808080;

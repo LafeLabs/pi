@@ -46,6 +46,7 @@
         "home.svg",
         "lightdark.svg",
         "scroll.svg",
+        "uplink.svg",
         "www.svg"
     ]
 }
