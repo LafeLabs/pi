@@ -22,7 +22,7 @@ $$
  - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt)
  - [set replicator page](set.html)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
