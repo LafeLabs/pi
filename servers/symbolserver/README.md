@@ -16,7 +16,8 @@ Create, edit, replicate and delete symbols using the Geometron language.  For de
  - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [symbol set replicator](symbolset.html)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
 
