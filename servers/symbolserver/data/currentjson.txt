@@ -1,10 +1,10 @@
 {
-    "glyph": "0227,",
-    "x0": 50,
-    "y0": 50,
-    "unit": 41.81818181818181,
-    "width": 100,
-    "height": 100,
+    "glyph": "0337,",
+    "x0": 200,
+    "y0": 200,
+    "unit": 50,
+    "width": 400,
+    "height": 400,
     "style": {
         "color0": "black",
         "fill0": "black",
