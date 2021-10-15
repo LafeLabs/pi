@@ -129,7 +129,7 @@ if(innerWidth > innerHeight){
 }
 else{
     document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
-    document.getElementById("scrollscroll").style.top = (120).toString() + "px";    
+    document.getElementById("scrollscroll").style.top = (100).toString() + "px";    
     document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
     document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";        
 }
@@ -411,13 +411,16 @@ h1,h2,h3,h4{
         font-size:2em;
     }
     #scrollsbox{
+        height:200px;
         right:0px;
         left:0px;
         bottom:0px;
     }
     #scrollscroll{
+        top:90px;
         left:0px;
         right:0px;
+        bottom:200px;
     }   
     #landscapelinks{
         display:none;
@@ -427,6 +430,9 @@ h1,h2,h3,h4{
         position:absolute;
         left:0px;
         top:0px;
+    }
+    table img{
+        max-width:80px;
     }
 
 }
