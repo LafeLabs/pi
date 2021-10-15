@@ -1,10 +1,12 @@
 {
     "server": "http://localhost/",
     "code": [
-        "hello.py",
+        "doubler.html",
+        "hello.html",
         "index.html",
-        "plot1.py",
+        "input.html",
+        "sketch.html",
         "sketch.js",
-        "slimezistor.ino"
+        "table.html"
     ]
 }
