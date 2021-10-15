@@ -16,7 +16,8 @@
         "shapestacksymbols.html",
         "styleeditor.html",
         "symbolfeed.html",
-        "symboljson.html"
+        "symboljson.html",
+        "symbolset.html"
     ],
     "javascript": [
         "geometron.js",
@@ -30,6 +31,7 @@
         "dna.txt",
         "hypercube.txt",
         "set.txt",
+        "symbolset.txt",
         "textfeed.txt"
     ],
     "php": [
@@ -47,11 +49,11 @@
         "removephp.txt",
         "replicator.txt",
         "setreplicator.txt",
+        "symbolsetreplicator.txt",
         "text2php.txt",
         "uploadsymbol.txt",
         "user.txt"
     ],
-    "maps": [],
     "iconsymbols": [
         "abcfont.svg",
         "abcfontsymbol.svg",

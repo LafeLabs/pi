@@ -13,7 +13,6 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
-mkdir("maps");
 mkdir("jscode");
 mkdir("iconsymbols");
 mkdir("symbolfeed");
@@ -52,9 +51,6 @@ foreach($dna->php as $value){
 
 }
 
-foreach($dna->maps as $value){
-    copy($baseurl."maps/".$value,"maps/".$value);
-}
 
 
 ?>
