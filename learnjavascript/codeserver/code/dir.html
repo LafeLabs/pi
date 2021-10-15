@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<title>dir.html</title>
+</head>
+<body>
+    <a href = "index.html">index.html</a>
+    <textarea id = "textio"></textarea>
+    <script>
+    directories = [];
+    var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            directories = JSON.parse(this.responseText);
+            document.getElementById("textio").value = JSON.stringify(directories,null,"   ");
+        }
+    };
+
+    httpc2.open("GET", "dir.php?type=dir", true);
+    httpc2.send();
+
+    </script>
+    <style>
+    a{
+        font-size:3em;
+        display:block;
+    }
+        #textio{
+            width:50%;
+            height:40em;
+        }
+    </style>
+</body>
+</html>

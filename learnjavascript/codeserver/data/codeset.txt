@@ -1,12 +1,17 @@
 {
     "server": "http://localhost/",
     "code": [
+        "dir.html",
+        "dir.php",
         "doubler.html",
+        "fileloader.php",
+        "filesaver.php",
         "hello.html",
         "index.html",
         "input.html",
         "sketch.html",
         "sketch.js",
-        "table.html"
+        "table.html",
+        "wall.html"
     ]
 }
