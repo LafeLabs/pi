@@ -1,8 +1,8 @@
 ## [../](../)
 
-# [HOME](index.html)
+#  Scroll Server
 
-#  Scroll Server README.md
+Create, replicate, edit and delete "scroll" documents, which are in the [Markdown language](https://www.markdownguide.org/cheat-sheet/).  
 
 ## Links
 
@@ -11,13 +11,15 @@
  - [http://localhost/](http://localhost/)
  - [../](../)
  - [fork.html](fork.html)
+ - [user.php](user.php)
+ - [index.html](index.html)
  - [readme.html](readme.html)
- - [home](index.html)
  - [editor.php](editor.php)
  - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
+ - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)
- - [set replicator page](set.html)
+ - [scroll set replicator](scrollset.html)
+ - [set replicator](set.html)
  - [replicator.php](replicator.php)
 
 ## copy replicators to local replicator.php
@@ -51,4 +53,3 @@
  - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
  - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
  - [classifieds server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt)
-
