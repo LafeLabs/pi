@@ -4,6 +4,7 @@
         "fork.html",
         "index.html",
         "mapdelete.html",
+        "mapset.html",
         "qrcode.html",
         "readme.html",
         "scrolleditor.html",
@@ -14,6 +15,7 @@
     ],
     "data": [
         "dna.txt",
+        "mapset.txt",
         "set.txt",
         "textfeed.txt"
     ],
@@ -26,6 +28,7 @@
         "filesaver.txt",
         "ipaddress.txt",
         "mapeditor.txt",
+        "mapsetreplicator.txt",
         "mkdir.txt",
         "rdelete.txt",
         "removephp.txt",
