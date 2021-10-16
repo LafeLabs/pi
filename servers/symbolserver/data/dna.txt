@@ -35,6 +35,7 @@
         "textfeed.txt"
     ],
     "php": [
+        "copy.txt",
         "deletefile.txt",
         "dir.txt",
         "dnagenerator.txt",

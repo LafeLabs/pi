@@ -16,6 +16,7 @@
         "set.txt"
     ],
     "php": [
+        "copy.txt",
         "deletefile.txt",
         "dir.txt",
         "dnagenerator.txt",
@@ -35,6 +36,7 @@
         "user.txt"
     ],
     "scrolls": [
+        "faq",
         "foo",
         "home"
     ],
