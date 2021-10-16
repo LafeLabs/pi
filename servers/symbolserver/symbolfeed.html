@@ -12,16 +12,15 @@
 <body>    
 
 <div id = "margin">
-<div id = "linkdiv">
-    <img id = "rawimg"/>
 <a href = "index.html" style = "font-size:3em">
     <img src = "iconsymbols/home.svg"/>
 </a>
 <a href = "symbolset.html" style = "font-size:3em">
     <img src = "iconsymbols/chaos.svg"/>
 </a>
-
-</div>
+    <canvas id= "maincanvas"></canvas>
+    <input id = "rawinput"/>
+    <img id = "mainimage"/>
 </div>
 <div id = "symbolscroll">
 <form id = "uploadform"  action="uploadsymbol.php" method="post" enctype="multipart/form-data">
@@ -52,10 +51,12 @@ httpc4.onreadystatechange = function() {
             newimg.classList.add("feedimage");
             document.getElementById("symbolscroll").appendChild(newp);
             newp.appendChild(newimg);
+            
             newimg.onclick = function() {
                 var localurl = "symbolfeed" + this.src.split("symbolfeed")[1];
                 loadsymbol(localurl);
-            }
+            }                
+
         
             var newlabel = document.createElement("P");
             newlabel.className = "typelabel";
@@ -132,8 +133,12 @@ function loadsymbol(thisurl){
         };
         httpc2.open("GET", "fileloader.php?filename=" + imageurl, true);
         httpc2.send();
-
     }
+    if(thisurl.substr(-4) == ".png"){
+        imagename = thisurl.split("symbolfeed/")[1];
+        imageurl = "symbolfeed/" + imagename;
+        document.getElementById("mainimage").src = imageurl;
+    }    
 }
 
 
@@ -171,8 +176,42 @@ function savecube(){
     httpc.send("data="+encodeURIComponent(hypercubestring)+"&filename=data/hypercube.txt");//send text to filesaver.php    
 }
 
+
+document.getElementById("rawinput").value = "";
+document.getElementById("mainimage").onload = function() {
+    canvas = document.getElementById("maincanvas");
+    ctx = canvas.getContext("2d");
+    canvas.width = this.width;
+    canvas.height = this.height;
+    img = document.getElementById("mainimage");
+    img.crossOrigin = 'Anonymous';
+  
+    ctx.drawImage(img, 0,0,this.width,this.height);
+    document.getElementById("rawinput").value = canvas.toDataURL();
+//    foo = canvas.toDataURL('image/jpeg', 0.1);
+    
+};
+
 </script>
 <style>
+#maincanvas{
+    width:10px;
+    height:10px;
+    display:none;
+}
+#mainimage{
+    border:solid;
+    position:absolute;
+    right:0px;
+    top:22px;
+}
+#rawinput{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height:20px;
+    font-size:18px;
+}
 #margin{
     position:absolute;
     bottom:85%;
@@ -228,12 +267,6 @@ p img{
 }
 input{
     width:20em;
-}
-#rawimg{
-    position:absolute;
-    right:0px;
-    top:0px;
-    width:100px;
 }
 .typelabel{
     text-align:center;
