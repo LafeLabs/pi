@@ -1,5 +1,5 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/codeserver/data/codeset.txt/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/codeserver/",
     "code": [
         "aspectratio.css",
         "body.css",

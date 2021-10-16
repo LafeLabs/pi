@@ -74,6 +74,8 @@ Numbered lists use numbers with periods, followed by spaces
 
 `*italic*` and `**bold**`
 
+***both bold and italic***
+
 Images are inserted with the format `![optional alt text](image url)`.  An image link inserts the image inside where the text would normally go in a link: `[![](image url)](link url)`
 
 ## Actions for learning Markdown:

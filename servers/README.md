@@ -9,16 +9,16 @@ This is the model.  Within this model we have built a variety of prototype serve
 ##  Server Types:
 
  - [page like this](page/)
- - [math pages(typeset math, optional)](mathpage/)
+ - [math pages(typeset math equations)](mathpage/)
+ - [scroll server](scrollserver/)
  - [wall](wall/)
+ - [image server](imageserver/)
+ - [map server](mapserver/)
+ - [symbol server](symbolserver/)
  - [code server](codeserver/)
  - [board server](boardserver/)
  - [CHAOS scroll server](chaos/)
  - [full geometron server](geometron/)
- - [image server](imageserver/)
- - [map server](mapserver/)
- - [symbol server](symbolserver/)
- - [scroll server](scrollserver/)
  - [trash robot icon server](iconserver/)
  - [classifieds server](classifieds/)
 

@@ -1,5 +1,5 @@
 {
-    "server": "http://localhost/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnjavascript/codeserver/",
     "code": [
         "dir.html",
         "dir.php",

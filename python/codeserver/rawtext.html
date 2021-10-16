@@ -22,10 +22,8 @@ https://cloud9-sdk.readme.io/docs/language-mode
 -->    
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-<title>Code Server</title>
-
+<title>Geometron Text Only Code Server</title>
 </head>
 <body>
 <table id = "linktable">
@@ -39,27 +37,11 @@ https://cloud9-sdk.readme.io/docs/language-mode
             </a>
         </td>
         <td>
-            <a href = "code/">
-                <img src = "iconsymbols/www.svg"/>
-            </a>
-        </td>
-        <td>
-            <a href = "fork.html">
-                <img alt = "fork" src = "iconsymbols/fork.svg"/>
-            </a>
-        </td>
-        <td>
-            <a href = "codeset.html">
-                <img alt = "chaos" src = "iconsymbols/chaos.svg"/>
-            </a>
-        </td>
-        
-        <td>
             <a href = "readme.html">
                 <img src = "iconsymbols/scroll.svg"/>
             </a>
         </td>
-        <td id = "qrcode"></td>
+
     </tr>
 </table>
 
@@ -81,8 +63,7 @@ https://cloud9-sdk.readme.io/docs/language-mode
     </tr>
 </table>
 
-<div id="maineditor" contenteditable="true" spellcheck="false"></div>
-
+<textarea id="maineditor"></textarea>
 
 <div id = "filescroll">
 
@@ -90,27 +71,17 @@ https://cloud9-sdk.readme.io/docs/language-mode
 
 <script>
 
+document.getElementById("maineditor").style.top = "100px";
+document.getElementById("maineditor").style.height = (innerHeight - 150).toString() + "px";
+
 prototypescroll = "name";
-arduinoprototype = "//name\nvoid setup(){\n\n}\nvoid loop() {\n\n}\n";
-htmlprototype = "<!doctype html>\n<html>\n<head>\n<title>name</title>\n</head>\n<body>\n</body>\n</html>\n";
-pythonprototype = "# name\n# new python program";
 
-
-editor = ace.edit("maineditor");
-editor.setTheme("ace/theme/github");
-//editor.setTheme("ace/theme/vibrant_ink");
-editor.getSession().setMode("ace/mode/python");
-editor.getSession().setUseWrapMode(true);
-editor.$blockScrolling = Infinity;
-editor.setTheme("ace/theme/vibrant_ink");
-
-currentFile = "code/index.html";
+currentFile = "code/plot1.py";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
-        setmode();
-        editor.setValue(filedata);
+        document.getElementById("maineditor").value = filedata;
         document.getElementById("currentfilename").innerHTML = currentFile;
     }
 };
@@ -127,7 +98,6 @@ httpc8.onreadystatechange = function() {
         for(var index = 0;index < scrolls.length;index++) {    
             var newscrollbutton = document.createElement("div");
             newscrollbutton.classList.add("file");
-            newscrollbutton.classList.add("python");
             newscrollbutton.innerHTML = "code/" + scrolls[index];
             document.getElementById("filescroll").appendChild(newscrollbutton);
             newscrollbutton.onclick = function(){
@@ -137,11 +107,10 @@ httpc8.onreadystatechange = function() {
                 httpc.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
                         filedata = this.responseText;
-                        setmode();
-                        editor.setValue(filedata);
+                        document.getElementById("maineditor").value = filedata;
                         var fileType = currentFile.split("/")[0]; 
                         var fileName = currentFile.split("/")[1];
-                        document.getElementById("newscrollinput").value = fileName;
+                      
                     }
                 };
                 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -161,7 +130,8 @@ httpc8.send();
 document.getElementById("currentfilename").innerHTML = currentFile;
 
 document.getElementById("maineditor").onkeyup = function(){
-    data = encodeURIComponent(editor.getSession().getValue());
+    scroll = this.value;
+    data = encodeURIComponent(this.value);
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
@@ -177,8 +147,8 @@ lightmode = false;
 document.getElementById("lightdarkbutton").onclick = function(){
     lightmode = !lightmode;
     if(lightmode){
-
-        editor.setTheme("ace/theme/github");
+        document.getElementById("maineditor").style.backgroundColor = "#e0e0e0";
+        document.getElementById("maineditor").style.color = "black";        
         document.body.style.backgroundColor = "#d0d0d0";
         document.body.style.color = "black";
         document.getElementById("newscrollinput").style.backgroundColor = "#d0d0d0";
@@ -186,7 +156,8 @@ document.getElementById("lightdarkbutton").onclick = function(){
 
     }
     else{
-        editor.setTheme("ace/theme/vibrant_ink");
+        document.getElementById("maineditor").style.backgroundColor = "#303030";
+        document.getElementById("maineditor").style.color = "white";
         document.body.style.backgroundColor = "#202020";
         document.body.style.color = "white";
         document.getElementById("newscrollinput").style.backgroundColor = "#202020";
@@ -199,9 +170,6 @@ document.body.style.color = "white";
 document.getElementById("newscrollinput").style.backgroundColor = "#202020";
 document.getElementById("newscrollinput").style.color = "white";        
 
-editor.setTheme("ace/theme/vibrant_ink");
-
-        
 document.getElementById("newscrollinput").value = "";
 
 name = "";
@@ -214,17 +182,8 @@ document.getElementById("newscrollinput").onchange = function(){
             filedata = this.responseText;
             if(filedata.length == 0){
                 scroll = prototypescroll;
-                if(currentFile.substring(currentFile.length-4,currentFile.length) == ".ino"){
-                    scroll = arduinoprototype;
-                }   
-                if(currentFile.substring(currentFile.length-5,currentFile.length) == ".html"){
-                    scroll = htmlprototype;
-                }   
-                
                 scroll = scroll.replace(/name/g,name);
-                setmode();
-                editor.setValue(scroll);  
-                
+                document.getElementById("maineditor").value = scroll;
                 data = encodeURIComponent(scroll);
                 var httpc = new XMLHttpRequest();
                 var url = "filesaver.php";        
@@ -235,8 +194,7 @@ document.getElementById("newscrollinput").onchange = function(){
                 
             }
             else{
-                setmode();
-                editor.setValue(filedata);                
+                document.getElementById("maineditor").value = filedata;
             }
 
             document.getElementById("currentfilename").innerHTML = currentFile;
@@ -252,7 +210,6 @@ document.getElementById("newscrollinput").onchange = function(){
 function addcodelink(codename){
     var newscrollbutton = document.createElement("div");
     newscrollbutton.classList.add("file");
-    newscrollbutton.classList.add("python");
     newscrollbutton.innerHTML = "code/" + codename;
     document.getElementById("filescroll").appendChild(newscrollbutton);
     newscrollbutton.onclick = function(){
@@ -262,11 +219,10 @@ function addcodelink(codename){
         httpc.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 filedata = this.responseText;
-                setmode();
-                editor.setValue(filedata);
+                document.getElementById("maineditor").value = filedata;
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-                document.getElementById("newscrollinput").value = fileName;
+              
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -278,51 +234,6 @@ function addcodelink(codename){
 }
 
 
-function setmode(){
-    if(currentFile.substring(currentFile.length-3,currentFile.length) == ".py"){
-        editor.getSession().setMode("ace/mode/python");
-    }
-    if(currentFile.substring(currentFile.length-3,currentFile.length) == ".md"){
-        editor.getSession().setMode("ace/mode/markdown");
-    }
-    if(currentFile.substring(currentFile.length-4,currentFile.length) == ".tex"){
-        editor.getSession().setMode("ace/mode/latex");
-    }
-    if(currentFile.substring(currentFile.length-3,currentFile.length) == ".js"){
-        editor.getSession().setMode("ace/mode/javascript");
-    }    
-    if(currentFile.substring(currentFile.length-4,currentFile.length) == ".ino"){
-        editor.getSession().setMode("ace/mode/java");
-    }   
-    if(currentFile.substring(currentFile.length-4,currentFile.length) == ".css"){
-        editor.getSession().setMode("ace/mode/css");
-    }       
-    if(currentFile.substring(currentFile.length-4,currentFile.length) == ".php"){
-        editor.getSession().setMode("ace/mode/php");
-    }       
-    if(currentFile.substring(currentFile.length-5,currentFile.length) == ".html"){
-        editor.getSession().setMode("ace/mode/html");
-    }   
-    if(currentFile.substring(currentFile.length-5,currentFile.length) == ".json"){
-        editor.getSession().setMode("ace/mode/json");
-    }       
-    
-}
-
-codesquaresize = 120;
-//globalurl = "http://www.trashrobot.org/qrcode.html";
-globalurl = window.location.href;
-
-qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-    
-qrcode.makeCode(globalurl);
 
 </script>
 <style>
@@ -346,7 +257,8 @@ a{
     background-color:#808080;
 }
 body{
-    overflow:hidden;
+
+    
 }
 input{
     font-family:courier;
@@ -380,14 +292,17 @@ input{
     z-index:99999999;
 }
 #maineditor{
-    position:absolute;  
-    left:0%;
-    top:150px;
+    position:absolute;
+    left:10px;
+    top:5em;
     bottom:1em;
-    right:30%;
+    width:70%;
+    height:90%;
     font-size:22px;
     border:solid;
     border-color:black;
+    background-color:#303030;
+    color:white;
 }
 .button{
     cursor:pointer;
