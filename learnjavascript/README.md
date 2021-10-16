@@ -1,8 +1,7 @@
 ## [../](../)
 
-### [p5js/](p5js/)
 
-### [code server](codeserver/)
+## [code server](codeserver/)
 
 #  JavaScript: Actions on the Web
 
