@@ -1,25 +1,5 @@
 ## [../](../)
 
-#  What is Community Networking?
-
- - the purpose of the network is to be a free resource for everyone in a community to share information with everyone they want to
- - all software is free and open source on a Public Domain license with no restrictions
- - all software contains scripts to automatically replicate to other servers
- - this is a network of places, living things, documents, and messages, not of "users"
- - there are no private data on this network, all documents and applications are public utilities
- - there is no "security", no passwords, no log ins, no user names
- - every document can be replicated to any server by any person at any time
- - every document can be edited by any person on any server at any time
- - every document can be deleted by anyone on any server at any time
- - communities are physically defined and local
- - no cloud, every server is understood and controlled individually by an operator
- - trained operators operate servers in each community
- - operators are trained to train more operators
- - all network stations are powered by off-grid electricity directly generated and stored on site
- - all stations extend network coverage from other existing stations or existing Internet connections
- - the network can operate locally even if the Internet is disconnected
-
-
 # Community Networking FAQ
  
 **what is community networking?** Community networking is free network infrastructure which connects anyone with anyone else by mutual consent: if you want to send a message and someone wants to receive it, the operators will put the message through. If they don't want it, the operator will block it.  
@@ -47,10 +27,49 @@
 
 **If everything is local, how does this network connect globally?** Our network will be connected from one community to another, but we build connections based on the *physical* world, not abstract virtual notions of shared interest.  Our network will grow along natural physical network connections like roads and rivers, as well as other existing right of ways like power line trails.  Nodes are also still all on the Internet, this network does not replace the existing networks overnight, it is a new network layer making connections which do not exist in the current Internet or phone system.
 
-**If this is not a business how do Operators survive the current money-based economic system?**  If this network creates the kind of value it has the potential   
+**If this is not a business how do Operators survive the current money-based economic system?**  If this network creates the kind of value it has the potential to unleash trillions of dollars of new commercial activity within the existing capitalist system, but with a massive decentralization of control.  Our challenge if this happens will not be to find ways to support operators but to make sure no operator becomes too powerful, and that we do not end up replicating the same abusive power structures of Silicon Valley that this project aims to destroy.  This is why we center our entire project on education: it is the responsibility of the teachers in this meta-school to create a culture of mutual aid in which as the network grows more and more things are free by teaching a set of values compatible with that way of life.  If this grows as we expect it to, Operators will be able to "live for free" not by dominating networks like the tech companies but by simply being part of communities where *everyone* lives for free.
+
+**How do we get all this started?**  Again, the faculty are at the center of the project, and that is where it all starts. We need a full curriculum in place which teaches enough marketable tech skills that a large cross sections of existing STEAM education programs will support it.  This all needs to be self-replicating in that the whole curriculum is built into self-replicating documents on the system.  This is what is currently being developed on [https://github.com/lafelabs/pi](https://github.com/lafelabs/pi).  What is needed is a grant application template, in which anyone can apply for a grant, buy hardware, deploy it in a community, find students, and teach them the system using media contained in the system.
+
+**How much does one system cost?**  The Pi with a screen and all the basic parts is about $250, a second board for a home server is about another 50, and the solar setup is about 100, so about $400 gets a full setup with a home server, and outside off-grid server. Buying domains is also helpful, but those can be just a few dollars.  
 
 
 # Use cases
 
+ - open science platform
+ - learn web development for jobs in tech
+ - help the community with tech issues, be free IT support to bridge digital divide
+ - help local small business owners to get around the blockade from Big Tech to get directly to the people they serve
+ - personals ads, dating, find-a-friend, direct personal connections
+ - organizing drivers at an airport, where operators act as dispatchers, put ride sharing out of business
+ - any "sharing economy" predatory silicon valley app can be replaced with operators combined with free servers
+
+# Workflow
+
+1. operator stands in public place with a large, attractive, and clearly branded sign pointing to a domain running a server
+2. operator has a free public raspberry pi terminal/server with them which they can use to edit documents locally
+3. operator replicates documents from their local server to a home raspberry pi server which uses port forwarding to get information out to the public internet
+4. operator uses document set replication to replicate all documents from their terminal to their home server and from there to the public page, updating the public page without ever logging into anything or using a password.  
+5. operator keeps tabs on all servers and backs them up to multiple locations so that any corrupted documents are replaced by other replications quickly.  We want documents which are like insects: they die constantly, but breed faster.
+
+
+#  What is Community Networking?[old]
+
+ - the purpose of the network is to be a free resource for everyone in a community to share information with everyone they want to
+ - all software is free and open source on a Public Domain license with no restrictions
+ - all software contains scripts to automatically replicate to other servers
+ - this is a network of places, living things, documents, and messages, not of "users"
+ - there are no private data on this network, all documents and applications are public utilities
+ - there is no "security", no passwords, no log ins, no user names
+ - every document can be replicated to any server by any person at any time
+ - every document can be edited by any person on any server at any time
+ - every document can be deleted by anyone on any server at any time
+ - communities are physically defined and local
+ - no cloud, every server is understood and controlled individually by an operator
+ - trained operators operate servers in each community
+ - operators are trained to train more operators
+ - all network stations are powered by off-grid electricity directly generated and stored on site
+ - all stations extend network coverage from other existing stations or existing Internet connections
+ - the network can operate locally even if the Internet is disconnected
 
 
