@@ -18,6 +18,7 @@
         "scroll.md",
         "sketch.html",
         "sketch.js",
+        "strings.html",
         "table.html",
         "wall.html"
     ]
