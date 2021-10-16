@@ -1,11 +1,11 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/codeserver/",
+    "server": "http://localhost/",
     "code": [
-        "aspectratio.css",
-        "body.css",
-        "box.css",
-        "classes.css",
+        "hello.py",
         "index.html",
-        "scroll.css"
+        "plot1.py",
+        "sketch.html",
+        "sketch.js",
+        "slimezistor.ino"
     ]
 }

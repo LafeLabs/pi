@@ -21,7 +21,8 @@
         "fork.svg",
         "home.svg",
         "lightdark.svg",
-        "scroll.svg"
+        "scroll.svg",
+        "www.svg"
     ],
     "php": [
         "codesetreplicator.txt",
@@ -39,11 +40,11 @@
         "text2php.txt"
     ],
     "code": [
-        "aspectratio.css",
-        "body.css",
-        "box.css",
-        "classes.css",
+        "hello.py",
         "index.html",
-        "scroll.css"
+        "plot1.py",
+        "sketch.html",
+        "sketch.js",
+        "slimezistor.ino"
     ]
 }

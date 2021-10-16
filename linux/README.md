@@ -2,6 +2,20 @@
 
 #  Linux
 
+## Topics
+
+ - users
+ - basic file and directory movement and manipulation
+ - permissions
+ - text editors
+ - file system structure, system files
+ - GPIB
+ - installation of packages
+ - shell scripts
+ - python
+ - php
+
+
 ## What we want to know how to do
 
  - Open a file in all major text editors, edit, close.

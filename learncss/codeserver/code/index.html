@@ -1,37 +1,92 @@
 <!doctype html>
 <html>
-<head>
-<title>foo.html</title>
- <link rel="stylesheet" href="box.css"> 
- <link rel="stylesheet" href="body.css"> 
- <link rel="stylesheet" href="scroll.css"> 
- <link rel="stylesheet" href="classes.css"> 
- <link rel="stylesheet" href="aspectratio.css">
-</head>
-<body>
-
-<h1 class = "data" style = "background-color:white;color:black">BIG INVISIBLE TITLE</h1>
-
-<h2 class = "portrait">PORTRAIT</h2>
-<h2 class = "landscape">LANDSCAPE</h2>
-
-<a href = "../">return to code editor</a>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <h1>
+          <a href ="css.html">
+              css.html
+          </a>
+      </h1>
+      <h1>biggest heading size</h1>
+      <h2>next biggest heading size</h2>
+      <a href = "../../">a stands for "anchor" which means hyperlink</a>
+      <div>division, just a box with no specific properties, displayed "block" by default</div>
+      <span>like a "div", but inline(no newline)</span>
+      <a href = "../">
+          <img src = "../iconsymbols/edit.svg" alt "alt text describes image"/>
+      </a>
+<ul>
+    <li>un-ordered list item 1</li>
+    <li>un-ordered list item 2</li>
+</ul>      
+<ol>
+    <li>ordered list item 1</li>
+    <li>ordered list item 2</li>
+</ol>      
+<pre>
+    //here we put code-looking things 
+    void loop(){
+      supid.c.derived.language();
+      break;
+    }
+</pre>
+<br>
+break with br manually
 <p>
-    <a href = "../../">back up to CSS scroll</a>
+    paragraph is p.  somewhat anachronistic.
 </p>
+<textarea></textarea>
+<input/>
 <table>
     <tr>
-        <td class=  "button">button1</td>
-        <td class = "button">button2</td>
-        <td class = "textd">some random text in a box</td>
+        <td>element11</td>
+        <td>element12</td>
+    </tr>
+    <tr>
+        <td>element21</td>
+        <td>element22</td>
     </tr>
 </table>
-<div id = "box">
-    BOX
-</div>
 
-<div id = "scroll">
-    We hope we have convinced the reader that the system cannot be reformed in such a way as to reconcile freedom with technology. The only way out is to dispense with the industrialtechnological system altogether. This implies revolution, not necessarily an armed uprising, but certainly a radical and fundamental change in the nature of society. 141. People tend to assume that because a revolution involves a much greater change than reform does, it is more difficult to bring about than reform is. Actually, under certain circumstances revolution is much easier than reform. The reason is that a revolutionary movement can inspire an intensity of commitment that a reform movement cannot inspire. A reform movement merely offers to solve a particular social problem. A revolutionary movement offers to solve all problems at one stroke and create a whole new world; it provides the kind of ideal for which people will take great risks and make great sacrifices. For this reasons it would be much easier to overthrow the whole technological system than to put effective, permanent restraints on the development or application of any one segment of technology, such as genetic engineering, for example. Not many people will devote themselves with single-minded passion to imposing and maintaining restraints on genetic engineering, but under suitable conditions large numbers of people may devote themselves passionately to a revolution against the industrial-technological system. As we noted in paragraph 132, reformers seeking to limit certain aspects of technology would be working to avoid a negative outcome. But revolutionaries work to gain a powerful reward -- fulfillment of their revolutionary vision and therefore work harder and more persistently than reformers do. 
-</div>
-</body>
+<h4>hexidecimal value of UNICODE, ACE OF SPADES:</h4>
+<span style  = "font-size:4em">&#x2660;A</span>
+<span style  = "font-size:4em;transform:rotate(180deg);position:absolute">&#x2660;A</span>
+
+<h4>base 10 smiling poop emoji UNICODE:</h4>
+<span style = "font-size:4em">&#128169;</span>
+
+<ul style = "font-size:4em">
+    <li>
+        <a href = "sketch.html">sketch.html</a>
+    </li>
+    <li>
+        <a href = "../">../</a>
+    </li>
+    <li>
+        <a href = "../../">../../</a>
+    </li>
+    <li>
+        <a href = "readme.html">readme.html</a>
+    </li>
+</ul>
+
+    <script>
+    //javascript goes in scripts
+    console.log("print this on console, you can see using developer mode on your browser");
+    </script>
+    <style>
+        /*
+        "style" contains CSS code to decide how things look
+        this turns links(anchors) a color
+        */
+        a{
+            color:purple;
+        }
+        td,tr,table{
+            border:solid;
+        }
+      </style>
+  </body>
 </html>
