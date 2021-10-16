@@ -9,6 +9,8 @@
         "hello.html",
         "index.html",
         "input.html",
+        "scroll.html",
+        "scroll.md",
         "sketch.html",
         "sketch.js",
         "table.html",
