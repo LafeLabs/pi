@@ -10,6 +10,7 @@
         "hello.html",
         "index.html",
         "input.html",
+        "mathjax.html",
         "qrcode.html",
         "rotate.svg",
         "scale.svg",
