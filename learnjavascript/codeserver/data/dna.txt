@@ -40,11 +40,32 @@
         "text2php.txt"
     ],
     "code": [
-        "hello.py",
+        "button.html",
+        "dir.html",
+        "dir.php",
+        "doubler.html",
+        "energy.html",
+        "fileloader.php",
+        "filesaver.php",
+        "geometron.html",
+        "geometron.js",
+        "hammer.html",
+        "hello.html",
         "index.html",
-        "plot1.py",
+        "input.html",
+        "map.html",
+        "mapfactory.js",
+        "math.html",
+        "mathjax.html",
+        "qrcode.html",
+        "rotate.svg",
+        "scale.svg",
+        "scroll.html",
+        "scroll.md",
         "sketch.html",
         "sketch.js",
-        "slimezistor.ino"
+        "strings.html",
+        "table.html",
+        "wall.html"
     ]
 }
