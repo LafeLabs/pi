@@ -1,6 +1,7 @@
 {
     "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnjavascript/codeserver/",
     "code": [
+        "boolean.html",
         "button.html",
         "dir.html",
         "dir.php",
