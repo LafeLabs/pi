@@ -4,6 +4,28 @@
 
 Social coding: make a program, edit a program, destroy a program, replicate a program.
 
+## Pages and programs to learn JavaScript
+
+ - [code editor](index.html)
+ - [code/index.html](code/index.html)
+ - [code/hello.html](code/hello.html)
+ - [code/sketch.html](code/sketch.html)
+ - [code/wall.html](code/wall.html)
+ - [code/scroll.html](code/scroll.html)
+ - [code/qrcode.html](code/qrcode.html)
+ - [code/hammer.html](code/hammer.html)
+ - [code/mathjax.html](code/mathjax.html)
+ - [code/doubler.html](code/doubler.html)
+ - [code/dir.html](code/dir.html)
+ - [code/input.html](code/input.html)
+ - [code/math.html](code/math.html)
+ - [code/energy.html](code/energy.html)
+ - [code/button.html](code/button.html)
+ - [code/strings.html](code/strings.html)
+ - [code/map.html](code/map.html)
+ - [code/geometron.html](code/geometron.html)
+
+
 ## Links
 
  - [code/](code/)
