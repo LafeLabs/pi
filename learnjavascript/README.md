@@ -43,6 +43,8 @@ alert("hello, world");
 </script>
 ```
 
+The best way to learn is to copy and paste and experiment.  To do this create a code server by forking an existing server using [fork.html](fork.html) and then clicking the link to replicate the code server, then 
+
 ## goals
 
  - create a self-replicating calculator

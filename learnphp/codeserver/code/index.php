@@ -6,14 +6,13 @@
   <body>
     <h1><a href = "../">back to code editor</a></h1>
     <h1><a href = "index.html">index.html</a></h1>
-    <ul>
-        <li>
-            <a href = "index.php">index.php</a>
-        </li>
-        <li>
-            <a href = "dirlinks.php">dirlinks.php</a>
-        </li>
+    <h1><a href = "dirlinks.html">dirlinks.php</a></h1>
 
-    </ul>
+  <?php
+  
+  $stringvariable = "middle string";
+  echo "first string".$stringvariable."last string";
+
+  ?>
   </body>
 </html>
