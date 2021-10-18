@@ -1,5 +1,8 @@
 
 <ul>
+    <li>
+        <a href  = "../">back to code editor</a>
+    </li>
 <?php
 
 // list files and or directories in a directory

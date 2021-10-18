@@ -1,18 +1,24 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1><a href = "../">back to code editor</a></h1>
-    <h1><a href = "index.html">index.html</a></h1>
-    <h1><a href = "dirlinks.html">dirlinks.php</a></h1>
 
-  <?php
-  
-  $stringvariable = "middle string";
-  echo "first string".$stringvariable."last string";
+<ul>
+    <li>
+        <a href  = "../">back to code editor</a>
+    </li>
+<?php
 
-  ?>
-  </body>
-</html>
+// list files and or directories in a directory
+
+$files = scandir(getcwd());
+
+foreach($files as $value){
+    if($value[0] != "."){
+       echo "    <li><a href = \"".$value."\">".$value."</a></li>\n";
+    }
+}
+
+?>
+</ul>
+<style>
+    a{
+        font-size:2em;
+    }
+</style>

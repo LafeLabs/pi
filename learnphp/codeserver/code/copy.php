@@ -1,3 +1,7 @@
+<h1>
+    <a href = "index.php">home</a>
+</h1>
+
 <?php
 
 // copy from a url to a local file on server 
@@ -11,7 +15,6 @@ if(isset($_GET["from"]) && isset($_GET["to"])){
 
 
 ?>
-<a href = "index.html">CLICK TO GO HOME</a>
 
 <style>
 a{

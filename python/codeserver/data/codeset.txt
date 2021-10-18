@@ -3,9 +3,13 @@
     "code": [
         "hello.py",
         "index.html",
+        "liveplot.py",
         "plot1.py",
+        "rando.css",
         "sketch.html",
         "sketch.js",
-        "slimezistor.ino"
+        "slimezistor.ino",
+        "test.ino",
+        "testpage.html"
     ]
 }

@@ -2,9 +2,15 @@
     "server": "http://localhost/",
     "code": [
         "copy.php",
+        "delete.php",
         "dir.php",
         "dirlinks.php",
+        "explode.php",
+        "fileloader.php",
+        "filesaver.php",
         "index.html",
-        "index.php"
+        "index.php",
+        "ipaddress.php",
+        "textfile.txt"
     ]
 }
