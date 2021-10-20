@@ -2,6 +2,7 @@
     "server": "http://localhost/",
     "code": [
         "copy.php",
+        "datafile.txt",
         "delete.php",
         "dir.php",
         "dirlinks.php",
@@ -11,6 +12,8 @@
         "index.html",
         "index.php",
         "ipaddress.php",
+        "python.php",
+        "pythonfile.py",
         "textfile.txt"
     ]
 }
