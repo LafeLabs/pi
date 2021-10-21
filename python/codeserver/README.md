@@ -21,6 +21,12 @@ Social coding: make a program, edit a program, destroy a program, replicate a pr
  - [local replicator code link](php/replicator.txt)
  - [replicator.php](replicator.php)
 
+## copy code sets
+
+ - [copy css code set](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/codeserver/data/codeset.txt&to=data/codeset.txt)
+ - [copy JavaScript code set](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/learnjavascript/codeserver/data/codeset.txt&to=data/codeset.txt)
+
+
 ## copy replicators to local replicator.php
 
  - [copy wall server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt&to=replicator.php)

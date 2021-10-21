@@ -1,15 +1,11 @@
 {
-    "server": "http://localhost/learnphp/codeserver/",
+    "server": "http://localhost/",
     "code": [
         "hello.py",
         "index.html",
-        "liveplot.py",
         "plot1.py",
-        "rando.css",
         "sketch.html",
         "sketch.js",
-        "slimezistor.ino",
-        "test.ino",
-        "testpage.html"
+        "slimezistor.ino"
     ]
 }

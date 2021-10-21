@@ -2,13 +2,14 @@
 
 #  [CSS (Cascaded Style Sheets)](https://github.com/LafeLabs/pi/blob/main/learncss/README.md)
 
+[code server with example CSS code](codeserver/)
+
 [raw version of this markdown file](https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/README.md)
 
 [w3schools.com CSS tutorial](https://www.w3schools.com/w3css/)
 
 [codepen.io online html social coding site with amazing CSS examples](https://codepen.io/)
 
-[code server with example CSS code](codeserver/)
 
 [code server code/index.html page](codeserver/code/)
 
