@@ -4,18 +4,54 @@
 
 ## Goals
 
- - Use python to take data from Arduino.
- - Use python to plot data.
- - Use python to fit data.
- - Use python to open and close a file, read write and append
- - Use python to work with jsons and strings
- - plot a function 
- - all the basic string operations
- - for loops, while loops, if
- - all the boolean operations
- - all the bitwise operations
- - basic matplotlib operations, axes and labels etc
+in the community networking pi server/terminal, we only need python for one thing: recording data down the serial port. that is then all saved as raw json data in a .txt file which is used by p5j javascript into html.  So all we need from python is open file, save file, read serial.  that's it.  we don't need jupyter.  
 
+Hence the goal
+
+ - install python and make sure it's working
+ - print hello world get python working
+ - run a python script to record data from serial into the log file
+ - operate python script in background or on a schedule so that log files are taken over time
+
+Since we are *only* using python to record data from arduino to file, we can destroy this whole repository, eliminate all the robotics and neopixel from arduino, eliminate the shield, so the arduino is just sensors with jumpers, all off the shelf, 
+
+Then we can link to resources, which are matplotlib and w3schools tutorial, and that's it.
+
+### [matplotlib](https://matplotlib.org/)
+### [w3schools](https://www.w3schools.com/python/default.asp)
+
+
+this is how you run pythonfile.py from php, allowing you to update data from browser remotely over apache/geometron:
+
+```
+<?php
+shell_exec("python3 pythonfile.py");
+?>
+```
+
+```
+#include <ArduinoJson.h>
+
+int x;
+float voltsperpoint = 12.46/399;//based on measuring with DVM fully charged battery
+float v = 0.0;
+
+void setup() {
+ Serial.begin(9600);
+}
+
+void loop() {
+
+  x = analogRead(A1);
+  v = voltsperpoint*x;//convert to volts
+  DynamicJsonDocument measurement(200);
+  measurement["x"] = x;
+  measurement["v"] = v;
+  serializeJson(measurement, Serial);
+  Serial.println();
+
+}
+```
 
 ## Links
 

@@ -2,6 +2,8 @@
 
 #  Linux
 
+As with all sections of the pi repo we must re-evaluate the *absolute minimum* set of things to put in here and still get the system we want.  Operators must be able to be responsible for the whole system so that system has to be as simple as possible.
+
 ## Topics
 
  - users

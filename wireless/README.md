@@ -2,10 +2,9 @@
 
 #  Wireless
 
-1. make a raspberry pi an access point
-2. make a raspberry pi a repeater
-3. build an outdoor high distance repeater, deliver free web to a place
+Not Raspberry pi.  Everything is off the shelf cheap stuff.  This chapter and off grid get consolidated into "off grid network extensions", which is not raspberry pi at all but is just network extensions.
 
+Whatever the simplest and cheapest legal way to extend wireless, is what we want.  Then the wireless delivers free wifi in hotspots, which is where the raspberry pi servers are.  Part of our network is routers, which are all also cheap and off the shelf, and these manage the port forwarding from server to server along our wireless link.  This whole wireless line of nodes does not need 
 
 [kreosan long range wifi extender](https://www.youtube.com/watch?v=XHptie4WadM)
 

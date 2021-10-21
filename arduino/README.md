@@ -1,5 +1,11 @@
 ## [back up to main pi scroll](../)
 
+What is this all about? Why is there an Arduino section here?  What is this for?  This is not for robotics or general interest.  It is all focused on the pi which means it is about ONE thing, measuring the environment.  We will measure sensor outputs or analog inputs, turn it into JSON, send it down the serial, then use python to read it and save it to a file which can then be processed with javascript, using p5.js
+
+This is the work flow here, and both arduino and python exist for the sole purpose of supporting this:
+
+sensor &rarr; arduino &rarr; serial &rarr; python &rarr; data/data.txt &rarr; p5js &rarr; html
+
 [open arduino class](https://github.com/LafeLabs/openarduino)
 
 ## Data logging:

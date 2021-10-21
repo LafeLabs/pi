@@ -52,6 +52,16 @@
 4. operator uses document set replication to replicate all documents from their terminal to their home server and from there to the public page, updating the public page without ever logging into anything or using a password.  
 5. operator keeps tabs on all servers and backs them up to multiple locations so that any corrupted documents are replaced by other replications quickly.  We want documents which are like insects: they die constantly, but breed faster.
 
+# Hardware Elements
+
+ - raspberry pi terminal/server with self-contained batter, wall power, solar, 
+ - arduino based sensor which senses something about the environment and sends down serial on pi, water science toolkit
+ - off-the-shelf hardware to extend internet links from some source of very cheap high bandwidth out to all the hot spots, which are along waterways and right of ways
+ - wifi hotspots for free internet in public areas, connected from the wireless repeater links
+ - self-contained solar power and battery system for each repeater on the wireless links
+
+
+Port forwarding on routers allows each pi to use internal server names linked to external router ip addresses, with no need for any purchased domains. This means we can have significant repetition of names, with the same name pointing to an analogous place like "thecorner/" in a huge number of places globally. This builds up a local geography which is repeated again and again from one locality to another globally.  
 
 #  What is Community Networking?[old]
 
