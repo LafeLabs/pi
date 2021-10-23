@@ -33,9 +33,5 @@
  - [pi specific battery pack($40)](https://www.adafruit.com/product/1566)
  - [HDMI micro to HDMI cable($7)](https://www.pishop.us/product/micro-hdmi-to-standard-hdmi-a-m-1m-cable-white/)
 
-[wifi extender tutorial](https://pimylifeup.com/raspberry-pi-wifi-extender/)
-
-[https://hamprojects.wordpress.com/2020/09/06/raspberry-pi-for-ham-radio/](https://hamprojects.wordpress.com/2020/09/06/raspberry-pi-for-ham-radio/)
-
 
 
