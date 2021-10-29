@@ -186,7 +186,7 @@ sudo pip3 install jupyter
  - [copy page server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt&to=replicator.php)
  - [copy mathpage server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt&to=replicator.php)
  - [copy board server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/boardserver/php/replicator.txt&to=replicator.php)
- - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/codeserver/php/replicator.txt&to=replicator.php)
+ - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt&to=replicator.php)
  - [copy CHAOS server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/chaos/php/replicator.txt&to=replicator.php)
  - [copy full geometron server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/geometron/php/replicator.txt&to=replicator.php)
  - [copy image server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt&to=replicator.php)
