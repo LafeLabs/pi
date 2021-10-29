@@ -4,6 +4,8 @@
 
 [link to the language model page if you're on a live geometron instance(index.html)](index.html)
 
+[localhost](http://localhost/)
+
 This is a self-replicating language model server.  You replicate it yourself.  Build a Raspberry Pi Geometron Server.  If you already have a geometron server running, copy the [global replicator link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/languagemodel/php/replicator.txt) into replicator.php and run that to replace any given geometron server with the language model server.  
 
 [https://raw.githubusercontent.com/LafeLabs/pi/main/servers/languagemodel/php/replicator.txt](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/languagemodel/php/replicator.txt)
