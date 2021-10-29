@@ -9,6 +9,7 @@ This is the model.  Within this model we have built a variety of prototype serve
 ##  Server Types:
 
  - [page like this](page/)
+ - [language model server](languagemodel/)
  - [math pages(typeset math equations)](mathpage/)
  - [scroll server](scrollserver/)
  - [wall](wall/)
