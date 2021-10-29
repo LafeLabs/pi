@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <a href = "../">UP A LEVEL</a>
+            </td>
+            <td>
+                <a href = "editor.php">editor.php</a>
+            </td>
+            <td>
+                <a href = "python.php">python.php</a>
+            </td>
+        </tr>
+    </table>
+
+<div id = "inlabel">CORPUS</div>
+<textarea id = "textin"></textarea>
+<div id = "outlabel">OUTPUT</div>
+<textarea id = "textout"></textarea>
+<div id = "ngramlabel">NGRAM</div>
+<textarea id ="ngramout"></textarea>
+
+<div id = "pythonlabel">PYTHON</div>
+<div id="maineditor" contenteditable="true" spellcheck="false"></div>
+
+<script>
+code = document.body.innerHTML;
+
+editor = ace.edit("maineditor");
+//editor.setTheme("ace/theme/github");
+editor.setTheme("ace/theme/vibrant_ink");
+editor.getSession().setMode("ace/mode/python");
+editor.getSession().setUseWrapMode(true);
+editor.$blockScrolling = Infinity;
+
+currentFile = "php.py";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        editor.setValue(filedata);
+    }
+};
+httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+httpc.send();
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        document.getElementById("textin").value = filedata;
+    }
+};
+httpc2.open("GET", "fileloader.php?filename=data/textin.txt", true);
+httpc2.send();
+
+
+var httpc3 = new XMLHttpRequest();
+httpc3.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        document.getElementById("textout").value = filedata;
+    }
+};
+httpc3.open("GET", "fileloader.php?filename=data/textout.txt", true);
+httpc3.send();
+
+var httpc4 = new XMLHttpRequest();
+httpc4.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        document.getElementById("ngramout").value = filedata;
+    }
+};
+httpc4.open("GET", "fileloader.php?filename=data/ngram.txt", true);
+httpc4.send();
+
+
+document.getElementById("maineditor").onkeyup = function(){
+    data = encodeURIComponent(editor.getSession().getValue());
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+    
+}
+
+document.getElementById("textin").onkeyup = function() {
+    textin = this.value;
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+encodeURIComponent(textin)+"&filename=data/textin.txt");//send text to filesaver.php        
+}
+
+
+
+</script>
+<style>
+td{
+    width:10em;
+    text-align:center;
+}
+a{
+    color:#ff2cb4;
+    font-size:2em;
+}
+body{
+    background-color:#404040;
+}
+textarea{
+    background-color:#202020;
+    color:white;
+}
+#inlabel{
+    position:absolute;
+    left:2em;
+    bottom:86%;
+    background-color:#202020;
+    color:white;
+}
+#textin{
+    position:absolute;
+    left:1em;
+    width:25%;
+    top:15%;
+    height:70%;
+}
+#outlabel{
+    position:absolute;
+    right:2em;
+    bottom:86%;
+    background-color:#202020;
+    color:white;
+}
+#textout{
+    position:absolute;
+    right:1em;
+    width:25%;
+    top:15%;
+    height:40%;
+}
+#pythonlabel{
+    position:absolute;
+    left:48%;
+    top:5px;
+    background-color:#202020;
+    color:white;
+    
+}
+#ngramlabel{
+    position:absolute;
+    right:2em;
+    bottom:37%;
+    background-color:#202020;
+    color:white;
+    
+}
+#ngramout{
+    position:absolute;
+    right:1em;
+    width:25%;
+    bottom:5%;
+    height:30%;
+}
+#maineditor{
+    position:absolute;
+    left:30%;
+    right:30%;
+    top:5%;
+    bottom:5em;
+    border:solid;
+}
+</style>
+
+</body>
+</html>
