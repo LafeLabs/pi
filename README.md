@@ -4,25 +4,6 @@
 
 [replicator raw code](php/replicator.txt)
 
-## Links
-
- - [qrcode.html](qrcode.html)
- - [ipaddress.php](ipaddress.php)
- - [http://localhost/](http://localhost/)
- - [../](../)
- - [fork.html](fork.html)
- - [user.php](user.php)
- - [index.html](index.html)
- - [readme.html](readme.html)
- - [editor.php](editor.php)
- - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt)
- - [local replicator code link](php/replicator.txt)
- - [scroll set replicator](scrollset.html)
- - [set replicator](set.html)
- - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt&to=replicator.php)
- - [replicator.php](replicator.php)
-
 # Basic Kit
 
 *For about $400 we build an off-grid solar powered web server with no private information which can be shared in public with anyone*

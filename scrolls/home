@@ -1,5 +1,8 @@
 #  Geometron/Trash Robot
 
+ - [links](scrolls/links)
+ - [server replicators](scrolls/replicators)
+ - [dnagenerator.php](dnagenerator.php)
  - [README](scroll(README.md))
  - [community networking faq](scrolls/communitynetworking)
  - [learn about linux](scrolls/linux)
@@ -11,10 +14,9 @@
  - [print an icon with robot](scrolls/printicon)
  - [build raspberry pi terminal](scrolls/pi)
  - [symbolserver/](symbolserver/)
- - [wireless networking in the developing world](wndw/)
  - [mapserver/](mapserver/)
  - [imageserver/](imageserver/)
  - [coinserver/](coinserver/)
  - [codeserver/](codeserver/)
- - [dnagenerator.php](dnagenerator.php)
+ - [wireless networking in the developing world](wndw/)
 

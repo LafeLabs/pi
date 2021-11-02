@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/freenet/main/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/pi/main/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -15,12 +15,26 @@ mkdir("data");
 mkdir("php");
 mkdir("scrolls");
 mkdir("iconsymbols");
+
 mkdir("codeserver");
+mkdir("symbolserver");
+mkdir("mapserver");
+mkdir("imageserver");
+mkdir("coinserver");
+mkdir("wndw");
 
 
-copy("https://raw.githubusercontent.com/LafeLabs/freenet/main/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt","replicator.php");
 
-copy("https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt","codeserver/replicator.php");
+
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/codeserver/php/replicator.txt","codeserver/replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt","symbolserver/replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt","mapserver/replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt","imageserver/replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/coinserver/php/replicator.txt","coinserver/replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/wndw/main/php/replicator.txt","wndw/replicator.php");
+
+
 
 foreach($dna->html as $value){
     

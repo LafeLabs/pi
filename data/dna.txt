@@ -43,10 +43,12 @@
         "freestuff",
         "help",
         "home",
+        "links",
         "linux",
         "markdown",
         "php",
         "pi",
+        "replicators",
         "stories",
         "web",
         "wirelesslinks"
