@@ -1,28 +1,5 @@
 ## [home](scrolls/home)
 
-#  Geometron/TRASH ROBOT
-
-[replicator raw code](php/replicator.txt)
-
-## Links
-
- - [qrcode.html](qrcode.html)
- - [ipaddress.php](ipaddress.php)
- - [http://localhost/](http://localhost/)
- - [../](../)
- - [fork.html](fork.html)
- - [user.php](user.php)
- - [index.html](index.html)
- - [readme.html](readme.html)
- - [editor.php](editor.php)
- - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt)
- - [local replicator code link](php/replicator.txt)
- - [scroll set replicator](scrollset.html)
- - [set replicator](set.html)
- - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt&to=replicator.php)
- - [replicator.php](replicator.php)
-
 # Basic Kit
 
 *For about $400 we build an off-grid solar powered web server with no private information which can be shared in public with anyone*
@@ -45,7 +22,6 @@ Get a second raspberry pi board to be the permanent home server which replicates
 ![](https://i.imgur.com/Y46szlG.jpg)
 
 ![](https://i.imgur.com/N4ItAdo.jpg) 
-
 
 #  Raspberry Pi System Installation
 
@@ -72,7 +48,7 @@ sudo apt install php libapache2-mod-php -y
 ```
 cd /var/www/html
 sudo rm index.html
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/freenet/main/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
@@ -188,50 +164,3 @@ reboot
 sudo pip3 install jupyter
 ```
 
-
-## Links
-
- - [qrcode.html](qrcode.html)
- - [ipaddress.php](ipaddress.php)
- - [http://localhost/](http://localhost/)
- - [../](../)
- - [fork.html](fork.html)
- - [user.php](user.php)
- - [index.html](index.html)
- - [readme.html](readme.html)
- - [editor.php](editor.php)
- - [dnagenerator.php](dnagenerator.php)
- - [global page replicator code link](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
- - [local replicator code link](php/replicator.txt)
- - [scroll set replicator](scrollset.html)
- - [set replicator](set.html)
- - [replicator.php](replicator.php)
-
-## copy replicators to local replicator.php
-
- - [copy wall server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt&to=replicator.php)
- - [copy page server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt&to=replicator.php)
- - [copy mathpage server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt&to=replicator.php)
- - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt&to=replicator.php)
- - [copy full geometron server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/geometron/php/replicator.txt&to=replicator.php)
- - [copy image server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt&to=replicator.php)
- - [copy map server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt&to=replicator.php)
- - [copy scroll server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt&to=replicator.php)
- - [copy symbol server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt&to=replicator.php)
- - [copy icon server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt&to=replicator.php)
-
-## links to replicators
-
- - [wall server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt)
- - [page server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt)
- - [mathpage server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt)
- - [board server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/boardserver/php/replicator.txt)
- - [code server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/codeserver/php/replicator.txt)
- - [CHAOS server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/chaos/php/replicator.txt)
- - [full geometron server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/geometron/php/replicator.txt)
- - [image server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt)
- - [map server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt)
- - [scroll server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/scrollserver/php/replicator.txt)
- - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
- - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
- - [classifieds server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt)

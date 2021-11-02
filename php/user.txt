@@ -5,15 +5,15 @@
 
     <!--
 
-        EVERYTHING IS PHYSICAL
+        EVERYTHING IS PHYSICAL 
         EVERYTHING IS FRACTAL
         EVERYTHING IS RECURSIVE
-        NO MONEY
-        MO MINING
+        NO MONEY 
+        MO MINING 
         NO PROPERTY
         LOOK AT THE INSECTS
         LOOK AT THE FUNGI
-        LANGUAGE IS HOW THE MIND PARSES REALITY
+        LANGUAGE IS HOW THE MIND PARSES REALITY 
 
     -->
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
@@ -21,7 +21,6 @@
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <!--       un comment to use math
 
@@ -50,7 +49,7 @@
 <table id = "landscapelinks">
     <tr>
         <td class = "editlinks">
-            <a  id ="scrolleditorlink2" href = "scrolleditor.php">
+            <a id = "scrolleditorlink2" href = "scrolleditor.php">
                 <img src = "iconsymbols/edit.svg"/>
             </a>
         </td>
@@ -81,9 +80,6 @@
             <img src = "iconsymbols/lightdark.svg"/>
         </td>
     </tr>
-    <tr>
-        <td id = "qrcode"></td>
-    </tr>
 </table>
 
 <table id = "portraitlinks">
@@ -93,7 +89,7 @@
                 <img src = "iconsymbols/edit.svg"/>
             </a>
         </td>
-        <td class = "editlinks">
+        <td>
             <a href = "scrollset.html">
                 <img src = "iconsymbols/chaos.svg"/>
             </a>
@@ -111,9 +107,15 @@
         <td id = "modebutton2" class= "button">
             <img src = "iconsymbols/lightdark.svg"/>
         </td>
-        <td id = "qrcode2"></td>
     </tr>
 </table>
+<div class = "data" id = "scrolldiv"><?php
+    
+if(isset($_GET["scroll"])){
+    echo $_GET["scroll"];
+}
+
+?></div>
 
 <script>
 
@@ -126,9 +128,10 @@ if(innerWidth > innerHeight){
 
 }
 else{
-
-
-    
+    document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
+    document.getElementById("scrollscroll").style.top = (100).toString() + "px";    
+    document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
+    document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";        
 }
 
 mode = "dark";
@@ -144,7 +147,16 @@ converter.setOption('literalMidWordUnderscores', 'true');
 converter.setOption('tables', 'true')
     
 filename = "scrolls/home";
-loadscroll("scrolls/home");
+
+//loadscroll("scrolls/home");
+
+if(document.getElementById("scrolldiv").innerHTML.length > 0){
+    loadscroll(document.getElementById("scrolldiv").innerHTML);
+}
+else{
+    loadscroll("scrolls/home");
+}
+
 
 localfile = true;
 
@@ -159,7 +171,8 @@ function loadscroll(scrollname){
         localfile = false;
     }
     document.getElementById("scrolleditorlink").href = "scrolleditor.php?scroll=" + filename;
-    document.getElementById("scrolleditorlink2").href = "scrolleditor.php?scroll=" + filename;    
+    document.getElementById("scrolleditorlink2").href = "scrolleditor.php?scroll=" + filename;
+
 
     document.getElementById("scrollscroll").innerHTML = "";
     document.getElementById("scrollscroll").style.display = "block";
@@ -225,6 +238,7 @@ function convertscrollinks(){
 document.getElementById("modebutton").onclick = function(){
     modeswitch();
 }
+
 document.getElementById("modebutton2").onclick = function(){
     modeswitch();
 }
@@ -251,8 +265,7 @@ function modeswitch(){
         document.getElementById("scrollinput").style.backgroundColor = "black";              
   
         document.getElementById("scrollsbox").style.backgroundColor = "#303030";
-        document.getElementById("scrollsbox").style.color = "#00ff00";          
-                
+        document.getElementById("scrollsbox").style.color = "#00ff00";  
 
     }
 }
@@ -271,7 +284,7 @@ httpc9.onreadystatechange = function() {
         newscrollbutton.onclick = function(){
             currentFile = this.innerHTML;
                 loadscroll(currentFile);
-        }        
+        }           
         for(var index = 0;index < scrolls.length;index++) {
             var newscrollbutton = document.createElement("P");
             newscrollbutton.className = "boxlink";
@@ -282,8 +295,6 @@ httpc9.onreadystatechange = function() {
                 loadscroll(currentFile);
             }
         }
-        
-        
     };
 }
 
@@ -298,46 +309,8 @@ document.getElementById("scrollinput").onchange = function(){
 }
 
 
-if(innerWidth > innerHeight){
-    codesquaresize = 100;
-}
-else{
-    codesquaresize = 80;
-}
-
-
-//globalurl = "http://www.trashrobot.org/qrcode.html";
-globalurl = window.location.href;
-
-
-qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-    
-qrcode.makeCode(globalurl);
-
-qrcode2 = new QRCode(document.getElementById("qrcode2"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-    
-qrcode2.makeCode(globalurl);
-
-
 </script>
 <style>
-.editlinks{
-/*    display:none;*/
-}
 body{
     overflow:hidden;
     background-color:black
@@ -396,9 +369,6 @@ input{
 h1,h2,h3,h4{
     text-align:center;
 }
-.button{
-    cursor:pointer;
-}
 .button:hover{
     background-color:green;
 }
@@ -433,7 +403,7 @@ h1,h2,h3,h4{
     #portraitlinks{
         display:none;
     }
-
+    
 }
 
 @media only screen and (orientation: portrait) {
@@ -464,6 +434,7 @@ h1,h2,h3,h4{
     table img{
         max-width:80px;
     }
+
 }
 </style>
 </body>

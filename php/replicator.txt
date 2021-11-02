@@ -13,9 +13,17 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
+mkdir("scrolls");
+mkdir("iconsymbols");
+
+mkdir("codeserver");
+mkdir("wndw");
+mkdir("symbolserver");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt","replicator.php");
+
+//copy("https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt","codeserver/replicator.php");
 
 foreach($dna->html as $value){
     
@@ -23,6 +31,11 @@ foreach($dna->html as $value){
 
 }
 
+foreach($dna->iconsymbols as $value){
+    
+    copy($baseurl."iconsymbols/".$value,"iconsymbols/".$value);
+
+}
 
 foreach($dna->data as $value){
     
@@ -37,6 +50,9 @@ foreach($dna->php as $value){
 
 }
 
+foreach($dna->scrolls as $value){
+    copy($baseurl."scrolls/".$value,"scrolls/".$value);
+}
 
 
 ?>

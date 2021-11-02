@@ -1,0 +1,18 @@
+{
+    "server": "http://10.0.0.26/pi/",
+    "scrolls": [
+        "arduino",
+        "communitynetworking",
+        "freenet",
+        "freestuff",
+        "help",
+        "home",
+        "linux",
+        "markdown",
+        "php",
+        "pi",
+        "stories",
+        "web",
+        "wirelesslinks"
+    ]
+}

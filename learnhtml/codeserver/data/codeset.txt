@@ -1,6 +1,0 @@
-{
-    "server": "http://localhost/",
-    "code": [
-        "index.html"
-    ]
-}
