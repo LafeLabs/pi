@@ -1,5 +1,5 @@
 {
-    "server": "http://localhost/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/symbolserver/",
     "symbols": [
         "symbol1632849011.svg",
         "symbol1633623068.svg",
