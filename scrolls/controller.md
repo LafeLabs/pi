@@ -18,6 +18,17 @@ Controller kit:
 - 7 solid wire jumpers, 3" long
 - Geometron shapes: 3" equillateral triangle, 3" square, 3" isoscoles right triangle, 6"x1" ruler with Geometron markings
 
+## Version 2 Geometry
+
+![](https://i.imgur.com/Iu8m5NU.png)
+
+![](https://i.imgur.com/LOGqpWJ.png)
+
+![](https://i.imgur.com/DXJ8lp1.png)
+
+![](https://i.imgur.com/BaobcqC.png)
+
+
 ![](https://i.imgur.com/rIaKsJ3.jpg)
 
 Corrugated Cardboard patterns

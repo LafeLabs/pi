@@ -10,6 +10,7 @@
         "box.md",
         "brain.md",
         "brand.md",
+        "buildrobot",
         "civilizations.md",
         "communitynetworking",
         "controller.md",
