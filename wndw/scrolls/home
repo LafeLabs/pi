@@ -1,5 +1,3 @@
-## [../](../)
-
 #  [Wireless Networking in the Developing World](http://wndw.net/book.html#readBook)
 
 ## [README](scroll(README.md))
@@ -17,8 +15,8 @@ This is a digital hardcopy of the book [Wireless Networking in the Developing Wo
  9. [SECURITY FOR WIRELESS NETWORKS](scrolls/security)
  10. [DEPLOYMENT PLANNING](scrolls/deployment) 
  11. [HARDWARE SELECTION AND CONFIGURATION](scrolls/hardware)
- 12. INDOOR INSTALLATION
- 13. OUTDOOR INSTALLATION
+ 12. [INDOOR INSTALLATION](scrolls/indoor)
+ 13. [OUTDOOR INSTALLATION](scrolls/outdoor)
  14. OFF GRID POWER
  15. MAINTENANCE AND TROUBLESHOOTING
  16. NETWORK MONITORING

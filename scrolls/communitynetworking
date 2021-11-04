@@ -63,6 +63,8 @@
 
 Port forwarding on routers allows each pi to use internal server names linked to external router ip addresses, with no need for any purchased domains. This means we can have significant repetition of names, with the same name pointing to an analogous place like "thecorner/" in a huge number of places globally. This builds up a local geography which is repeated again and again from one locality to another globally.  
 
+[youtube link about nyc community mesh network](https://www.youtube.com/watch?v=Dpl-faX6vlg)
+
 #  What is Community Networking?[old]
 
  - the purpose of the network is to be a free resource for everyone in a community to share information with everyone they want to
