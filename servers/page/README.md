@@ -26,6 +26,7 @@ To create a new page like this on a web server without any Geometron, create a n
 
 ## copy replicators to local replicator.php
 
+ - [copy main pi replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt&to=replicator.php)
  - [copy wall server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt&to=replicator.php)
  - [copy page server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/php/replicator.txt&to=replicator.php)
  - [copy mathpage server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mathpage/php/replicator.txt&to=replicator.php)

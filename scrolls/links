@@ -1,7 +1,16 @@
 ## [HOME](scrolls/home)
 
 # links
- 
+
+ - [user.php](user.php?scroll=scrolls/links)
+ - [scrolleditor.php] (scrolleditor.php?scroll=scrolls/links)
+ - [servers/](servers/)
+ - [codeserver/](codeserver/)
+ - [symbolserver/](symbolserver/)
+ - [iconserver/](iconserver/)
+ - [imageserver/](imageserver/)
+ - [wndw/](wndw/)
+ - [mapserver/](mapserver/)
  - [qrcode.html](qrcode.html)
  - [ipaddress.php](ipaddress.php)
  - [http://localhost/](http://localhost/)

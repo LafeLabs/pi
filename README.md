@@ -4,6 +4,12 @@
 
 [replicator raw code](php/replicator.txt)
 
+[global replicator link](https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt)
+
+## [LINKS](scrolls/links)
+
+## [REPLICATORS](scrolls/replicators)
+
 # Basic Kit
 
 *For about $400 we build an off-grid solar powered web server with no private information which can be shared in public with anyone*

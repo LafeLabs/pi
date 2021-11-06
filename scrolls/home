@@ -1,21 +1,20 @@
 #  Geometron/Trash Robot
 
- - [links](scrolls/links)
- - [server replicators](scrolls/replicators)
- - [dnagenerator.php](dnagenerator.php)
- - [README](scroll(README.md))
- - [community networking faq](scrolls/communitynetworking)
- - [learn about linux](scrolls/linux)
- - [example markdown document](scrolls/markdown)
- - [freenet](scrolls/freenet)
- - [servers](servers/)
- - [book of geometron](scrolls/bookofgeometron.md)
- - [build a robot](scrolls/buildrobot)
- - [build raspberry pi terminal](scrolls/pi)
- - [symbolserver/](symbolserver/)
- - [mapserver/](mapserver/)
- - [imageserver/](imageserver/)
- - [iconserver/](iconserver/)
- - [codeserver/](codeserver/)
- - [wireless networking in the developing world](wndw/)
+#  <span style = "color:red">Γ</span><span style = "color:orange">ε</span><span style = "color:yellow">ω</span><span style = "color:green">μ</span><span style = "color:blue">ε</span><span style = "color:purple">τ</span><span style = "color:red">ρ</span><span style = "color:orange">ο</span><span style = "color:yellow">ν</span>
 
+#  <span style = "color:red">T</span><span style = "color:orange">R</span><span style = "color:yellow">A</span><span style = "color:green">S</span><span style = "color:blue">H</span><span style = "color:purple">R</span><span style = "color:red">O</span><span style = "color:orange">B</span><span style = "color:yellow">0</span><span style = "color:red">T</span>
+
+
+## [MAKE A RASPBERRY PI GEOMETRON MACHINE](scrolls/pi)
+
+## [CONSTRUCTIONS OF ACTION GEOMETRY](scrolls/actiongeometry.md)
+
+## [READ THE BOOK OF GEOMETRON](scrolls/bookofgeometron.md)
+
+## [FAQ](scrolls/faq)
+
+## [TRASH MAGIC MANIFESTO](https://lafelabs.github.io/Trash_Magic_Manifesto.pdf)
+
+## [WIRELESS NETWORKING IN THE DEVELOPING WORLD BOOK](wndw/)
+
+## [README.md](scroll(README.md))

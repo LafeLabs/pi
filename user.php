@@ -344,7 +344,7 @@ input{
 }
 
 #scrollscroll{
-    
+    text-align:justify;
     padding-left:1em;
     padding-right:1em;
     position:absolute;
