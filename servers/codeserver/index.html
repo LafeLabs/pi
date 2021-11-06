@@ -282,6 +282,9 @@ function setmode(){
     if(currentFile.substring(currentFile.length-3,currentFile.length) == ".py"){
         editor.getSession().setMode("ace/mode/python");
     }
+    if(currentFile.substring(currentFile.length-3,currentFile.length) == ".txt"){
+        editor.getSession().setMode("ace/mode/text");
+    }    
     if(currentFile.substring(currentFile.length-3,currentFile.length) == ".md"){
         editor.getSession().setMode("ace/mode/markdown");
     }
