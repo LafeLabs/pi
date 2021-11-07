@@ -1,19 +1,6 @@
-[home](index.html)
+## [home](scrolls/home)
 
-[icon factory map](maps/iconfactory)
-
-
- - [google images](https://images.google.com/)
- - [global image feed](globalimagefeed.html)
- - [local image feed](localimagefeed.html)
- - [imgur.com](https://imgur.com/)
- - [image aligner](alignimage.html)
- - [icon tracer](traceicon.html)
- - [icon feed](iconfeed.html)
- - [program arduino](programarduino.html)
- - [inject icon into a Geometron map](icon64.html)
- - [3d print an icon](icon3d.html)
- - [spray paint stencil pattern of icon](lasericon.html)
+## [iconserver/](iconserver/)
 
 # Icon Factory
 
@@ -27,15 +14,19 @@ This is the most creative step.  This can be anything: words, computer icons, sy
 
 ## Step 2: Either find or create an image of the symbol 
 
-There are two paths to this: the [global image feed](globalimagefeed.html) and the [local image feed](localimagefeed.html).  We use the global image feed to capture the addresses of images on the World Wide Web which we will trace.  We can do this by doing an image search for whatever we decided we want to trace.  Having done the image search, you right click the image and "copy image link" to copy the address of the image.  Then when you go to [globalimagefeed.html](globalimagefeed.html) you just paste the address into the address bar and you have captured the image.  You can do this with an image you take yourself by uploading an image to the image sharing page [imgur.com/](https://imgur.com/), and again right clicking on your image and copying the link to paste in the global image feed.  That procedure can also be carried out on a Geometron server by uploading your image to the [local image feed](localimagefeed.html).  Note that before doing this you will need to make the image smaller by taking a screen shot of the image and cropping it(you ideally want it under 1 megabyte).  Tracing images you record on your mobile devices is used for converting symbols you draw on paper to digital icons, as well as symbols, logos and brands found in your environment.
+There are two paths to this: the [global image feed](iconserver/globalimagefeed.html) and the [local image feed(does not exist)].  We use the global image feed to capture the addresses of images on the World Wide Web which we will trace.  We can do this by doing an image search for whatever we decided we want to trace.  Having done the image search, you right click the image and "copy image link" to copy the address of the image.  Then when you go to [iconserver/globalimagefeed.html](iconserver/globalimagefeed.html) you just paste the address into the address bar and you have captured the image.  You can do this with an image you take yourself by uploading an image to the image sharing page [imgur.com/](https://imgur.com/), and again right clicking on your image and copying the link to paste in the global image feed.  
+
+local images can be uploaded to a server using the:
+
+[IMAGESERVER/](imageserver/)
 
 ### Step 3: Align the image for tracing
 
-Once you have the image of the symbol you want to trace in one of the image feeds, you need to line it up for tracing.  This is done with [alignimage.html](alignimage.html).  When you are on that page, click on the image in the feed that you want to use to select it and it will appear inside the alignment circle.  You then want to use either the slider bar or the little plus and minus symbols to adjust the size of the image so the whole symbol you want to trace appears inside the alignment circle.  When you have it the size you want, hit the SAVE button to save the image selection and scale.  Then move it around by dragging on the image to get the alignment all inside the circle.  Again, save whenever you get it how you want. You can also rotate with either the rotate bar or the buttons, and re-adjust the zoom and pan again, and finally hit the SAVE button when you have it how you want it.  When you have aligned the image, you can click on TRACE to get to the next step.
+Once you have the image of the symbol you want to trace in one of the image feeds, you need to line it up for tracing.  This is done with [conserver/alignimage.html](iconserver/alignimage.html).  When you are on that page, click on the image in the feed that you want to use to select it and it will appear inside the alignment circle.  You then want to use either the slider bar or the little plus and minus symbols to adjust the size of the image so the whole symbol you want to trace appears inside the alignment circle.  When you have it the size you want, hit the SAVE button to save the image selection and scale.  Then move it around by dragging on the image to get the alignment all inside the circle.  Again, save whenever you get it how you want. You can also rotate with either the rotate bar or the buttons, and re-adjust the zoom and pan again, and finally hit the SAVE button when you have it how you want it.  When you have aligned the image, you can click on TRACE to get to the next step.
 
 ### Step 4: Trace the image into an icon glyph
 
-Clicking from TRACE from the [image aligner](alignimage.html) will get you to [traceicon.html](traceicon.html), which is where you trace the icon.  If you are on a computer with a proper keyboard, which is much easier than mobile, you can use the keys a,s,d,f to control the movement of the tool with a pixel being drawn, and if you use the keys z,x,c,v you can control tool movement without drawing a pixel.  These keys are shown below:
+Clicking from TRACE from the [image aligner](iconserver/alignimage.html) will get you to [iconserver/traceicon.html](iconserver/traceicon.html), which is where you trace the icon.  If you are on a computer with a proper keyboard, which is much easier than mobile, you can use the keys a,s,d,f to control the movement of the tool with a pixel being drawn, and if you use the keys z,x,c,v you can control tool movement without drawing a pixel.  These keys are shown below:
 
 ![pixel movements](https://i.imgur.com/csr4ZMb.png)
 
@@ -53,16 +44,16 @@ To write text using the Geometron Robot font, hit return on a keyboard to switch
 
 When you have an icon you like, save it to the local icon feed by hitting the button marked SAVE.  After the icon is saved it will be available for use in other parts of the system, including:
 
- - [share and delete icons](iconfeed.html)
- - [program arduino](programarduino.html)
- - [inject icon into a Geometron map](icon64.html)
- - [3d print an icon](icon3d.html)
- - [spray paint stencil pattern of icon](lasericon.html)
+ - [share and delete icons](iconserver/iconfeed.html)
+ - [program arduino](iconserver/programarduino.html)
+ - [inject icon into a Geometron map](iconserver/icon64.html)
+ - [3d print an icon](iconserver/icon3d.html)
+ - [spray paint stencil pattern of icon](iconserver/lasericon.html)
 
 
 ### Step 5: Share and save glyphs, replicate
 
-The [Icon Feed](iconfeed.html) page allows you to see and delete all the icons in the Feed.  Red X's delete. Be careful! Deletion really destroys the icon.  If you click on any icon, the glyph will load into the text input at the top of the screen.  That can then be copy/pasted to share with other people or save into a file. This page is critical for building a network of artists who can create and share these icons.  Any new glyph put in the top input will, after you hit enter, be loaded into the Feed.  Saving from the Trace page also adds an icon to the Feed.  The actual file which represents the Feed is stored at [data/robotfeed.txt](data/robotfeed.txt).  That file is also displayed in the text area at the bottom of the screen.  This can be copied to the clipboard and shared with other people or saved separately as well.  When someone shares a whole Feed file with you, you can paste it into the same text area at the bottom of the screen, and click the "import" button to import that whole Feed.  Again, this deletes the existing Feed, so make sure every Feed you want to keep is copied to some file saved somewhere.
+The [Icon Feed](iconserver/iconfeed.html) page allows you to see and delete all the icons in the Feed.  Red X's delete. Be careful! Deletion really destroys the icon.  If you click on any icon, the glyph will load into the text input at the top of the screen.  That can then be copy/pasted to share with other people or save into a file. This page is critical for building a network of artists who can create and share these icons.  Any new glyph put in the top input will, after you hit enter, be loaded into the Feed.  Saving from the Trace page also adds an icon to the Feed.  The actual file which represents the Feed is stored at [iconserver/data/robotfeed.txt](iconserver/data/robotfeed.txt).  That file is also displayed in the text area at the bottom of the screen.  This can be copied to the clipboard and shared with other people or saved separately as well.  When someone shares a whole Feed file with you, you can paste it into the same text area at the bottom of the screen, and click the "import" button to import that whole Feed.  Again, this deletes the existing Feed, so make sure every Feed you want to keep is copied to some file saved somewhere.
 
 ### Step 6: Set up robot
 
@@ -82,7 +73,7 @@ Once the Arduino IDE is installed and open, make sure the robot is plugged into 
 
 ![](https://i.imgur.com/V6dxO5e.png)
 
-When the Arduino is recognized, go to the Program Arduino page in the Geometron system at [programarduino.html](programarduino.html).  On this page, click on the icon you want to print, and you will see the code chnage in the blue-green rectangular area.  When you click on any other icon, what changes is the string of letters in the top of the program.  Those letters represent the same information as the glyph code with the numbers described above, but in a form the Arduino is programmed to understand.  To program, click the arrow to compile and load the code.  There should be some text at the bottom of the IDE, the lights on the robot brain should blink, and then it should say that the sketch is uploaded(Arduino programs are called "sketches").  In some cases the size of an icon might be too large to load, and you can cut the string of letters into two pieces and upload the first one, print it, and then upload the second half to print.  
+When the Arduino is recognized, go to the Program Arduino page in the Geometron system at [iconserver/programarduino.html](iconserver/programarduino.html).  On this page, click on the icon you want to print, and you will see the code chnage in the blue-green rectangular area.  When you click on any other icon, what changes is the string of letters in the top of the program.  Those letters represent the same information as the glyph code with the numbers described above, but in a form the Arduino is programmed to understand.  To program, click the arrow to compile and load the code.  There should be some text at the bottom of the IDE, the lights on the robot brain should blink, and then it should say that the sketch is uploaded(Arduino programs are called "sketches").  In some cases the size of an icon might be too large to load, and you can cut the string of letters into two pieces and upload the first one, print it, and then upload the second half to print.  
 
 This is what the button looks like that you click to load the code:
 
@@ -132,4 +123,4 @@ Icons can be incorporated into [Geoemtron Maps](scrolls/maps.md) using [icon64.h
 
 You now have the tools to create self-replicating icons in several media which can represent any idea which the human mind can express in language and use them for any purpose. 
 
-[home](index.html)
+[home](scrolls/home)

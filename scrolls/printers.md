@@ -1,10 +1,8 @@
-[home](index.html)
+## [home](scrolls/home)
 
-[Book of Geometron](scrolls/bookofgeometron.md)
+## [Book of Geometron](scrolls/bookofgeometron.md)
 
 # Chapter 12: Printers
-
-[icon factory](scrolls/iconfactory.md)
 
 1. [Build Arduino Brain](scrolls/brain.md)
 2. [Build Controller](scrolls/controller.md)
