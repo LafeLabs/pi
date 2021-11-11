@@ -1,7 +1,5 @@
 [home](index.html)
 
-[return to shield map](maps/shield)
-
 # Trash Robot UNO Shield v5
 
 ![](https://i.imgur.com/fzFvL7B.jpg)
