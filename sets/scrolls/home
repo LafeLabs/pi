@@ -2,6 +2,7 @@
 
  - [set.html](set.html)
  - [editor.php](editor.php)
+ - [copy poetry engine set](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/sets/data/poetryengineset.txt&to=data/set.txt)
 
 # Geometron
 

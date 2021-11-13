@@ -1,26 +1,62 @@
 [
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/maps/math",
-        "name": "maps/math"
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/textfeed.html",
+        "name": "textfeed.html"
     },
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/scrolls/math.md",
-        "name": "scrolls/math.md"
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/add.svg",
+        "name": "iconsymbols/add.svg"
     },
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/php/mathmapeditor.txt",
-        "name": "php/mathmapeditor.txt"
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/delete.svg",
+        "name": "iconsymbols/delete.svg"
     },
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/php/mathmapeditor.txt",
-        "name": "mathmapeditor.php"
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/save.svg",
+        "name": "iconsymbols/save.svg"
     },
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/php/mathuser.txt",
-        "name": "mathuser.php"
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/downelement.svg",
+        "name": "iconsymbols/downelement.svg"
     },
     {
-        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/php/mathuser.txt",
-        "name": "php/mathuser.txt"
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/upelement.svg",
+        "name": "iconsymbols/upelement.svg"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/scroll.svg",
+        "name": "iconsymbols/scroll.svg"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/feed.svg",
+        "name": "iconsymbols/feed.svg"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/home.svg",
+        "name": "iconsymbols/home.svg"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/iconsymbols/scroll.svg",
+        "name": "iconsymbols/scroll.svg"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/jscode/mapfactory.js",
+        "name": "jscode/mapfactory.js"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/data/poetry.txt",
+        "name": "data/poetry.txt"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/data/textfeed.txt",
+        "name": "data/textfeed.txt"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/thing/master/poetryengine.html",
+        "name": "index.html"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/servers/page/README.md",
+        "name": "README.md"
     }
 ]
