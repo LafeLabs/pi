@@ -16,7 +16,7 @@ mkdir("php");
 mkdir("maps");
 mkdir("jscode");
 mkdir("iconsymbols");
-
+mkdir("uploadimages");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt","replicator.php");

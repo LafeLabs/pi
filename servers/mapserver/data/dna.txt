@@ -35,6 +35,7 @@
         "replicator.txt",
         "setreplicator.txt",
         "text2php.txt",
+        "upload.txt",
         "user.txt"
     ],
     "maps": [

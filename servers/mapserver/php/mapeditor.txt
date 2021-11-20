@@ -888,6 +888,46 @@ function redrawhref(){
     
 }
 
+uploadImages = [];
+var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        uploadImages = JSON.parse(this.responseText);
+        for(var index = uploadImages.length - 1;index >= 0;index--) {
+            var newuploadbox = document.createElement("DIV");
+            newuploadbox.classList.add("uploadbox");
+            var newimg = document.createElement("IMG");
+            newimg.src = "uploadimages/" + uploadImages[index];
+            newimg.classList.add("uploadimage");
+            newimg.classList.add("button");
+            newuploadbox.appendChild(newimg);
+            document.getElementById("feedscroll").appendChild(newuploadbox);
+            newimg.onclick = function() {
+                var localurl = "uploadimages" + this.src.split("uploadimages")[1];
+                mainmap.array[mainmap.linkindex].src = localurl;
+                mainmap.draw();
+                document.getElementById("imginput").value = mainmap.array[mainmap.linkindex].src;
+    
+            }
+            var newimg = document.createElement("IMG");
+            newimg.src = "iconsymbols/delete.svg";
+            newuploadbox.appendChild(newimg);
+            newimg.classList.add("button");
+            newimg.classList.add("deletebutton");
+            newimg.onclick = function(){
+                var imageurl =this.parentElement.getElementsByClassName("uploadimage")[0].src; 
+                var imagename = "uploadimages/" + imageurl.split("uploadimages/")[1];
+                var httpc = new XMLHttpRequest();
+                var url = "deletefile.php";         
+                httpc.open("POST", url, true);
+                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc.send("filename=" + imagename);//send text to deletefile.php
+                this.parentElement.parentElement.removeChild(this.parentElement);
+            }
+        }
+    }
+};
+
 </script>
 <style>
 #iotable .button{
