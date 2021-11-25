@@ -63,6 +63,7 @@
         "streetnetwork.md",
         "symbols.md",
         "textile.md",
+        "trashmagicactioncoloringbook",
         "web",
         "web2d.md",
         "windows",
