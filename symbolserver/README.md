@@ -6,6 +6,7 @@ Create, edit, replicate and delete symbols using the Geometron language.  For de
 
 ## Links
 
+ - [copy symbol set from trash magic book](copy.php?from=https://raw.githubusercontent.com/LafeLabs/trashmagic/main/symbolserver/data/symbolset.txt&to=data/symbolset.txt)
  - [index.html](index.html)
  - [qrcode.html](qrcode.html)
  - [ipaddress.php](ipaddress.php)
