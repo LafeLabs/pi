@@ -14,7 +14,5 @@
     "here is some more text"
   ],
   "src": [],
-  "href": [
-    "http://geometronics.org"
-  ]
+  "href": []
 }

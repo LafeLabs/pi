@@ -67,16 +67,16 @@
         <img id = "imagebutton" src = "iconsymbols/image.svg" class = "button" />                
         <img id = "linkbutton" src = "iconsymbols/link.svg" class = "button" />              
         <table id = "inputtable">
-            <tr>
+            <tr class=  "tablesuppress">
                 <td>text:</td><td><input id = "textinput"/></td>
             </tr>
             <tr>
                 <td>link:</td><td><input id = "linkinput"/></td>
             </tr>
-            <tr>
+            <tr class=  "tablesuppress">
                 <td>image url:</td><td><input id = "imginput"/></td>
             </tr>
-            <tr>
+            <tr class=  "tablesuppress">
                 <td>maplinkmode</td><td id = "maplinkmodebutton" class= "button"></td>
             </tr>
         </table>
@@ -309,7 +309,7 @@ mainmap.linkindex = 0;
 pageindex = 0;
 
 document.getElementById("savebutton").onclick = function() {
-    
+    mainmap.array[0].href= "";
     mainmap.array[mainmap.linkindex].x = parseInt(mainmap.linkArray[mainmap.linkindex].style.left.substring(0,mainmap.linkArray[mainmap.linkindex].style.left.length-2))/mainmap.w;
     mainmap.array[mainmap.linkindex].y = parseInt(mainmap.linkArray[mainmap.linkindex].style.top.substring(0,mainmap.linkArray[mainmap.linkindex].style.top.length-2))/mainmap.w;
     mainmap.array[mainmap.linkindex].w = parseInt(mainmap.linkArray[mainmap.linkindex].style.width.substring(0,mainmap.linkArray[mainmap.linkindex].style.width.length-2))/mainmap.w;
@@ -545,9 +545,9 @@ var httpc = new XMLHttpRequest();
             document.getElementById("feedscroll").appendChild(newuploadbox);
             newimg.onclick = function() {
                 var localurl = "uploadimages" + this.src.split("uploadimages")[1];
-                mainmap.array[mainmap.linkindex].src = localurl;
+                mainmap.array[0].src = localurl;
                 mainmap.draw();
-                document.getElementById("imginput").value = mainmap.array[mainmap.linkindex].src;
+                document.getElementById("imginput").value = mainmap.array[0].src;
     
             }
             var newimg = document.createElement("IMG");
@@ -675,11 +675,14 @@ if (this.readyState == 4 && this.status == 200) {
 //        newa.href = href[index];
         newa.innerHTML = "maps/" + maps[index];
         newa.onclick = function(){
-            mainmap.array[mainmap.linkindex].href = this.innerHTML;
-            mainmap.array[mainmap.linkindex].text = "map";
-            mainmap.array[mainmap.linkindex].src = "iconsymbols/map.svg";
-            mainmap.array[mainmap.linkindex].w = 0.05;
-            mainmap.array[mainmap.linkindex].maplinkmode = true;
+            if(mainmap.linkindex != 0){
+                mainmap.array[mainmap.linkindex].href = this.innerHTML;
+                mainmap.array[mainmap.linkindex].text = "map";
+                mainmap.array[mainmap.linkindex].src = "iconsymbols/map.svg";
+                mainmap.array[mainmap.linkindex].w = 0.05;
+                mainmap.array[mainmap.linkindex].maplinkmode = true;
+                
+            }
 
             mainmap.draw();
             document.getElementById("linkbox").innerHTML = this.innerHTML;
@@ -715,11 +718,14 @@ httpc9.onreadystatechange = function() {
     //        newa.href = href[index];
             newa.innerHTML = "scrolls/" + scrolls[index];
             newa.onclick = function(){
-                mainmap.array[mainmap.linkindex].href = this.innerHTML;
-                mainmap.array[mainmap.linkindex].text = "scroll";
-                mainmap.array[mainmap.linkindex].src = "iconsymbols/scroll.svg";
-                mainmap.array[mainmap.linkindex].w = 0.05;
-                mainmap.array[mainmap.linkindex].maplinkmode = true;
+                if(mainmap.linkindex != 0){
+                    mainmap.array[mainmap.linkindex].href = this.innerHTML;
+                    mainmap.array[mainmap.linkindex].text = "scroll";
+                    mainmap.array[mainmap.linkindex].src = "iconsymbols/scroll.svg";
+                    mainmap.array[mainmap.linkindex].w = 0.05;
+                    mainmap.array[mainmap.linkindex].maplinkmode = true;
+                    
+                }
     
                 mainmap.draw();
                 document.getElementById("linkbox").innerHTML = this.innerHTML;
@@ -996,6 +1002,16 @@ var httpc = new XMLHttpRequest();
 
 </script>
 <style>
+.tablesuppress{
+    display:none;
+}
+#textio{
+    display:none;
+}
+#iotable{
+    display:none;
+}
+
 #textbutton{
     display:none;
 }

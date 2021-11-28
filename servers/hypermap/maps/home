@@ -1,73 +1,18 @@
 [
     {
-        "x": -0.048,
-        "y": 0.053714285714285714,
-        "w": 1.2822857142857143,
-        "h": 0.8697142857142857,
+        "x": -0.184,
+        "y": -0.11657142857142858,
+        "w": 1.2857142857142858,
+        "h": 1.1268571428571428,
         "angle": 0,
-        "text": "CLICK TO DESIGN!!",
+        "text": "map",
         "href": "",
-        "src": "uploadimages/image1.png",
-        "maplinkmode": false
-    },
-    {
-        "x": 0.5462857142857143,
-        "y": 0.2925714285714286,
-        "w": 0.05142857142857143,
-        "h": 0.046857142857142854,
-        "angle": 0,
-        "text": "scroll",
-        "href": "scrolls/scroll1",
-        "src": "iconsymbols/scroll.svg",
+        "src": "uploadimages/image2.png",
         "maplinkmode": true
-    },
-    {
-        "x": 0.012571428571428572,
-        "y": 0.018285714285714287,
-        "w": 0.24,
-        "h": 0.05828571428571429,
-        "angle": 0,
-        "text": "editor.php",
-        "href": "editor.php",
-        "src": "",
-        "maplinkmode": false
-    },
-    {
-        "x": 0.44,
-        "y": 0.012571428571428572,
-        "w": 0.24,
-        "h": 0.04228571428571429,
-        "angle": 0,
-        "text": "scrolls.html",
-        "href": "scrolls.html",
-        "src": "",
-        "maplinkmode": false
-    },
-    {
-        "x": 0.6068571428571429,
-        "y": 0.6468571428571429,
-        "w": 0.04342857142857143,
-        "h": 0.04342857142857143,
-        "angle": 0,
-        "text": "scroll",
-        "href": "maps/map2",
-        "src": "iconsymbols/map.svg",
-        "maplinkmode": true
-    },
-    {
-        "x": 0.8194285714285714,
-        "y": 0.017142857142857144,
-        "w": 0.24,
-        "h": 0.04228571428571429,
-        "angle": 0,
-        "text": "powermap.html",
-        "href": "powermap.html",
-        "src": "",
-        "maplinkmode": false
     },
     {
         "x": 0.08914285714285715,
-        "y": 0.27314285714285713,
+        "y": 0.7257142857142858,
         "w": 0.04914285714285714,
         "h": 0.05028571428571429,
         "angle": 0,
@@ -77,25 +22,14 @@
         "maplinkmode": true
     },
     {
-        "x": 0.018285714285714287,
-        "y": 0.6662857142857143,
+        "x": 0.792,
+        "y": 0.44457142857142856,
         "w": 0.04914285714285714,
-        "h": 0.05028571428571429,
+        "h": 0.04914285714285714,
         "angle": 0,
         "text": "scroll",
-        "href": "scrolls/home",
+        "href": "scrolls/scroll1",
         "src": "iconsymbols/scroll.svg",
-        "maplinkmode": true
-    },
-    {
-        "x": 0.9211428571428572,
-        "y": 0.6788571428571428,
-        "w": 0.04914285714285714,
-        "h": 0.05028571428571429,
-        "angle": 0,
-        "text": "map",
-        "href": "maps/map2",
-        "src": "iconsymbols/map.svg",
         "maplinkmode": true
     }
 ]
