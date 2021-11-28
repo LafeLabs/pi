@@ -173,6 +173,10 @@ function loadmap(mapname){
                         if(localmap.includes("scrolls/")){
                             var localscroll = "scrolls/" + localmap.split("scrolls/")[1];
                             loadscroll(localscroll);
+                            
+                            currentscroll = localscroll;
+                            scrollmode =true;
+                            document.getElementById("currentmaplink").src = "iconsymbols/map.svg";
                         }
                         if(localmap.includes("scroll(")){
                             var localscroll = localmap.split("scroll(")[1].split(")")[0];
@@ -244,7 +248,10 @@ function convertscrollinks(){
                 var localscroll = this.getElementsByClassName("data")[0].innerHTML;
                 currentscroll = localscroll;
                 scrollmode =true;
+                document.getElementById("currentmaplink").src = "iconsymbols/map.svg";
                 loadscroll(localscroll);
+
+                
             }
         }
         if(links[index].href.includes("scroll(") && !links[index].href.includes(".php")){
@@ -299,7 +306,7 @@ function convertscrollinks(){
                 var localscroll = this.getElementsByClassName("data")[0].innerHTML;
                 currentmap = localscroll;
                 scrollmode = false;
-
+                document.getElementById("currentmaplink").src = "iconsymbols/scroll.svg";
                 loadmap(localscroll);
             }
         }        
@@ -480,7 +487,7 @@ input{
     overflow:scroll;
     background-color:black;
     color:#00ff00;
-    font-size:2em;
+    font-size:3em;
     display:none;
     z-index:-3;
 }
