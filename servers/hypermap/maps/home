@@ -1,0 +1,79 @@
+[
+    {
+        "x": -0.048,
+        "y": 0.053714285714285714,
+        "w": 1.2822857142857143,
+        "h": 0.8697142857142857,
+        "angle": 0,
+        "text": "CLICK TO DESIGN!!",
+        "href": "",
+        "src": "uploadimages/image1.png",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.5462857142857143,
+        "y": 0.2925714285714286,
+        "w": 0.05142857142857143,
+        "h": 0.046857142857142854,
+        "angle": 0,
+        "text": "scroll",
+        "href": "scrolls/scroll1",
+        "src": "iconsymbols/scroll.svg",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.012571428571428572,
+        "y": 0.018285714285714287,
+        "w": 0.24,
+        "h": 0.05828571428571429,
+        "angle": 0,
+        "text": "editor.php",
+        "href": "editor.php",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.44,
+        "y": 0.012571428571428572,
+        "w": 0.24,
+        "h": 0.04228571428571429,
+        "angle": 0,
+        "text": "scrolls.html",
+        "href": "scrolls.html",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.6068571428571429,
+        "y": 0.6468571428571429,
+        "w": 0.04342857142857143,
+        "h": 0.04342857142857143,
+        "angle": 0,
+        "text": "scroll",
+        "href": "maps/map2",
+        "src": "iconsymbols/map.svg",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.8194285714285714,
+        "y": 0.017142857142857144,
+        "w": 0.24,
+        "h": 0.04228571428571429,
+        "angle": 0,
+        "text": "powermap.html",
+        "href": "powermap.html",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.08914285714285715,
+        "y": 0.27314285714285713,
+        "w": 0.04914285714285714,
+        "h": 0.05028571428571429,
+        "angle": 0,
+        "text": "map",
+        "href": "maps/foo",
+        "src": "iconsymbols/map.svg",
+        "maplinkmode": true
+    }
+]

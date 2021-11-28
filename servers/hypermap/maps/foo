@@ -1,0 +1,24 @@
+[
+    {
+        "x": 0.09942857142857142,
+        "y": 0.09942857142857142,
+        "w": 0.32571428571428573,
+        "h": 0.39085714285714285,
+        "angle": 0,
+        "text": "text",
+        "href": "maps/home",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.38285714285714284,
+        "y": 0.3097142857142857,
+        "w": 0.32571428571428573,
+        "h": 0.39085714285714285,
+        "angle": 0,
+        "text": "text",
+        "href": "",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": false
+    }
+]

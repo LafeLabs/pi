@@ -1,0 +1,24 @@
+[
+    {
+        "x": -0.054857142857142854,
+        "y": -0.009142857142857144,
+        "w": 1.086857142857143,
+        "h": 0.952,
+        "angle": 0,
+        "text": "text",
+        "href": "",
+        "src": "uploadimages/image2.png",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.6994285714285714,
+        "y": 0.7714285714285715,
+        "w": 0.11085714285714286,
+        "h": 0.11085714285714286,
+        "angle": 0,
+        "text": "text",
+        "href": "maps/home",
+        "src": "iconsymbols/map.svg",
+        "maplinkmode": true
+    }
+]
