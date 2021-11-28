@@ -53,6 +53,11 @@
         "home",
         "map2"
     ],
+    "scrolls": [
+        "foo",
+        "home",
+        "scroll1"
+    ],
     "iconsymbols": [
         "add.svg",
         "addressstack.svg",

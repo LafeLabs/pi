@@ -11,10 +11,10 @@
         "maplinkmode": true
     },
     {
-        "x": 0.08914285714285715,
-        "y": 0.7257142857142858,
+        "x": 0.21714285714285714,
+        "y": 0.44342857142857145,
         "w": 0.04914285714285714,
-        "h": 0.05028571428571429,
+        "h": 0.04914285714285714,
         "angle": 0,
         "text": "map",
         "href": "maps/foo",
@@ -22,13 +22,35 @@
         "maplinkmode": true
     },
     {
-        "x": 0.792,
-        "y": 0.44457142857142856,
+        "x": 0.784,
+        "y": 0.5428571428571428,
         "w": 0.04914285714285714,
         "h": 0.04914285714285714,
         "angle": 0,
         "text": "scroll",
         "href": "scrolls/scroll1",
+        "src": "iconsymbols/scroll.svg",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.6982857142857143,
+        "y": 0.32571428571428573,
+        "w": 0.04914285714285714,
+        "h": 0.05028571428571429,
+        "angle": 0,
+        "text": "scroll",
+        "href": "scrolls/home",
+        "src": "iconsymbols/scroll.svg",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.9348571428571428,
+        "y": 0.08914285714285715,
+        "w": 0.04914285714285714,
+        "h": 0.04914285714285714,
+        "angle": 0,
+        "text": "scroll",
+        "href": "scrolls/foo",
         "src": "iconsymbols/scroll.svg",
         "maplinkmode": true
     }
