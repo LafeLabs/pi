@@ -6,6 +6,7 @@
 ## fork down and create replicators
 
  - [fork down to trashmagic](mkdir.php?dir=trashmagic&replicator=https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt)
+ - [fork down to hypermap](mkdir.php?dir=hypermap&replicator=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/hypermap/php/replicator.txt)
 
 ## copy replicators to local replicator.php
 

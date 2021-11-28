@@ -66,6 +66,7 @@ Use this to create a new server, and mutate it.  Then go up a level (you might h
  - [copy icon server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt&to=replicator.php)
  - [copy classifieds server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt&to=replicator.php)
 
+
 ## links to replicators
 
  - [wall server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/wall/php/replicator.txt)
@@ -81,5 +82,6 @@ Use this to create a new server, and mutate it.  Then go up a level (you might h
  - [symbol server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt)
  - [icon server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt)
  - [classifieds server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/classifieds/php/replicator.txt)
+ - [hypermap server replicator](https://raw.githubusercontent.com/LafeLabs/pi/main/servers/hypermap/php/replicator.txt)
 
 
