@@ -42,6 +42,7 @@
     
 </head>
 <body>    
+<img id = "currentmaplink" src = "iconsymbols/scroll.svg"/>
 <div id = "scrollscroll"></div>
 <div id = "mainmap"></div>
 <div id = "modebutton" class = "button">LIGHT<br>DARK</div>
@@ -62,6 +63,10 @@
     </div>
 </div>
 <script>
+
+scrollmode = false;
+currentscroll = "scrolls/home";
+currentmap = "maps/home";
 
 mode = "dark";
 //mode = "light";
@@ -235,7 +240,10 @@ function convertscrollinks(){
             links[index].style.display = "none";
             
             newspan.onclick = function(){
+                
                 var localscroll = this.getElementsByClassName("data")[0].innerHTML;
+                currentscroll = localscroll;
+                scrollmode =true;
                 loadscroll(localscroll);
             }
         }
@@ -289,6 +297,9 @@ function convertscrollinks(){
             
             newspan.onclick = function(){
                 var localscroll = this.getElementsByClassName("data")[0].innerHTML;
+                currentmap = localscroll;
+                scrollmode = false;
+
                 loadmap(localscroll);
             }
         }        
@@ -405,6 +416,19 @@ document.getElementById("mapinput").onchange = function(){
     this.value = "";
 }
 
+document.getElementById("currentmaplink").onclick = function(){
+    if(scrollmode){
+        loadmap(currentmap);
+        this.src = "iconsymbols/scroll.svg";
+    }    
+    else{
+        loadscroll(currentscroll);
+        this.src = "iconsymbols/map.svg";
+    }
+    scrollmode = !scrollmode;
+
+}
+
 </script>
 <style>
 body{
@@ -491,6 +515,7 @@ h1,h2,h3,h4{
     color:black;
     cursor:pointer;
     border:solid;
+    display:none;
     border-radius:5px;
     text-align:center;
 }
@@ -530,8 +555,24 @@ h1,h2,h3,h4{
     background-color:#ffd0d0;
     overflow:scroll;
 }
+#currentmaplink{
+    position:absolute;
+    right:5px;
+    cursor:pointer;
+    width:100px;
+}
+#currentmaplink:hover{
+    background-color:green;
+}
+#currentmaplink:active{
+    background-color:yellow;
+}
 
 @media only screen and (orientation: landscape) {
+    #currentmaplink{
+        top:5px;
+    }
+
     #margin{
         top:0px;
     }
@@ -545,6 +586,10 @@ h1,h2,h3,h4{
 }
 
 @media only screen and (orientation: portrait) {
+    #currentmaplink{
+        bottom:5px;
+    }
+
     #modebutton{
         right:0px;
         bottom:0px;

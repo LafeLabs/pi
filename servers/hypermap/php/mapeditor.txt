@@ -696,6 +696,44 @@ if (this.readyState == 4 && this.status == 200) {
 httpc8.open("GET", "dir.php?filename=maps", true);
 httpc8.send();
 
+
+
+
+scrolls = [];
+var httpc9 = new XMLHttpRequest();
+httpc9.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        scrolls = JSON.parse(this.responseText);
+
+        //maps in link scroll to select map links
+        for(var index = 0;index < scrolls.length;index++) {
+            
+            var newbox = document.createElement("div");
+            newbox.className = "box";
+            
+            var newa = document.createElement("A");
+    //        newa.href = href[index];
+            newa.innerHTML = "scrolls/" + scrolls[index];
+            newa.onclick = function(){
+                mainmap.array[mainmap.linkindex].href = this.innerHTML;
+                mainmap.array[mainmap.linkindex].text = "scroll";
+                mainmap.array[mainmap.linkindex].src = "iconsymbols/scroll.svg";
+                mainmap.array[mainmap.linkindex].w = 0.05;
+                mainmap.array[mainmap.linkindex].maplinkmode = true;
+    
+                mainmap.draw();
+                document.getElementById("linkbox").innerHTML = this.innerHTML;
+                document.getElementById("linkinput").value = mainmap.array[mainmap.linkindex].href;
+            }
+            newbox.appendChild(newa);
+            
+            document.getElementById("hrefscroll").appendChild(newbox);
+        };
+    }
+}
+httpc9.open("GET", "dir.php?filename=scrolls", true);
+httpc9.send();
+
 document.getElementById("newmapinput").value = "";
 document.getElementById("newmapinput").onchange = function(){
     var localmapname = this.value;
@@ -958,6 +996,23 @@ var httpc = new XMLHttpRequest();
 
 </script>
 <style>
+#textbutton{
+    display:none;
+}
+#deleteimagebutton{
+    display:none;
+}
+#deletelinkbutton{
+    display:none;
+}
+
+#movedownbutton{
+    display:none;
+}
+#moveupbutton{
+    display:none;
+}
+
 #rotatezoombuttons2{
     display:none;
 }

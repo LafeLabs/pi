@@ -75,5 +75,27 @@
         "href": "maps/foo",
         "src": "iconsymbols/map.svg",
         "maplinkmode": true
+    },
+    {
+        "x": 0.018285714285714287,
+        "y": 0.6662857142857143,
+        "w": 0.04914285714285714,
+        "h": 0.05028571428571429,
+        "angle": 0,
+        "text": "scroll",
+        "href": "scrolls/home",
+        "src": "iconsymbols/scroll.svg",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.9211428571428572,
+        "y": 0.6788571428571428,
+        "w": 0.04914285714285714,
+        "h": 0.05028571428571429,
+        "angle": 0,
+        "text": "map",
+        "href": "maps/map2",
+        "src": "iconsymbols/map.svg",
+        "maplinkmode": true
     }
 ]
