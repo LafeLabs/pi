@@ -13,7 +13,7 @@ $images = $remoteimageset->images;
 
 foreach($images as $value){
 
-    copy($server."uploadimages/".$value,"uploadimages/copy-".$value);
+    copy($server."uploadimages/".$value,"uploadimages/".$value);
 
 }
 
