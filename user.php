@@ -128,10 +128,8 @@ if(innerWidth > innerHeight){
 
 }
 else{
-    document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
-    document.getElementById("scrollscroll").style.top = (100).toString() + "px";    
-    document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
-    document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";        
+
+
 }
 
 mode = "dark";
