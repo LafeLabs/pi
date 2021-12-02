@@ -1,0 +1,6 @@
+{
+    "server": "http://10.0.0.26/geometron/",
+    "scrolls": [
+        "home"
+    ]
+}
