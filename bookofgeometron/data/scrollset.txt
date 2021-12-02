@@ -1,5 +1,5 @@
 {
-    "server": "http://10.0.0.26/geometron/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/bookofgeometron/",
     "scrolls": [
         "FAQ",
         "actiongeometry.md",
