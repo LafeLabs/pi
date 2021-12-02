@@ -127,11 +127,7 @@ if(innerWidth > innerHeight){
 }
 else{
 
-    document.getElementById("scrollscroll").style.height = (innerWidth).toString() + "px";
-    document.getElementById("scrollscroll").style.top = (100).toString() + "px";    
-    document.getElementById("scrollsbox").style.height = (0.5*(innerHeight - innerWidth)).toString() + "px";
-    document.getElementById("scrollsbox").style.top = (innerWidth + 0.5*(innerHeight - innerWidth)).toString() + "px";        
-    
+
 }
 
 mode = "dark";
@@ -446,6 +442,7 @@ h1,h2,h3,h4{
         right:0px;
         left:0px;
         bottom:0px;
+        display:none;
     }
     #scrollscroll{
         top:10px;
@@ -457,6 +454,7 @@ h1,h2,h3,h4{
         display:none;
     }
     #portraitlinks{
+        display:none;
         position:absolute;
         left:0px;
         top:0px;
