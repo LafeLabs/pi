@@ -1,6 +1,12 @@
-## [home](scrolls/home)
+## [QUBERT](scrolls/qubert)
 
-# Basic Kit
+## [HOME](scrolls/home)    
+    
+# Raspberry Pi
+
+![](https://i.imgur.com/MA4BFJS.png)
+
+## Basic Kit
 
 *For about $400 we build an off-grid solar powered web server with no private information which can be shared in public with anyone*
 
@@ -164,3 +170,5 @@ reboot
 sudo pip3 install jupyter
 ```
 
+
+## [ARTBOX](scrolls/artbox)
