@@ -8,7 +8,8 @@
         "scrolldelete.html",
         "scrolleditor.html",
         "scrollset.html",
-        "set.html"
+        "set.html",
+        "textconvert.html"
     ],
     "data": [
         "dna.txt",

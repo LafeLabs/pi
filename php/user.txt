@@ -21,6 +21,7 @@
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <!--       un comment to use math
 
@@ -49,7 +50,7 @@
 <table id = "landscapelinks">
     <tr>
         <td class = "editlinks">
-            <a id = "scrolleditorlink2" href = "scrolleditor.php">
+            <a  id ="scrolleditorlink2" href = "scrolleditor.php">
                 <img src = "iconsymbols/edit.svg"/>
             </a>
         </td>
@@ -80,6 +81,9 @@
             <img src = "iconsymbols/lightdark.svg"/>
         </td>
     </tr>
+    <tr>
+        <td id = "qrcode"></td>
+    </tr>
 </table>
 
 <table id = "portraitlinks">
@@ -89,7 +93,7 @@
                 <img src = "iconsymbols/edit.svg"/>
             </a>
         </td>
-        <td>
+        <td class = "editlinks">
             <a href = "scrollset.html">
                 <img src = "iconsymbols/chaos.svg"/>
             </a>
@@ -107,8 +111,14 @@
         <td id = "modebutton2" class= "button">
             <img src = "iconsymbols/lightdark.svg"/>
         </td>
+        <td id = "hidebutton" class= "button">
+            <img id = "hideicon" src = "iconsymbols/showmenu.svg"/>
+        </td>
+
+        <td id = "qrcode2"></td>
     </tr>
 </table>
+
 <div class = "data" id = "scrolldiv"><?php
     
 if(isset($_GET["scroll"])){
@@ -307,8 +317,63 @@ document.getElementById("scrollinput").onchange = function(){
 }
 
 
+
+
+if(innerWidth > innerHeight){
+    codesquaresize = 100;
+}
+else{
+    codesquaresize = 80;
+}
+
+
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+
+
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+    
+qrcode.makeCode(globalurl);
+
+qrcode2 = new QRCode(document.getElementById("qrcode2"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+    
+qrcode2.makeCode(globalurl);
+
+
+hideportraitlist = true;
+
+document.getElementById("hidebutton").onclick = function(){
+    hideportraitlist = !hideportraitlist;
+    if(hideportraitlist){
+        document.getElementById("scrollsbox").style.display = "none";
+        document.getElementById("hideicon").src = "iconsymbols/showmenu.svg";
+    }
+    else{
+        document.getElementById("scrollsbox").style.display = "block";
+        document.getElementById("hideicon").src = "iconsymbols/hidemenu.svg";
+
+    }
+
+}
 </script>
 <style>
+.editlinks{
+/*    display:none;*/
+}
 body{
     overflow:hidden;
     background-color:black
@@ -350,13 +415,12 @@ input{
     background-color:black;
     color:#00ff00;
     font-size:2em;
-    display:none;
 }
 #scrollscroll a{
     color:#ff2cb4;
 }
 #scrollscroll img{
-    max-width:50%;
+    max-width:80%;
     display:block;
     margin:auto;
     background-color:none;
@@ -366,6 +430,9 @@ input{
 }
 h1,h2,h3,h4{
     text-align:center;
+}
+.button{
+    cursor:pointer;
 }
 .button:hover{
     background-color:green;
@@ -393,7 +460,6 @@ h1,h2,h3,h4{
         bottom:0px;
     }   
     #landscapelinks{
-        display:block;
         position:absolute;
         left:0px;
         top:0px;
@@ -401,7 +467,7 @@ h1,h2,h3,h4{
     #portraitlinks{
         display:none;
     }
-    
+
 }
 
 @media only screen and (orientation: portrait) {
@@ -409,30 +475,29 @@ h1,h2,h3,h4{
         font-size:2em;
     }
     #scrollsbox{
-        height:200px;
+        height:30%;
         right:0px;
         left:0px;
         bottom:0px;
+        display:none;
     }
     #scrollscroll{
-        top:90px;
-        left:0px;
-        right:0px;
-        bottom:200px;
+        top:70px;
+        left:10px;
+        right:10px;
+        bottom:10px;
     }   
     #landscapelinks{
         display:none;
     }
     #portraitlinks{
-        display:block;
         position:absolute;
         left:0px;
         top:0px;
     }
     table img{
-        max-width:80px;
+        max-width:60px;
     }
-
 }
 </style>
 </body>

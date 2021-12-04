@@ -111,6 +111,10 @@
         <td id = "modebutton2" class= "button">
             <img src = "iconsymbols/lightdark.svg"/>
         </td>
+        <td id = "hidebutton" class= "button">
+            <img id = "hideicon" src = "iconsymbols/showmenu.svg"/>
+        </td>
+
         <td id = "qrcode2"></td>
     </tr>
 </table>
@@ -332,6 +336,22 @@ qrcode2 = new QRCode(document.getElementById("qrcode2"), {
 qrcode2.makeCode(globalurl);
 
 
+hideportraitlist = true;
+
+document.getElementById("hidebutton").onclick = function(){
+    hideportraitlist = !hideportraitlist;
+    if(hideportraitlist){
+        document.getElementById("scrollsbox").style.display = "none";
+        document.getElementById("hideicon").src = "iconsymbols/showmenu.svg";
+    }
+    else{
+        document.getElementById("scrollsbox").style.display = "block";
+        document.getElementById("hideicon").src = "iconsymbols/hidemenu.svg";
+
+    }
+
+}
+
 </script>
 <style>
 .editlinks{
@@ -438,14 +458,14 @@ h1,h2,h3,h4{
         font-size:2em;
     }
     #scrollsbox{
-        height:200px;
+        height:30%;
         right:0px;
         left:0px;
         bottom:0px;
         display:none;
     }
     #scrollscroll{
-        top:10px;
+        top:70px;
         left:10px;
         right:10px;
         bottom:10px;
@@ -454,13 +474,12 @@ h1,h2,h3,h4{
         display:none;
     }
     #portraitlinks{
-        display:none;
         position:absolute;
         left:0px;
         top:0px;
     }
     table img{
-        max-width:80px;
+        max-width:60px;
     }
 }
 </style>
