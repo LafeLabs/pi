@@ -2,9 +2,7 @@
 
 [Book of Geometron](scrolls/bookofgeometron.md)
 
-[symbol.html](symbol.html)
-
-[symbol feed](symbolfeed.html)
+[symbol server](symbolserver/)
 
 # Chapter 9: 2d Web Graphics
 

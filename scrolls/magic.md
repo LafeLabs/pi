@@ -219,3 +219,5 @@ red.
 
 ![](https://i.imgur.com/bqaZ2D3.png)
 
+[full stack geometron](scrolls/fullstack.md)
+

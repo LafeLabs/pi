@@ -4,9 +4,6 @@
 
 # Chapter 13: Geometron in 3d and Beyond
 
-[voxel.html](voxel.html)
-
-[icon3d.html](icon3d.html)
 
 As discussed in Symbols chapter, there is a layer of the Geometron
 Hypercube devoted to 3d geometric actions in software(as opposed to

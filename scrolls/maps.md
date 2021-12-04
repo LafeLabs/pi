@@ -2,18 +2,7 @@
 
 [book of geometron](scrolls/bookofgeometron.md)
 
- - [edit maps](mapeditor.html)
- - [edit math maps](mathmapeditor.html)
- - [go to math map](mathuser.php?map=maps/math)
- - [copy maps](copy.html)
- - [delete maps](mapdelete.html)
- - [canvas2png.html](canvas2png.html)
- - [globalimagefeed.html](globalimagefeed.html)
- - [localimagefeed.html](localimagefeed.html)
- - [textfeed.html](textfeed.html)
-
 # Chapter 7: Maps
-
 
 Maps are a from of document in which a set of images, words, and links
 are arranged geometrically on the screen. Just as the Geometron Scroll

@@ -1,4 +1,4 @@
-[Home](index.html)
+[Home](scrolls/home)
 
 [Book of Geometron](scrolls/bookofgeometron.md)
 

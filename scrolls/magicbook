@@ -20,5 +20,7 @@ The physical layer is created by printing out the pdf found here:
 
 Print this out double sided, and FLIP ON THE SHORT EDGE in the printer mode.  Fold down the spine, punch a sequence of hole spaced every 1/2 inch down the spine with a thumb tack, and back stitch the whole thing.  Fill out the book and color it in.  Share with others, show them how to replicate.
 
+The digital layers are the collection of scrolls of which this scroll is one and the various other servers.  All the graphics for the coloring book are made with Geometron using the [symbolserver/](symbolserver/).  These graphics form yet another self-replicating set, and they are copied from one machine to another across the web.  The graphics are saved as both .svg(vector) files and .png files(bitmap).  The .png files are imported into a LaTeX document which generates a pdf. That pdf is converted to a booklet format using "print to pdf" in Adobe Acrobat reader.
+
 ## [WEB](scrolls/web)
 

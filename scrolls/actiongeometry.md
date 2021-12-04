@@ -1,4 +1,4 @@
-[home](index.html)
+[home](scrolls/home)
 
 [back to book of Geometron](scrolls/bookofgeometron.md)
 
@@ -15,10 +15,6 @@
 [shape set scroll](scrolls/lasercutshapes)
 
 [shape set JSON scroll](scrolls/shapes)
-
-[shape set map](maps/shapes)
-
-[ruler map](maps/ruler)
 
 [ruler scroll](scrolls/ruler)
 

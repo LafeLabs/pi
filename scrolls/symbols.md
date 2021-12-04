@@ -2,10 +2,6 @@
 
 [Book of Geometron](scrolls/bookofgeometron.md)
 
-[symbol.html](symbol.html)
-
-[symbol feed](symbolfeed.html)
-
 
 # Chapter 8: Symbols
 
