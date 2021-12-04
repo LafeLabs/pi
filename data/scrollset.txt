@@ -1,5 +1,5 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/",
     "scrolls": [
         "FAQ",
         "actiongeometry.md",
