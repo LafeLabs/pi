@@ -1,6 +1,20 @@
 {
-    "server": "http://10.0.0.27/library/aliceinwonderland/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/library/aliceinwonderland/data/scrollset.txt&to=data/scrollset.txt/",
     "scrolls": [
-        "home"
+        "alice",
+        "home",
+        "i",
+        "ii",
+        "iii",
+        "iv",
+        "ix",
+        "replicator",
+        "v",
+        "vi",
+        "vii",
+        "viii",
+        "x",
+        "xi",
+        "xii"
     ]
 }
