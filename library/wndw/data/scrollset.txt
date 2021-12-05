@@ -1,0 +1,23 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/wndw/main/",
+    "scrolls": [
+        "antennas",
+        "deployment",
+        "hardware",
+        "home",
+        "indoor",
+        "licensing",
+        "markdown",
+        "mesh",
+        "networking",
+        "offgrid",
+        "outdoor",
+        "physics",
+        "pi",
+        "radio",
+        "security",
+        "telecommunications",
+        "web",
+        "wifi"
+    ]
+}

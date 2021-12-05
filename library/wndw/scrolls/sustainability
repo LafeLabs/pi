@@ -1,0 +1,255 @@
+## [HOME](scrolls/home)
+
+# ECONOMIC  SUSTAINABILITY
+
+##    Introduction
+
+Achieving   long-term   sustainability   is   perhaps   the   most   difficult   goal when  designing  and  operating  wireless  networks.  The  prohibitive  cost  of Internet   connectivity in   many   countries,   particularly   those   who   are heavily   regulated   by  the  government,   imposes   a  substantial   operating expense  that  makes  these networks  sensitive  to economic  fluctuations  and necessitates  innovation  to attain  viability.
+
+Substantial    progress    in    the    use    of    wireless    networks    for    rural 
+communications  has  been  accomplished  over  the  past  few  years,  due  in large part to technological  breakthroughs.
+
+Long-distance  links  have  been  constructed,  high  bandwidth  designs  are possible  and  secure  means  to  access  networks  are  available.  In  contrast, there  have   been   fewer  successes  with   the  development   of  sustainable business  models  for wireless  networks,  particularly for  remote  areas.
+
+Based  on  experiences  and  observations  of  existing  networks,  as  well  as knowledge  from  entrepreneurial  development  best  practices,  this  chapter will  focus   on  documenting   methods   for   building   sustainable   wireless networks.
+
+In  the  past  decade,  there  has  been  tremendous  growth  in  Internet  access across   the  world.   Most  cities   now  have  wireless   or  DSL    networks  and fibre    optic   connections     to    the    Internet,    which     is    a    substantial improvement. Nevertheless,   outside   urban   areas,   Internet   access   is   still   a  formidable challenge.   There   is  little  wired   infrastructure  beyond   principal  cities  in many  countries.   Therefore,   wireless  remains  one  of  the  few  choices  for providing  affordable  Internet  access.
+
+There  are  now  proven  models  for  rural  access  using  wireless.  This  book was written  for those wishing  to connect  their  communities.  The models  described  here  are  smaller  in scale  and  use  affordable  designs. Our  aim  is   to  provide  examples  of  how  wireless  networks  can  be  designed to   expand   sustainable    access   where   large   telecommunications   operators have  not  yet  installed  their  networks  into  areas  that  would  otherwise  not be  economically  feasible  by traditional  models.
+
+Two   common   misconceptions   must    be   dispelled.    First,   many   people assume  that  there  is  one  preferred  business  model  that  will  work  in  every community,  and  the key  to success  is  to  find  that  one  “eureka”  solution.
+
+In   practice,   this   is   not   the   case.   Each   community,   town   or   village   is 
+different.   There  is  no  prescribed  model  that  meets  the  needs  of  all  areas. Despite  the  fact  that  some  places  may  be  similar  in  economic   terms,  the characteristics  of  a  sustainable   business   model  vary   from   community   to community.
+
+Although  one  model  may  work  in  one  village,  another  village  nearby  may not  possess  the  same  necessary  qualities  for  this  model  to  be  sustainable. In  this  circumstance,   other innovative  models   must  be  customised  to  fit the context  of  this  particular  community.
+
+Another  misconception  is  that  sustainability has  the same definition  for  all people.  Although  this  term  generally  means  that  a system  is  built  to  persist indefinitely,  this  chapter  focuses  more  on  the  discussion  of  the  economic conditions  (financial  and  managerial)   than  other  aspects  of  sustainability. Also,   instead   of   the  horizon   being indeterminate,  it   centres   on  a   time period  of  five  years -- the  period  in  which  these  ICT    infrastructure  and wireless  technologies  are  expected  to  be  useful.
+
+Thus,  the  term  sustainability will  be  used  to encapsulate  a system  designed to  persist  for  approximately  five years.  As we  explained  earlier  in  the  book, wireless   networks   in  local   communities   often   stimulate   the   growth   of connectivity   and  usage,  and  the installation   of  fibre  begins  to  become  a reality.
+
+So  creating   a   sustainable   model  for   your   wireless   network   may   lead   to growth    of    other    networks    and    installation    of    longer    term    greater bandwidth  fibre  links.
+
+Wireless   will   then   likely  continue   to   co-habit   alongside   fibre   in   your network  as it grows  in size and  reach. When   determining   and   implementing   the   best   model   for   a   wireless network,  several key factors  will help  to ensure its success.
+
+This  chapter  is  not  meant  to  be  a  guide  for  managing  sustainable  wireless networks.
+
+Rather,  this  is  a  “how-to”  guide  seeking  to  present  an  approach  that  will enable you to find the model  that  best fits your situation.
+
+The  tools  and  information  contained  within  this  chapter  will  help  people starting   wireless   networks   to   ask   the   right   questions   and   gather   the necessary  data  to  define  the  most  appropriate  components  of  their  model. Keep  in  mind  that  determining  the  best  model  is  not  a  sequential  process where  each step is followed  until completion.  In  fact, the process is ongoing  and  iterative.
+
+All  of  the  steps  are  integrally  connected  to  each  other,  and  often  you  will revisit steps several  times as you progress.
+
+##     Create  a mission  statement
+
+What  do you want  to accomplish  by setting  up your  network?
+
+It  seems  like  a  simple  question.   However,   many  wireless   networks   are installed without a clear  vision  of what  they are doing and  what  they hope to   accomplish   in   the  future.   The  first  step   involves   documenting   this vision with  the input  of your  entire  team  or staff.
+
+ - What is  the purpose  of the wireless  network?
+ - Who  does  the  network seek to serve?
+ - What  does  the  network  do  to  address  the  community's needs  and  to create  value?
+ - What are  the  principles  that guide  the  networks
+
+A  good  mission  statement  expresses   the  purpose  of  your   network  in  a concise,  meaningful  way while  articulating  your  values  and  services.
+Above   all,   your   mission   provides   a   vision   of   the  aspirations   for   your wireless  network.
+
+It  is  important   that  every  team   member  working   to  build  the  wireless network  is   included   in   the  process  of  developing   your   mission,   which helps  create  further  buy-in.  It  will  garner  support  and  commitment   not only from  your  staff,  but  also from  customers,  partners  and  donors, which will further  your  overall  objectives.
+
+In  the  dynamic  world  of  technology,  the  needs  of  customers  and  the  best way  to  satisfy  those  needs  change  rapidly;  therefore,  the  development  of your  mission  is an  ongoing  process. After   defining   the   initial   mission   with   your   team,   you   must   conduct research   to  determine  whether  this  first  conception   is  aligned   with  the realities   of   your   environment.   Based   on   an   analysis   of   the   external environment  and  your  internal  competencies,  you must constantly  modify the mission  throughout  the life-cycle  of the wireless network.
+
+##     Evaluate the demand for potential  offerings
+
+The   next   step   in   deriving   your   business   model   involves   assessing   the 
+community's   demand   for   the   network's   products   and   services.   First, identify  the  individuals,  groups  and  organisations  in  the  community  that have a  need  for  information  and  would  benefit  from  the wireless  network's offerings.  Potential  users could  consist  of a wide  variety  of  individuals  and organisations  that include,  but  are not limited  to:
+
+ - Farmers'  associations  and  cooperatives
+ - Women's  groups
+ - Schools  and  universities
+ - Businesses  and  local  entrepreneurs
+ - Health  clinics  and  hospitals
+ - Religious  groups
+ - International  and  local  non-governmental  organizations   (NGOs) Local  and national  government  agencies
+ - Radio  stations
+ - Organisations  in  the  tourist  industry
+
+Once  you  establish  a  list  of  all  the  potential  user  groups  of  the  network, you    must     determine     their     needs     for    access     to    information     and  communication.  Often,  people  confuse  services  with  needs. A   farmer  may  need  to  gather  information  on  market  prices  and  climatic conditions  to  
+improve  his  crop  yield  and  sales.  Perhaps  the  way  in  which he  gets  this  information  is  through  the Internet;  however,  the  farmer could also   receive   this   information    through   SMS     over   a   mobile   phone   or through    Voice    over    Internet    Protocol   (VoIP).    It    is    important     to differentiate   between   needs   and   services   because there   may   be   various ways  to  satisfy  the  farmer's  needs.  Your  wireless  network  should  look  for the   best  way   to  fulfill   the  farmer's   needs,   thereby  creating   value  at   the lowest  cost  for  the  user.  When  assessing  the  needs  of  the  community,  it  is  important  to  figure  out where  the  network  can  bring  the  most  value  to  its  users. For  instance,  in  the  small  town  of  Douentza,  Mali,  a  telecentre  manager evaluated  the  potential  benefits  of  establishing  a  wireless  network  through discussions   with   several   local   organisations.   He    interviewed   one   local NGO     that  discussed  its  need  to  send  monthly  reports  to  its  headquarters office  in  Bamako.  At  that  time,  there  was  no  Internet  access  in  Douentza. In order  to  email  a copy  of  the  report,  the NGO     sent one of its  employees to  Mopti  once  a  month,  resulting  in  transportation  and  lodging  costs,  as well  as  the opportunity  cost  of  having  the  employee  out  of  the  office  for several  days  each  month.
+
+When  the  telecentre  manager  calculated  the  total  monthly  costs  incurred by   the   NGO,   he   was   able   to   demonstrate    the   value   of   an   Internet connection  through  cost  savings  to  the organisation. Assistance  from  key  partners  may  also  be  necessary  to  secure  sustainability for  your  wireless   network.   During   this  phase,   you  should  connect  with potential  partners  and  
+explore  mutually  beneficial  collaborations.  You   can   evaluate   the   demand   in   your   community   by  contacting   your potential  customers  and  asking  questions  directly  or  through  surveys,  focus groups,  interviews  or  town  hall  meetings.  Conducting  research   through  a review  of  statistical  documentation,  industry  reports,  censuses,  magazines, newspapers  and  other  secondary  data sources  will  also  help  to  give  you  a better  picture  of your  local  environment. The  goal  of this  data  collection  is  to  obtain  a  thorough  understanding  of the  demand  for  information   and  communication   in  your  community  so that  the network  being  created  responds  to  those needs.  Often,  wireless  networks  that  do not  succeed  forget  this  key  step.  Your entire  network  should be  based  on  the demand  in  the community.
+
+If  you  set  up  a  wireless  network  in  which  the  community  does  not  find value or cannot  afford  its services,  it will  ultimately fail.
+
+##     Establish  appropriate  incentives
+
+Often,  there  is  little  economic  incentive  for  subsistence-based  economic participants  to access the Internet. In  addition,   the  cost  of  acquiring  a  computer   or  mobile  smart  phone, learning  to  use it,  and  getting  an  Internet  connection  far  outweighs  the economic  returns  that it can  provide. There  has  recently  been  some  development   of  applications   that  address this   lack   of   
+incentive,   such   as   market   information   systems,   quality standards  imposed   by  importing  countries,  and  commodities   exchanges. Internet  access  becomes  an  obvious  advantage  in situations  where knowing the  day-to-day   prices  of  products   can   make  a  significant   difference  in income.  Establishing  appropriate  economic  incentives  is  paramount  to  the success  of  the  network.  The  network  must  provide  economic  value  to  its users in  a way that outweighs  its  costs, or  it must  be  cheap  enough  that its costs  are marginal   and  affordable   to  its   users.  It  is  crucial   to  design  a network  with  viable  economic  uses  and  with  costs  that  are  less  than  the economic  value  provided  by it.
+
+Additionally,  to  create  a  proper  incentive  structure,  you  must  involve  the community  in   the  creation   of  the  network  from   the  beginning  of  the project,  making  sure  that  this  initiative  is  organic  and  not  imposed  from the outside. To  begin, you should  try to answer  the following  questions:
+
+1.  What   economic   value   can   this   network   generate   for   the   local economy and  for whom?
+2.  How  much  perceivable  economic  value  can  be  generated?
+3.  Can  present  impediments  be  overcome  to  allow  the  achievement  of these economic  returns?
+
+By answering  these questions,  the  network will  be  able  to  clearly  articulate its  value  proposition  for its  users.  For  example,  “By using  this network  you can  improve  your  margins  on commodity sales  by 2%,”  or  “Internet  access will  allow  you  to  save  $X  in  phone  charges  and  transportation  costs  per month.”  You  must  figure  out  how  your  network can  improve  efficiencies, reduce  costs, or  increase  revenues  for  these customers.
+
+
+For  example,  if  providing  market  information  for  the  local  maize  industry, the  network  should  be  located  near  to  where  farmers  bring  their  crop  for sale  to  merchants.  Your   network   would   then   likely   need   to   tie-into   market   information systems,  providing  daily  price  sheets  ($1  each),  or  terminals  to  sellers  and merchants  ($2/hr).   Your network  might  also provide  the  means  for  farmers to  read  about  new  techniques  and  to  buy  new  products.   You  might  also provide   wireless    connections    to   merchants   and   rent   them   thin-client terminals  for  Internet  access. If   the  market   was  small,   you  might   be  able  to  reduce  costs  by  limiting access  to   images  and  other  bandwidth  intensive  services.  Again,  knowing how  much  value  your  network  will  create  for  these  merchants  will  allow you to  gauge  how  much  they will be  able  to  afford  for  your services.
+
+##     Research  the regulatory  environment  for wireless
+
+The  regulatory  environment   for  wireless  networks  also  affects  the  type  of business  model  that  can  be  implemented. First,   research   whether   any   organisation   has   the  right   to   use  2.4  GHz frequencies  without  a  license. In   most   situations,   2.4   GHz    is   free   to   use   worldwide;   however,   some countries  restrict  who  can  operate  a  network  or  require  expensive  licenses to do so.  So  although  wireless  networks  might  be  legal  in  a country,  the  operator  of a  network  might   have   to  acquire  a  license  to  use  2.4  GHz   frequencies, which   renders   this   usage   prohibitive   for  anyone   other   than   established Internet  Service  Providers  who  have  sufhcient  cash  flow  to  pay  the  license fees.  This  restriction  makes  it  difficult   for  small  communities   to  share  a wireless  network  with  other potentially  interested  parties  or  organisations. Other  countries  are  more  permissive  with  no  such  restrictions  on  wireless networks,    so    the   possibility    to    share    Internet    connectivity    in  small communities  is  a  viable solution.  The  lesson  is  to  do  your  research  at  the  onset,  ensuring  your  network  will comply  with  the  laws  of  the  country  and  local  community.  Some  project managers   have  been  forced  to  shut  down  their  wireless  networks  simply because  they were  unknowingly  breaking the law.
+
+You  should   also  check   into  the  legality  of  Voice   over  Internet   Protocol (VoIP)  services. In  some  countries  there  are  complicated  rules  surrounding  VoIP.  The  rules  for  VoIP  services  and  VoIP  gateways  vary  a  lot  so  please  check  in  your own  country  what  is legally allowed. You  can  start  by checking  wikipedia  - http://en.wikipedia.org/wiki/VoicepoverpIP
+
+##     Analyse the competition
+
+The  next  phase  in  the  evaluation  of  your  community  involves  an  analysis of   the  wireless   network's  competition.   Competitors   include  organisations that  provide  similar  products  and  services  (e.g.,  another  wireless  Internet Service    provider    or    WASP),    organisations     viewed    as    substitutes    or alternatives   to   the  products   and   services   your   network   provides   (e.g.,   a cybercafé),    and   organisations    defined   as   new   entrants   to   the   wireless market.
+
+Once   you  have   identified   your   competitors,   you  should   research   them thoroughly.   You  can  obtain  information  about  your  competitors   through the  Internet,  telephone  calls, their  advertisements and  marketing  materials, surveys  of   their  customers   and  visits  to  their  site.   Create  a  file  for  each competitor.  The  competitive  information  you  gather  can  include  a  list  of services   (including   price   and   quality   information),    their   target   clients, customer  service  techniques,  reputation,  marketing,  etc. Be  sure  to  collect  anything  that  will  help  you  determine  how  to  position your  network   in  the  community.
+It  is  important   to  evaluate   your   competition   for  many  reasons.   First,   it helps  you determine  the  level  of  market  saturation.  Knowing  what  already exists  will  allow  you to  determine  how  your  network  can  contribute  value to  the  community.   In   addition,   analysing   the  competition  can  stimulate innovative  ideas  for  your  service  offerings.  Is  there  something  that  you can do  better  than  the  competitors   to  make  your  services  more effectively  fit the  needs  of  the  community?
+
+Finally,   by  analysing  your  competitors  from  the  customers'  point  of  view and  understanding  their  strengths  and  weaknesses,  you can  determine  your competitive  advantages in  the  community.
+Competitive  advantages  are  those  which  cannot  be  easily  replicated  by  the competition. For  example,  a  wireless  network  that  can  exclusively  offer  a  faster  Internet connection  than  a competitor  is  a  competitive  advantage.
+
+##     Determine  initial and recurring costs and pricing
+
+When  you  are  planning  to  set  up  and  operate  your  wireless  network,  you must   determine   the   resources    needed   to   start   your   project    and   the recurring   operating   costs.   Start-up   costs   include   everything   you   must purchase  to start  your  wireless  network.
+
+These   expenses   can   range   from   the   initial    investment    you   make   in hardware,    access  to  towers  and  so  on  plus  equipment   for  access  points, hubs,  switches,  cables,  solar  equipment,   UPS,  etc.  to  the  costs  to  register your  organisation  as  a  legal  entity. Recurring   costs   are   what   you   must   pay   to   continue   to   operate   your wireless   network,  including  the  cost  of  Internet  access,  telephones,  loans, electricity,  salaries,  office  rental  fees,  equipment   maintenance  and  repairs, and  regular  investments  to  replace  malfunctioning or  obsolete  equipment. Every  piece  of  equipment  will eventually   break  down  or  become  outdated at  some point,  and  you should  set  aside  extra money  for  this purpose.
+
+An  advisable  and  very  common  method  to  deal  with  this  is  to  take  the price of  the  device  and  divide  it  by  the  period  of  time  you estimate  that  it will last.  This   process   is   called   depreciation.    Here   is   an   example.   An   average computer   is  supposed   to  last   for  two  to  five  years.   If   the  initial   cost   to purchase  the  computer  was  $1,000  USD,  and  you  will  be  able  to  use  the computer  for  five  years,   your  annual  depreciation   will  be  $200  USD.  In other  words,   you  will  lose   $16.67  USD every   month   so   that   you  can eventually  replace  this  computer.  To make  your  project  sustainable,  it  is of fundamental  importance  that  you  save  the  money  to  compensate  for  the depreciation  of equipment  each month.
+Keep  these  savings  until  you  finally  have   to  spend   them  for  equipment 
+replacement.    Some  countries  have   tax  laws   that  determine  the  period  of depreciation  for different  types of devices. In  any  case,  you  should  try  to  be  very  realistic  about  the  life-cycle  of  all the implemented  gear  and  plan  for  their  depreciation  carefully. It  is  important   to  research  all  your  start-up  costs  in  advance,   and  make realistic  estimations  of  your  recurring  expenses.
+It  is  always  better  to over-budget  for  expenses  than  to  under-budget.
+
+With  every  wireless  project,   there  are  always   unforeseen   costs,  especially during  the  first  year  of operations  as  you learn  how  to  better  manage  your network.   Following,   is a  non-exhaustive  list  of  categories   of  costs  that you  should  include,  both  in  start-up  phase  and  for  your  recurring  costs, just  to  give  you an  idea of  how  to  get  started  on calculating  your  costs:-
+
+##     Categories of Costs
+
+***Labour costs*** -
+    
+ - Check  ups  (analyses)  and  consultancies
+ - Development  costs for  programming,  testing,  integration  etc.
+ - Installation  costs
+ - Recruiting  costs
+ - Training  costs  (introduction  and  on-going)
+ - Handling  costs  /  salaries  for  employees  or  freelancers,  including yourself
+ - Equipment  maintenance  staff  costs
+ - Software  support staff costs
+ - Security  personnel
+
+***Non-labour  costs*** -
+    
+
+ - Acquisition   and  production   costs  (for  hardware   like  PCs,  VSAT, radio  link equipment  and  software)
+ - Ancillary  equipment  (e.g.,  switches,  cables  and  cabling,  generator, UPS,  etc.)
+ - Data  protection  and  security
+ - Start-up   inventory    (chairs,    tables,    lighting,   curtains,    tiles   and
+carpeting)
+ - Premises    costs    (new    building,    modification,    air    conditioning, electrical  wiring  and  boxes,  security  grills)
+ - Legal  costs,  such  as  business  registration
+ - Initial  license  costs  (VSAT)
+ - Initial  marketing  costs  (flyers,  stickers,  posters,  opening  party)
+ - Operating   costs   for   hardware   and   operating   systems   (Internet access,  telephone,  etc.)
+ - Rent  or  leasing  rates  (for  tower  space  for  example)
+ - Depreciation  of hardware  and  equipment 
+ - License  fees
+ - Consumables   and  ofhce  supplies  (e.g.,  data  media,  paper,  binds, clips)
+ - Operational  costs to maintain  data  protection  and  security
+ - Insurance  premiums
+ - Costs for energy and  to ensure  power supply
+ - Loan  payments,  capital  costs for  paying  back  your  setup costs
+ - Costs for advertising
+ - Local  fees
+ - Legal  and  accounting  services
+
+To  improve  your  chances  of  sustainability,  it  is  generally  best  to  maintain the  lowest  cost  structure  for  your  network.
+
+In other words,  keep your  expenses  as  low as  possible.  Take  time   to   thoroughly   research   all  of  your   suppliers,   particularly   the ISPs,  and  shop  around  for  the  best deals  on quality  service.  Once again,  be certain   that   what    you   purchase   from   suppliers   corresponds   with   the demand  in  the community.
+
+Before  installing  an  expensive  VSAT,  ensure  there  is  a sufficient  number  of individuals  and  organisations   in  your  community  willing  and  able  to  pay for  using  it.  Depending   upon  demand   for  information   access  and   ability   to  pay,   an alternative  method  of  connectivity   may  be  more  appropriate.  Do   not  be afraid  to  think  outside  the  box  and  be  creative  when  determining  the  best solution.
+
+Keeping  your  costs  down  should  not   be  at  the  cost  of  quality.   Because low-quality    equipment    is   more   likely   to   malfunction,    you   could   be spending  more on maintenance  in  the  long  run. The  amount  of money  you will  spend  to  maintain  your  ICT    infrastructure is   hard   to   guess.   The   larger   and   more   complicated   your   infrastructure becomes,  the  more  financial  and  labour  resources  you  must  allocate  for  its maintenance.  Many   times   this   relation   is   not   linear   but   exponential.   If   you  have   a quality  problem  with  your  equipment  once  it  is  rolled  out,  it  can  cost  you an  enormous   amount   of  money   to  fix  it.  Concurrently,   your   sales   will decrease  because the equipment  is  not  up and  running. There   is   an   interesting   example   of   a   major   wireless   Internet   Service Provider   (WASP)  who  had  more  than  3,000  access  points  in  operation  for a  while.  However,  the  WISP  never  managed  to  break-even  because  it  had to  spend  too  much  money  to  maintain  all  the  access  points.
+
+In   addition,   the   company   underestimated   the   short   life-cycle   of   such devices.  ICT    hardware  tends  to  get  cheaper  and  better  as  time  goes  on.  As soon  as  the  company  had  invested  time  and  money  to  install  the  version of  expensive  first  generation  802.11b  access  points,  the  new  “g”  standard was created. New  competitors   designed   better   and  cheaper  access  points   and  offered faster  Internet access  for  less  money.  Finally  the  first  WISP  was  forced  to close  down  the  company,  although  it was  initially  the  market  leader.
+Keep   in   mind   the   rapid   advancement   and   changes   in   technology   and think  about  how  and  when  it  may  be  time  for  you  to  reinvest  in  newer and   cheaper   (or   better)   devices   to  keep   your   infrastructure   competitive and  up-to-date.  As  mentioned  before, it  is  highly  important   that  you  save enough  to  be  able  to do so,  when  necessary.
+
+Once  you  have   identified   and   mapped   out   your   costs,  you  should  also determine  what  and  how  to  charge  for  your  services.  This  is  a complicated and   time-consuming   process   to   do  correctly.   These   key   tips   will   assist when  making  pricing  decisions:
+
+ - Calculate   the   prices   you  charge  so   that  you  cover   all  costs  to provide  the service,  including  all recurring expenses
+ - Examine  the  prices  of your  competitors.
+ - Evaluate  what  your  customers  are willing  and  able to  pay for  your services, and make sure your  prices  correspond  with  these
+
+It  is  absolutely  essential  to  make  a  financial  plan  before  you  start  to  find out  if  your  project  can  be sustainable.
+
+##    Secure the financing
+
+Once  you  have  determined  your  initial  and  recurring  costs  and  created your  financial  plan,  you  know  how  much  financing  you will  need  to run  a successful  wireless  network. The  next  step  is  to  research  and  secure  the  appropriate  amount  of  money to start  up  and  run  your  wireless  network.
+The  most  traditional  method  of  receiving  funding  for  wireless  networks  is through  grants given  by donors.  A donor  typically  will  contribute  funding and   other   types   of   donations    to   an   organisation    or   consortium   of organisations  to  help  them manage  projects  or support  causes.
+
+
+Because  this  funding  is  provided  in  the form  of grants  or  other donations, it  is  not  expected   to   be  repaid  by  the  organisations   implementing  the wireless  projects  or  by the  project's  beneficiaries.
+
+Such   donors   include   large   international   organisations   like   the   United Nations   (UN)   and   various   specialised    UN    agencies   like   the   United Nations     Development  Program      (UNDP)      and     United     Nations Educational,      Scientific      and    Cultural      Organization      (UNESCO). Government  agencies  that  specialise  in  international development,  such  as the  United  States  Agency  for  International   Development   (USAID),  the United   Kingdom's   Department   for  International   Development   (DFID), and   the  Canadian  International   Development   Agency  (CIDA),  are  also considered donors.  Large  foundations  like  the  Gates  Foundation  and  the Soros  Foundation  and  private  commercial  companies  are  other  rypes  of donors.
+Typically,  receiving  funding  involves  a  competitive  or  a  non-competitive process.  The  non-competitive  process  is  more  infrequent,  so  we will  focus on   the   competitive   process   at   a   very   high   level.   Most   donors   have complicated   procedures  surrounding  the  distribution  of  funding.  During the   competitive   bid   process,   the  donor   creates   a   request   for   proposal (RFP)   or   a   request   for  application   (RFA), which   solicits   various  non- governmental   organisations,   private   companies   and   their   partners   to submit  proposals  outlining  their  plans  for  projects  within  the  constraints of  the donors' objectives  and  guidelines. In  response  to  this  RFP  or  RFA,  NGOs  and  other  organisations  compete through  the  submittal  of  their  proposals,  which  are  then  evaluated  by  the donors    based    on    specific    established     criteria.    Finally,     the    donor organisation  selects  the  most appropriate  and  highest  ranking  proposal  to fund  the project.  Sometimes    donors   also   supply   funding   to   support   an   organisation's operations,  but this  type  of  funding  is  more  unusual  than  the  competitive bid  process for a specific  project.
+
+Another   way  of  accessing   the  necessary  funds   to  start  and   maintain   a wireless   network   is   through   microfinance,   or   the   provision   of   loans, savings  and  other  basic  financial  services   to  the  world's  poorest   people. Pioneered  in  the  1970’s by organisations  like ACCION  International  and Grameen  Bank,  microcredit,  a  type  of  microfinance,  enables entrepreneurs to  receive loans in small  amounts  of money  to start  up small enterprises.
+
+
+Despite   the   fact   that   often   individuals    lack   many   of   the   traditional 
+qualifications   needed   to   obtain   loans   like   verifiable   credit,   collateral   or 
+steady  employment,  microcredit  programs  have  been  highly  successful  in many  countries. Typically,   the  process  involves   an  individual  or  a  group  completing  and submitting   a  loan  application   in  the  hopes  of  receiving   a  loan,  and  the lender,  the  individual  or organisation  that  provides  the  loan,  giving  money on condition  that  it  is returned  with  interest.
+
+The use of  microcredit  to fund  wireless  networks  does  pose  one  constraint. Usually,   microcredit   involves   very  small  sums  of  money.  Unfortunately, because   a   large   amount   of   capital   is   needed   to   purchase   the   initial equipment  for  wireless  network  set up,  sometimes  a  microcredit  loan  is not sufficient.  However,  there have  been  many successful  applications  of  microcredit  that have  brought  technology  to  communities.  An  example  includes  the  story of  village  phone  operators.   These  entrepreneurs  use  their  microcredit  loans to  purchase  mobile phones  and  phone  credits.
+
+They  then  rent  the  use  of  their  mobile  phones  to  community  members  on a  per-call  basis  and  earn  enough  money  to  repay  their  debt  and  make  a profit for  themselves  and  their families.
+
+Another   mechanism   for   getting   funding   to   start   a   wireless   network   is angel   funding.   Angel   investors   are   normally   wealthy   individuals    that provide  capital  for business  start-up  in  exchange  for  a  high  rate  of  return on  their  investment. Because   the  ventures   in  which   they  invest   are  start   ups  and,   therefore, often  high  risk,  angel  investors  tend  to  expect  different   things  in  addition to  their   return.
+
+Many  expect  a  Board position  and  maybe  a  role in  the organisation.
+Some  angels  want   to  have   a  stake  in  the  company,   while  others   prefer shares  in  the  company  that  can  be  easily  redeemable   at  face  value,   thus providing  a  clear  exit  for  the  investor.  To  protect   their  investments,   angels  frequently  ask  the  businesses   not  to make  certain   key  decisions   without   their  approval.   Because   of  the  high risk  involved  in  developing   markets,  it  is  often  challenging   to  find  angel investors  to  help  setup  a  wireless  network,  but  not  impossible.
+
+The  best  way  to  find  potential  investors  is  through  your   social   network and  through  research  online.
+
+##   Evaluate the strengths and weaknesses  of the internal situation
+
+A   network  is only  as  good as  the people  who  work  and  operate  it. The  team  you  put  in  place  can  mean  the  difference  between  success  and failure. That   is  why  it  is  important   to  reflect   on  your   team's   qualifications   and skills,   including   those   of   staff   and   volunteers,    in   comparison   to   the competencies   needed  for  a  wireless  project. First,  make  a  list  of  all  the  competencies  needed  to  run  a  wireless  project successfully.   Capacity  areas  should  include   technology,   human   resources, accounting,   marketing,   sales,   negotiation,   legal,   and   operations,   among others.  Afterwards,  identify  local  resources  to  fulfill  these  skills.  Map  your team's  skill  sets  to  the competencies   needed,  and  identify  key  gaps.  One tool   often   used   to   assist   with    this    self-evaluation   is   an    analysis    of strengths,  weaknesses,  opportunities  and  threats,  called  SWOT.
+
+To  conduct  this  analysis,  specify  your  internal  strengths  and  weaknesses, and   elaborate    upon   the   external   opportunities   and   threats   in   your community.  It  is  important  to  be  realistic  and  honest  about  what  you  do well and  what  you are lacking. Be sure to distinguish  between  where your  organisation  is at  the  beginning of  this  endeavour  from  where  it could  be in  the future.  Your strengths  and weaknesses   allow  you   to  evaluate   your   capacities   internally   and   better understand  what  your  organisation  can  do, as well as  its  limits.
+
+By  understanding  your  strengths  and  weaknesses  and  comparing  them  to those  of your  competitors,  you can  determine your  competitive  advantages in   the   market.   You   can   also   note   the   areas   where   you   can   improve. Opportunities  and  threats  are  external,  which  enable  you  to  analyse  real world  conditions  and how these conditions  influence  your  network.
+
+The  diagram   on   the    next   page   will  help   you  in   creating   your   own SWOT  analysis  for your  organisation. Be   sure   to   respond   to   the   questions   asked   and   list   your   strengths, weaknesses,  opportunities  and  threats  in  the spaces  designated.
+
+![](imageserver/uploadimages/image173.png)
+
+
+##    Putting  it  all together
+
+Once   you  have   gathered   all  of   the   information,   you  are   ready   to   put everything   together   and   decide   upon   the   best   model   for   the   wireless network   in  your   community.   Based   on  the  results  of   your   external   and internal  analyses,   you  must   refine  your  mission  and  service  offerings.  All of   the  factors  that  you  researched  in  the  preceding   steps  come  into  play when  determining   your  overall  strategy.  It  is  essential   to  employ  a  model that  capitalises  on  opportunities   and  works  within  the  constraints   of   the local  environment.
+
+To    do    this,     you    must     often    find    innovative    solutions     to    attain  sustainability.     By     exploring     several     examples     and     discussing      the  components  of  the  models  implemented  in  those  instances,  you will  better understand  how  to  arrive  at  an  appropriate  model. In  the  distant  jungles   of  the  Democratic  Republic  of  Congo,   there  is  a rural  hospital  in  a  village  called  Vanga  in  the  province  of  Bandundu.  It  is so   remote   that   patients   travel   for   weeks   to   get   there   often   through   a combination  of travel  by foot  and  by river.  This   village,   founded   by  Baptist   missionaries   in   1904,   has   served   as   a hospital  for  many  years.  Although   it   is   extremely   remote,   it   is   renowned   for   being   an   excellent  facility   and   has  had   the  support   of   German  and  American   missionaries who  have  
+kept  this  facility  in operation.  In  2004,  a  project   sponsored  by  USAID  established   a  telecentre   in  this village    to    help    improve    education    in    this    isolated    community;    this  Internet    facility    was   also   heavily   used    by   the   educated   class    in   the  community  —  the  hospital's  staff.  The centre  had  been  a  great  boon  to  the  community,  offering  access  to  the world's      knowledge     and     even     providing     consultation     with    distant colleagues  in Switzerland,  France  and  Canada.
+
+The  centre  required  near  total subsidisation   to  operate  and  cover  its  costs,
+and  funding  was  to end  by 2006.  Although  the centre  added  great  value  to  the community,  it  did have  some shortcomings,   primarily    technical,    economic,    and   political    issues    that limited  its  sustainability.
+
+A  study  was commissioned  to consider  options  for  its  future.  After  reviewing  the  centre's  cost  structure,  it  was determined  that  it  needed to cut  its costs and  look  for  new ways  to  increase  its  revenues.
+
+The largest  expenses  were  electricity  and  Internet  access;  therefore,  creative models   needed   to   be   constructed   to   reduce   the   telecentre's   costs   and provide access in  a way that was sustainable.
+
+
+![](imageserver/uploadimages/image174.png)
+
+In  this  instance,  a  traditional  VSAT had  been  used  for connectivity. However,   there  was  a   unique   way  of  accommodating   local   community groups'  limited  ability  to  pay  for  Internet  services.  Various  organisations  in the   community    shared    this   Internet    access    through    a   local   wireless network;   this  meant   that  they  also  shared   the  costs  associated   with  the VSAT  connection   and  local  wireless   network.   This  model  led to  greater sustainability   for   everyone.   In   Vanga,   several   organisations,   including  a hospital,   a   pharmacy,   several   missionary   groups,   a  community   resource centre,   and  some  non-profit  organisations,  had  a  need  for  Internet  access and   the  means   to  pay  for  it.  This  arrangement  enabled   the  network  of organisations    to   have    a   higher   quality    connection    at    a   lower    cost. Additionally,    one    organisation    in    the    village    had    the   capacity    and willingness    to    manage    several    aspects    of    the    network's    operations, including   the  billing  and  payment   collection,   technical  maintenance   and general  business  operations  of  the entire  network. Therefore,   this  model  worked  well  in  Vanga  because  it  had  been  tailored to  meet  community  demand  and  leverage  local  economic  resources.
+
+![](imageserver/uploadimages/image175.png)
+
+Another  example  of  a  model  adapted  to  fit  the  local  context   is  that  of First  Mile  Solutions'  DakNet.  This  model  has  been  deployed  in  villages  in India,   Cambodia,   Rwanda,   and   Paraguay.   By   taking   into   account   the limited     buying     power     of  villagers,     this     model     addresses     their communication  needs  in  an  innovative   way.  In  the  DakNet  model,  there  is  a  franchise  that  exists  in  the  country,  and local   entrepreneurs   are  recruited   and  trained   to  operate  kiosks  equipped with  Wi-Fi  antennas. Using  pre-paid  cards,  villagers  are  able  to  asynchronously send  and  receive emails,   texts,  and  voice  mails,  conduct  web  searches,  and  participate  in  e- commerce.    Afterwards,    these   communications   are   stored   in   the   local kiosk's  server.  When  a  bus  or  motorcycle  with  a  mobile  access  point  drives past  a  kiosk,  the  vehicle  automatically   receives  the  kiosk's  stored  data  and delivers  any  incoming  data.  Once  the vehicle  reaches  a  hub  with  Internet connectivity,  it  processes  all  requests,  relaying   emails,  messages,  and  shared files.  DakNet  integrates  both  mobile  access  and  franchise  models  to  bring value   to  people  in  remote  villages.   For  such  a  model  to  be   sustainable, several  key  conditions  need  to  be  present. First,    a    franchise    organisation    must    exist    to    provide    financial    and  institutional   support,  including  an  initial  investment,   working  capital  for certain   recurring  costs,  advice  on  start-up  practices,  management  training, standardised  processes, reporting  mechanisms,  and  marketing  tools.  Additionally,    this    model    requires    a    highly    motivated    and    dynamic individual in  the  village,  with  the  appropriate  skills  to  manage  a  business and     willingness     to     accept     certain     requirements     of     the     franchise organisation.  Because  these  entrepreneurs   are  often  asked  to  commit  their own  resources  to  the  start-up  costs,  they  need  to  have  sufficient  access  to financial  resources.  Finally,   to  ensure  this  model  will  sustain  itself,  there  should  be  sufficient demand  for  information  and  communication   and  few  competitors  in  the community.
+
+
+##   Conclusion
+
+No   single  business  model  will  enable  wireless  networks  to  be  sustainable in  all  environments;   different   models   must   be   used  and  adapted  as  the circumstances    dictate.   Every   community   has   unique   characteristics,   and sufficient    analysis    must  be   conducted    at    the   onset   of   a   project    to determine   the   most    appropriate   model.   This   analysis   should   consider several    key    factors    in    the  local    environment,    including    community demand,      competition,      costs,     economic  resources,      etc.     Although appropriate  planning  and  execution  will  maximise  the chances  of  making your  network  sustainable,   there  are  no  guarantees  of  success.    However,  by using  the  methods  detailed  in  this  chapter,   you  will  help  to  ensure  that  your  network   brings  value  to  the  community  in  a  way  that  corresponds with  the  users'  needs.
