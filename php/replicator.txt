@@ -21,7 +21,7 @@ mkdir("symbolserver");
 mkdir("mapserver");
 mkdir("imageserver");
 mkdir("iconserver");
-mkdir("wndw");
+//mkdir("wndw");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt","replicator.php");
@@ -31,7 +31,7 @@ copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/ph
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/mapserver/php/replicator.txt","mapserver/replicator.php");
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt","imageserver/replicator.php");
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/iconserver/php/replicator.txt","iconserver/replicator.php");
-copy("https://raw.githubusercontent.com/LafeLabs/wndw/main/php/replicator.txt","wndw/replicator.php");
+//copy("https://raw.githubusercontent.com/LafeLabs/wndw/main/php/replicator.txt","wndw/replicator.php");
 
 
 
