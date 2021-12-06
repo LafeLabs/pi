@@ -12,12 +12,34 @@
 <body>    
 
 <div id = "margin">
-<a href = "index.html" style = "font-size:3em">
-    <img src = "iconsymbols/home.svg"/>
-</a>
-<a href = "symbolset.html" style = "font-size:3em">
-    <img src = "iconsymbols/chaos.svg"/>
-</a>
+    <a href = "index.html" style = "font-size:3em">
+        <img src = "iconsymbols/home.svg"/>
+    </a>            
+    <a href = "symbolset.html" style = "font-size:3em">
+        <img src = "iconsymbols/chaos.svg"/>
+    </a>
+
+<table id = "toptable">
+    <tr>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td>COPY LINK:</td>
+        <td><a id = "copylink"></a></td>
+    </tr>
+    
+    <tr>
+        <td>FROM:</td>
+        <td><input id = "fromfile"/></td>
+    </tr>
+    <tr>
+        <td>TO:</td>
+        <td><input id = "tofile"/></td>
+    </tr>
+
+</table>
+
     <canvas id= "maincanvas"></canvas>
     <input id = "rawinput"/>
     <img id = "mainimage"/>
@@ -32,6 +54,9 @@
 </div>
 
 <script>
+document.getElementById("tofile").value = "";
+document.getElementById("fromfile").value = "";
+
 hypercubearray = [];
 for(var index = 0;index  < 1024;index++){
     hypercubearray.push("");
@@ -55,6 +80,8 @@ httpc4.onreadystatechange = function() {
             newimg.onclick = function() {
                 var localurl = "symbolfeed" + this.src.split("symbolfeed")[1];
                 loadsymbol(localurl);
+                filename = this.src.split("symbolfeed/")[1];
+                document.getElementById("fromfile").value = filename;
             }                
 
         
@@ -192,6 +219,16 @@ document.getElementById("mainimage").onload = function() {
     
 };
 
+document.getElementById("tofile").onchange = function(){
+    tofile = this.value;
+    copylink = "copy.php?from=symbolfeed/";
+    copylink += document.getElementById("fromfile").value;
+    copylink += "&to=symbolfeed/" + tofile;
+    document.getElementById("copylink").href = copylink;
+    document.getElementById("copylink").innerHTML = copylink;
+    
+}
+
 </script>
 <style>
 #maincanvas{
@@ -212,6 +249,11 @@ document.getElementById("mainimage").onload = function() {
     height:20px;
     font-size:18px;
 }
+#toptable{
+    position:absolute;
+    left:150px;
+    top:0px;
+}
 #margin{
     position:absolute;
     bottom:85%;
@@ -219,6 +261,9 @@ document.getElementById("mainimage").onload = function() {
     left:0px;
     right:0px;
     overflow:scroll;
+}
+a img{
+    max-width:50px;
 }
 #linkdiv{
     position:absolute;
