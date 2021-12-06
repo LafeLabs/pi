@@ -37,6 +37,7 @@
         "home",
         "hyperlinks.md",
         "iconfactory.md",
+        "install",
         "lasercutshapes",
         "links",
         "linux",
