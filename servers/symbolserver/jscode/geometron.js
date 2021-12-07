@@ -287,6 +287,26 @@ function GVM(canvas2d,width,height) {
             this.glyph = "0207,";
             this.cleanGlyph = "";
         }
+        if(address == 012){
+            //spell after cursor
+            var currentGlyph = this.glyph;
+            var actionArray = currentGlyph.split(",");
+            var symbolGlyph = "";
+            for(var index = 0;index < actionArray.length;index++){
+                if(actionArray[index].length > 0 && actionArray[index] !="0207"){
+                    var localAction = parseInt(actionArray[index],8);
+                    if(localAction < 01000){
+                        localAction += 01000;
+                    }
+                    symbolGlyph += "0" + localAction.toString(8) + ",";
+                }
+            }
+            this.glyph = currentGlyph + symbolGlyph;
+            
+            
+        }
+        
+        
         if(address == 020) {
             //cursor back
             var currentGlyph = this.glyph;
