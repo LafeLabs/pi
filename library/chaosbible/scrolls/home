@@ -1,16 +1,17 @@
 ## [Back to library](../) 
 
-# CHAOS BIBLE
+# King James Bible
 
+copy/pasted from [Project Gutenberg](https://www.gutenberg.org/ebooks/10).
 
 ### Old Testament
 
- - [genesis](scrolls/genesis)
- - [exodus](scrolls/exodus)
- - [leviticus](scrolls/leviticus)
- - [numbers](scrolls/numbers)
- - [deuteronomy](scrolls/deuteronomy)
- - [joshua](scrolls/joshua)
+ - [Genesis](scrolls/genesis)
+ - [Exodus](scrolls/exodus)
+ - [Leviticus](scrolls/leviticus)
+ - [Numbers](scrolls/numbers)
+ - [Deuteronomy](scrolls/deuteronomy)
+ - [The Book of Joshua](scrolls/joshua)
  - [The Book of Judges](scrolls/judges)
  - [The Book of Ruth](scrolls/ruth)
  - [The First Book of Samuel](scrolls/firstsamuel)
@@ -47,4 +48,30 @@
 
 ### New Testament
 
-
+ - [The Gospel According to Saint Matthew](scrolls/matthew)
+ - [The Gospel According to Saint Mark](scrolls/mark)
+ - [The Gospel According to Saint Luke](scrolls/luke)
+ - [The Gospel According to Saint John](scrolls/john)
+ - [The Acts of the Apostles](scrolls/acts)
+ - [The Epistle of Paul the Apostle to the Romans](scrolls/romans)
+ - [The First Epistle of Paul the Apostle to the Corinthians](scrolls/firstcorinthians)
+ - [The Second Epistle of Paul the Apostle to the Corinthians](scrolls/secondcorinthians)
+ - [The Epistle of Paul the Apostle to the Galatians](scrolls/galatians)
+ - [The Epistle of Paul the Apostle to the Ephesians](scrolls/ephesians)
+ - [The Epistle of Paul the Apostle to the Philippians](scrolls/philippians)
+ - [The Epistle of Paul the Apostle to the Colossians](scrolls/colossians)
+ - [The First Epistle of Paul the Apostle to the Thessalonians](scrolls/thessalonians)
+ - [The Second Epistle of Paul the Apostle to the Thessalonians](scrolls/thessalonians)
+ - [The First Epistle of Paul the Apostle to Timothy](scrolls/firsttimothy)
+ - [The Second Epistle of Paul the Apostle to Timothy](scrolls/secondtimothy)
+ - [The Epistle of Paul the Apostle to Titus](scrolls/titus)
+ - [The Epistle of Paul the Apostle to Philemon](scrolls/philemon)
+ - [The Epistle of Paul the Apostle to the Hebrews](scrolls/hebrews)
+ - [The General Epistle of James](scrolls/james)
+ - [The First Epistle General of Peter](scrolls/firstpeter)
+ - [The Second General Epistle of Peter](scrolls/secondpeter)
+ - [The First Epistle General of John](scrolls/firstgeneraljohn)
+ - [The Second Epistle General of John](scrolls/secondgeneraljohn)
+ - [The Third Epistle General of John](scrolls/thirdgeneraljohn)
+ - [The General Epistle of Jude](scrolls/jude)
+ - [The Revelation of Saint John the Divine](scrolls/revelations)
