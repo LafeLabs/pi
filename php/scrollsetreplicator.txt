@@ -13,9 +13,9 @@ $scrolls = $remotescrollset->scrolls;
 
 foreach($scrolls as $value){
 
-    if($value != "home"){
+//    if($value != "home"){
         copy($server."scrolls/".$value,"scrolls/".$value);
-    }
+  //  }
 
 }
 
