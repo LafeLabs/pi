@@ -15,11 +15,13 @@
     </head>
 <body>
 <div id = "prototype">
+## [HOME](scrolls/home)
+
 # name
  
- double line break for paragraph break, *italic*, **bold**, [link](index.html). 
+double line break for paragraph break, *italic*, **bold**, [link](index.html). Delete all this.
  
- ![image alt text](iconsymbols/chaos.svg)
+![image alt text](iconsymbols/chaos.svg)
  
 </div>
     
