@@ -1,0 +1,26 @@
+## [HOME](scrolls/home)
+
+# Magic Library
+ 
+The Magic Library is a collection of self-replicating books.  Each book is a self-replicating set of scrolls, and in some cases also other files like images, designs, maps, code or any other type of file.  
+
+All books have information encoded in them which replicates them to other nodes in the network. The library can also include links to book-like resources such as pdfs of books freely available on the net or useful directories or wikis.  The Operator acts as a librarian, maintaining the books, and aiding in their creation and replication. 
+
+Most books are co-created by the community.  They are local.  But they can also be general, and can replicate freely across the network.  Libraries can fork to more libraries, and they can all have many books, replicating from library to library on any given server.
+
+Libraries are maintained on Raspberry Pi servers running Geometron, and on public-facing web pages hosted on paid hosting, as well as raspberry pi's which are open to the open web through port forwarding.  Libraries are also maintained by replication by way of github.
+
+Libraries have an informal relationship with local public libraries.  We promote our our libraries in the public library as a means of public technology education, a mutual aid hub, and a public utility.  We also run free events at the public library to train more operators.  These events can be funded by grant money, which also pays for hardware(distributed at the library).
+
+**Some Books**
+
+ - the book of geometron
+ - the book of shapes
+ - the trash magic action coloring book
+ - the book of [enter a local subject here]
+ - history of this place
+ - myths of this place
+ - culture of this place
+ - full business directory
+ - subject matter books written by people about their area of expertise
+

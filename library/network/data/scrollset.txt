@@ -1,0 +1,14 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/library/network/",
+    "scrolls": [
+        "geometron",
+        "grantmoney",
+        "home",
+        "library",
+        "mutualaid",
+        "operator",
+        "paidgigs",
+        "promotion",
+        "trashrobot"
+    ]
+}
