@@ -21,10 +21,15 @@ mkdir("symbolserver");
 mkdir("mapserver");
 mkdir("imageserver");
 mkdir("iconserver");
+mkdir("library");
+
 //mkdir("wndw");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt","replicator.php");
+
+
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt","library/replicator.php");
 
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/codeserver/php/replicator.txt","codeserver/replicator.php");
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt","symbolserver/replicator.php");
