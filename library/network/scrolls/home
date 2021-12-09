@@ -1,10 +1,36 @@
 ##  [Back up to library](../)
 
-# Network Libraries
+# Geometron Networks
 
-*empowering communities through networks*
+*empowering communities through self-replicating network libraries*
 
-Network libraries are a network knowledge resource for physically local communities.  They provide free Internet access and free access to a library of books co-created by the community to provide broad access to shared local knowledge.  Books document the community as well as the creative output of the community, including history, resources, commerce, culture, myths, geography, politics, all the other libraries in the community, the existing social networks, and the local living things.
+The elements of the network are:
+
+ - the raspberry pi servers
+ - public off-grid computer stations with raspberry pi
+ - community creators who write the content of the books
+ - authors who compile all the content into books 
+ - librarians who organize the books into libraries
+ - developers who maintain the code and share it
+ - the free wireless networking infrastructure to provide free Internet access in public spaces
+
+Some libraries:
+
+ - food library
+ - history library
+ - government library
+ - library library
+ - aid library
+ - library of commerce
+ - lore library
+ - art library
+ - music library
+ - code library
+ - arduino library
+ - trash robot library
+ 
+
+Geometron libraries are a network knowledge resource for physically local communities.  They provide free Internet access and free access to a library of books co-created by the community to provide broad access to shared local knowledge.  Books document the community as well as the creative output of the community, including history, resources, commerce, culture, myths, geography, politics, all the other libraries in the community, the existing social networks, and the local living things.
 
 Books are all created using the Geometron system on the Raspberry Pi low cost open source computing platform.  The Raspberry Pi running Geometron acts as a server for freely shared documents, which can replicate from one server to the next across the system.  
 
