@@ -1,0 +1,18 @@
+## [home](scrolls/home) 
+
+# replicators
+ 
+ - [scrollsetreplicator.php](scrollsetreplicator.php)
+ - [copy book of geometron set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/bookofgeometron/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy Trash Magic Action Coloring Book set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/tmacb/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy chaos bible set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/chaosbible/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy alice in wonderland set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/aliceinwonderland/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy alice through the  looking glass set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/lookingglass/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy book of servers set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/bookofservers/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy book of icon printers set replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/pi/main/library/iconprinters/data/scrollset.txt&to=data/scrollset.txt)
+ - [copy wireless networking in the developing world main replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/wndw/main/php/replicator.txt&to=replicator.php)
+ - [replicator.php](replicator.php)
+ - [Trash Magic Manifesto](https://lafelabs.github.io/Trash_Magic_Manifesto.pdf)
+ - [Frankenstein](https://www.gutenberg.org/ebooks/84)
+ - [A Short Account of the History of Mathematics](https://www.gutenberg.org/files/31246/31246-pdf.pdf)
+
