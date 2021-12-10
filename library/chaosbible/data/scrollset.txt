@@ -2,7 +2,6 @@
     "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/library/chaosbible/",
     "scrolls": [
         "Nehemiah",
-        "O",
         "Obadiah",
         "acts",
         "amos",
