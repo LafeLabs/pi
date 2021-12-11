@@ -1,0 +1,7 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/",
+    "scrolls": [
+        "home",
+        "replicators"
+    ]
+}
