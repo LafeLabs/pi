@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "http://10.0.0.27/quantumart/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/pi/main/library/webpagelibrary/quantumcybertarot/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -17,7 +17,7 @@ mkdir("jscode");
 mkdir("iconsymbols");
 mkdir("symbolfeed");
 
-copy("http://10.0.0.27/quantumart/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/pi/main/library/webpagelibrary/quantumcybertarot/php/replicator.txt","replicator.php");
 
 foreach($dna->html as $value){
     
