@@ -1,0 +1,12 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/",
+    "scrolls": [
+        "android",
+        "github",
+        "home",
+        "ios",
+        "latex",
+        "windows",
+        "wirlessnetwork"
+    ]
+}

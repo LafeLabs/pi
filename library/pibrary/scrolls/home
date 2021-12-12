@@ -1,0 +1,144 @@
+## [back up to library](../)
+
+# Pibrary([pibrary.org](https://www.pibrary.org))
+
+#### *Empowering content creators through Self-replicating libraries on the Raspberry Pi*
+
+In a pibrary there are no users, only documents.  Creators create documents and readers read them, but all of our information technology simply hosts these documents as they replicate and evolve freely in the world, independent of user identity.  On the pibrary we do not collect user data because we dispense with the concept of the user altogether.  
+
+On the pibrary, there is no cloud, and there are no data centers.  The entire network consists of Raspberry Pi computers running the free open source Geometron server software.   The [Raspberry Pi](https://www.raspberrypi.org/) is a low cost(<$100) open source computer about the size of a deck of cards.
+
+The Geometron software is like all the text documents it hosts: it freely replicates, freely evolved, and is self-contained.  Each individual pibrary server has the entire system on it in a form in which it can be edited, improved, changed, and then replicated on to the next server without reference to any central entity.  The entire system is smaller in size than a typical still image taken on a modern smart phone(<1Megabyte), and many copies exist on a typical server as the library forks off to sub-libraries and more and more books.  Any one of these individual libraries could in principle spawn billions more even if every other instance were destroyed.  This is living media in that it can replicate, evolve, and die(any instance can be deleted) just like a living thing, and all the documents on the media are carried along for the ride.
+
+The pibrary is *physical*.  All the hardware can be run off of a battery and solar panel which can be carried around by creators to share over wifi or plugged in and shared across the web over a home wifi router.  When two pibraries are connected either remotely or over a local wifi network, they can replicate libraries and books freely between them.  
+
+The support model is direct.  Pibrary creators either create books or contribute to books created by others and as those books freely replicate they can get material support for their continued work.  This can be as simple as a library about the art made in a given neighborhood of a city containing a book on an artist's work which has their contact information, payment information, and how to get their work.  
+
+By being as physically local as possible, we remove the need for online payment gateways and shipping, both of which act as impediments to creators making a living now.  Being local also means that creators can ask for non-financial material support such as space to work in and materials to use in creating.
+
+The pibrary is a public resource, and is an extension of the library system.  We use the social network we are building to coordinate the building of community wireless networks open to all people, in public spaces.  Pibrary creators will often co-create books with the community they are working with.
+
+
+The PiBrary is how the Trash Robot library is getting published, a collection of books created by Trash Robot as well as free books which Trash Robot wishes to propagate across the Internet.  This library will be used as the launch pad for the new book TRASH PHYSICS which is a combination memoir, catalog of the structural flaws in modern applied physics, and a plan for creating a new model of physics which can be used to build a better world.  
+
+The book TRASH PHYSICS will launch yet another library, which will be of physics books which together will make up the TRASH PHYSICS LIBRARY, started by the TRASH ROBOT but ultimately co-created by millions of new TRASH PHYSICISTS we recruit from around the world. 
+
+PiBraries can be on anything, however, and this just serves as a marker to point people to install more of them.  
+
+This will have a work flow for building a new raspberry pi based library, pushing that to a public web page, then replicating it from the public page back to a private pi.  
+
+The TRASH ROBOT library can be used to publish books, and other libraries.  Any library can publish any other library by forking down to a new library or book and replicating the other documents across. 
+
+Pibrary needs to have a Book composed of a scroll set:
+
+ - full raspberry pi installation
+ - some guidelines for rasperry pi hardware system setup
+ - information about free community wireless networks and how to set them up
+ - how to fork and create new libraries and books
+ - how to work with latex in the document work with real latex to make final pdf's for printing and other distribution, 
+ - pdf booklets for zine distribution, how to bind the zine, how to print to pdf with or without latex then make booklet(using print from web browser)
+ - physical pibrary composed of zine booklets and box in a bag
+ - using the github work flow with php localhost
+ - running the pibrary on an anrdoid  
+ - running the pibrary on ios
+ - running the pibrary on windows and macos
+ - pointers from the various parts to the geometron documentation
+
+
+[replicator raw code](php/replicator.txt)
+
+[global replicator link](https://raw.githubusercontent.com/LafeLabs/pi/main/php/replicator.txt)
+
+
+# Basic Kit
+
+*For about $400 we build an off-grid solar powered web server with no private information which can be shared in public with anyone*
+
+## Stuff to buy:
+
+ - [Raspberry Pi 4 4 gb($55)](https://www.pishop.us/product/raspberry-pi-4-model-b-4gb/)
+ - [microSD Card and SD adapter($7)](https://www.pishop.us/product/microsd-card-32-gb-class-10-blank/)
+ - [SD card reader($3)](https://www.pishop.us/product/high-speed-micro-sd-card-reader-maximum-128gb-black/)
+  - [HDMI Screen($102)](https://www.sunfounder.com/collections/monitors/products/7-inch-hdmi-monitor)
+ - [raspberry pi keyboard and mouse, official, from sunfounder($36)](https://www.sunfounder.com/collections/keyboard-gamepad/products/keyboard-mouse)
+ - [solar panel and charger, (Amazon $60)](https://www.amazon.com/SOLPERK-Controller%EF%BC%8C-Automotive-Motorcycle-Powersports/dp/B07TTMF3FZ)
+ - [barrel connector pigtails to connect pi screen from battery/charger/solar($9)](https://www.amazon.com/dp/B0915T6NLL)
+ - [12 V 9 A-h lead acid battery($40 Amazon)](https://www.amazon.com/Rechargeable-Battery-Computer-BX1300LCD-Back-UPS/dp/B07WRXR223/)
+
+# Terminal Assembly
+
+![](https://i.imgur.com/Y46szlG.jpg)
+
+![](https://i.imgur.com/N4ItAdo.jpg) 
+
+
+#  Raspberry Pi System Installation
+
+Get a SD card with 8 GB or more storage and a SD card USB reader
+
+Download and install, then use the Raspberry Pi Imager:
+
+[https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/)
+
+Turn on the pi click through all the things, put it on the wifi network.
+
+## Install Apache and PHP so that geometron can run
+
+Open a command prompt(black link on menu bar) and type:
+
+```
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
+```
+
+## Install geometron with this document for self-documentation and replication
+
+```
+cd /var/www/html
+sudo rm index.html
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/freenet/main/php/replicator.txt
+cd ..
+sudo chmod -R 0777 *
+cd html
+php replicator.php
+sudo chmod -R 0777 *
+```
+
+Check the IP address by hovering over the wifi icon, put that into the browser on another machine on the same local wifi network to see and edit the server.  Or open a browser on the pi and point it to [http://localhost](http://localhost)
+
+## Enable VNC(optional)
+
+From the menu, select
+
+preferences>raspberry pi configuration>interfaces
+
+click radio button to turn VNC on
+
+## Set up to have names for other servers
+
+edit hosts file to have the IP address of the other servers and then the name you want to use, copying the format in the existing file.
+
+```
+sudo nano /etc/hosts
+```
+
+edit, and use control-x and say "yes" to save changes.
+
+## connect pi to outside internet over router
+
+Look up "set up port forwarding raspberry pi" and follow instructions to log onto your router and forward port 80 to the raspberry pi.  Use [whatismyipaddress.com](https://whatismyipaddress.com/) to get your global IP address.  Now your home Raspberry pi server will be visible on that IP address.  Take that address and make it a link on the remote raspberry pi terminal as well as a QR code on both.   
+
+edit the /etc/hosts file on the remote pi terminal so that home/ and remote/ point to home pi server either on the local network or on the public network.  So "home" will point to the local IP address on the wifi and "remote" will point to the global IP address of the home raspberry pi server(which everyone can see).  
+
+
+The home server can now have a link to itself and also to a QR code page which points to the IP address.  Then the remote pi terminal has a link at the top so that localhost points to the home server, which then points to the QR code which passerby can scan.  Then all the passerby are directed by raw QR code to a raw IP address.  The Operator makes changes to the home pi using the remote pi.  The remote pi has links to the specific tools on the home server, using the shortcuts, e.g.: "http://trashrobotremote/classifieds/postad.html".
+
+
+[link to pi my life up](https://pimylifeup.com/raspberry-pi-port-forwarding/)
+
+[link to setting up basic website with pi with external connection](http://unixetc.co.uk/2013/09/21/create-a-basic-website-on-a-raspberry-pi/)
+
+
+
+

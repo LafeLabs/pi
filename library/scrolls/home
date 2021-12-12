@@ -2,8 +2,9 @@
 
 # TRASH ROBOT Library
 
- - [Geometron Network Library](network/)
+ - [pibrary](pibrary/)
  - [Trash Physics](trashphysics/)
+ - [Geometron Network Library](network/)
  - [Trash Magic Action Coloring Book](tmacb/)
  - [Book of Geometron](bookofgeometron/)
  - [Trash Magic Manifesto](https://lafelabs.github.io/Trash_Magic_Manifesto.pdf)
