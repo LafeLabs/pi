@@ -2,10 +2,15 @@
 
 # Trash Physics
 
+Server value for [scroll set replicator](scrollset.html): 
+
+https://raw.githubusercontent.com/LafeLabs/pi/main/library/trashphysics
+
 ## Methodology
 
 I will dive into problems with physics illustrated through stories one at a time to creator chapters in "problem", then for each problem I will add a "solution" chapter.
 
+Should there three books, problems, stories and solutions? maybe  or maybe this just needs a pre calculated structure now.
 
 ## Book I: Problem
 
@@ -63,6 +68,8 @@ I will dive into problems with physics illustrated through stories one at a time
  - instigate a mass resignation from military industrial complex jobs
  - let cultural leaders across a broad cross section of society lead, and physics follow
  - active participation by non-working people(retired, home maker, disabled, unemployed, travelers)
+ - the trash physics pibrary is a library of libraries of books which are sets of scrolls in geometron/trash robot pibrary system which document all the curriculum, all the builds, all the history
+ - the books in the trash physics pibrary will be written by the community, and will evolve in the wild.  rather than "read" a book and then do "assignments", learners will always actively engage the text and add to it, as well as leave asks for the next people to improve it, always leave the text better than you found it
 
 
 ## Some stories
@@ -95,16 +102,7 @@ I will dive into problems with physics illustrated through stories one at a time
  - techshop and why it sucked
  - the collapse of physics career tracks, endless post docs, winner take all academia, how i've seen it all get worse, where it's all going
 
-
-Problems include:
-
-
-
-
-Solutions include:
-
-
-Build:
+Builds:
 
  - build diy wifi antennas, use to make links to create free wifi
  - build arduino based neopixel system in public space
@@ -134,9 +132,9 @@ Build:
  - build a trash-built mechanical rough pump
  - build upcycled electronics which adds interconnects to trash electronics
 
-Learn:
+Learn(all this turns into books in libraries in the Trash Physics Library):
  
- - electromagnetism: motors, generators
+ - electromagnetism: motors, generators, antennas, waveguides, transmission lines, em radiation, permanent magnets, iron core transformers, capacitors from trash, RLC circuits, resonators, amplifiers
  - mechanics: gears, pulleys, skeletron, machines
  - thermodynamics: heat engines, heat pumps, steam engines, solar concentrators, efficient dwelling thermal design
  - python based data science
@@ -152,4 +150,8 @@ Learn:
  - water physics
  - vacuum physics
  - transistor physics
+ - history of the military industrial complex
+ - history of silicon valley
+ - history of telecommunication monopolies from the british empire to Big Tech
+ - history of academic physics in the West tracing back to the Catholic Church
 

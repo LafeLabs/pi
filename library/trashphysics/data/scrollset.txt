@@ -1,7 +1,6 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/library/trashphysics/",
     "scrolls": [
-        "home",
-        "replicators"
+        "home"
     ]
 }
