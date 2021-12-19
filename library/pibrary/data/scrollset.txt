@@ -1,7 +1,9 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/library/pibrary/",
     "scrolls": [
         "android",
+        "booklets",
+        "geometron",
         "github",
         "home",
         "ios",
